@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="SODEC: Steering One-Step Diffusion Model with Fidelity-Rich Decoder for Fast Image Compression">
+  <meta property="og:title" content="SODEC: Steering One-Step Diffusion Model with Fidelity-Rich Decoder for Fast Image Compression"/>
+  <meta property="og:description" content="A novel single-step diffusion image compression model that achieves superior rate–distortion–perception performance with 20x faster decoding speed"/>
+  <meta property="og:url" content="https://zheng-chen.cn/SODEC/"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/figs/sodec_banner.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="SODEC: Fast Image Compression with Single-Step Diffusion">
+  <meta name="twitter:description" content="A novel single-step diffusion image compression model with 20x faster decoding speed">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/figs/sodec_twitter_banner.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="image compression, diffusion model, single-step, fidelity, rate-distortion-perception">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>SODEC: Steering One-Step Diffusion Model with Fidelity-Rich Decoder for Fast Image Compression</title>
+  <link rel="icon" type="image/x-icon" href="static/figs/zhengchen.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">SODEC: Steering One-Step Diffusion Model with Fidelity-Rich Decoder for Fast Image Compression</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://zheng-chen.cn" target="_blank">Zheng Chen<sup>1</sup></a>,</span>
+              <span class="author-block">
+                <a href="https://orcid.org/0009-0003-6642-7349" target="_blank">Mingde Zhou<sup>1</sup></a>,</span>
+              <span class="author-block">
+                <a href="https://jp-guo.github.io/" target="_blank">Jinpei Guo<sup>2</sup></a>,</span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/jiale-yuan-0100a0223/" target="_blank">Jiale Yuan<sup>3</sup></a>,</span>
+              <span class="author-block">
+                <a href="https://github.com/Niax23" target="_blank">Ji Yifei<sup>4</sup></a>,</span>
+              <span class="author-block">
+                <a href="http://yulunzhang.com/" target="_blank">Yulun Zhang<sup>5</sup></a><sup>*</sup></span>
+            </div>
+            
+            <div class="is-size-5 publication-institutions">
+              <!-- Institutions -->
+              <span class="institution-block">
+                <sup>1</sup>Shanghai Jiao Tong University,
+                <sup>2</sup>Carnegie Mellon University
+              </span>
+              <span class="coorespond">
+                <small><br><sup>*</sup>Indicates Corresponding Author</a></small>
+              </span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+            
+                <!-- ArXiv abstract link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2508.04979" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                  </a>
+                </span>
+            
+                <!-- Supplementary PDF link -->
+                <span class="link-block">
+                  <a href="static/pdfs/SODEC_supplementary.pdf" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Supplementary</span>
+                  </a>
+                </span>
+            
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/zhengchen1999/SODEC" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Example Section-->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-sixths">
+        <figure>
+          <img src="static/figs/Example.png" alt="SODEC Example Illustration">
+        </figure>
+        <div class="content has-text-justified" style="margin-top: 1rem;">
+          <p>
+            <strong>SODEC</strong> achieves superior rate-distortion-perception performance with single-step decoding. Compared to previous diffusion-based compression models, SODEC improves decoding speed by more than 20× while maintaining high fidelity and perceptual quality.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Example Section-->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Diffusion-based image compression has demonstrated impressive perceptual performance. However, it suffers from two critical drawbacks: (1) excessive decoding latency due to multi-step sampling, and (2) poor fidelity resulting from over-reliance on generative priors. To address these issues, we propose SODEC, a novel single-step diffusion image compression model. We argue that in image compression, a sufficiently informative latent renders multi-step refinement unnecessary. Based on this insight, we leverage a pre-trained VAE-based model to produce latents with rich information, and replace the iterative denoising process with a single-step decoding. Meanwhile, to improve fidelity, we introduce the fidelity guidance module, encouraging outputs that are faithful to the original image. Furthermore, we design the rate annealing training strategy to enable effective training under extremely low bitrates. Extensive experiments show that SODEC significantly outperforms existing methods, achieving superior rate–distortion–perception performance. Moreover, compared to previous diffusion-based compression models, SODEC improves decoding speed by more than 20×.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Method Section-->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-sixths">
+        <h2 class="title is-3 has-text-left">Method</h2>
+        <figure>
+          <img src="static/figs/Pipeline.png" alt="SODEC Pipeline">
+          <figcaption class="title is-5">SODEC Pipeline</figcaption>
+        </figure>
+        <div class="content has-text-justified" style="margin-top: 1rem;">
+          <p>SODEC consists of three key components: <strong>(1) Rich Information Encoder:</strong> Leverages pre-trained VAE to produce informative latents; <strong>(2) Single-Step Decoder:</strong> Replaces iterative denoising with one-step decoding; <strong>(3) Fidelity Guidance Module:</strong> Ensures outputs are faithful to the original image while maintaining perceptual quality.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Method Section-->
+
+<!-- Performance Section-->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-sixths">
+        <h2 class="title is-3 has-text-left">Performance</h2>
+        <figure>
+          <img src="static/figs/Performance.png" alt="SODEC Performance Comparison">
+          <figcaption class="title is-5">Rate-Distortion-Perception Performance Comparison</figcaption>
+        </figure>
+        <div class="content has-text-justified" style="margin-top: 1rem;">
+          <p>
+            SODEC achieves superior performance across multiple metrics:
+          </p>
+          <ul>
+            <li>
+              <strong>Decoding Speed:</strong> 20× faster than previous diffusion-based methods
+            </li>
+            <li>
+              <strong>Rate-Distortion:</strong> Better compression efficiency at all bitrates
+            </li>
+            <li>
+              <strong>Perceptual Quality:</strong> Maintains high visual quality while improving fidelity
+            </li>
+            <li>
+              <strong>Fidelity:</strong> Significantly better than existing diffusion-based methods
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Performance Section-->
+
+<!-- Results Section -->
+<section class="section hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-left">
+        <div class="column is-five-sixths">
+          <h2 class="title is-3">Results</h2>
+          <details open>
+            <summary class="title is-5">Quantitative Results (click to expand)</summary>
+            <div class="content">
+              <ul><li class="title is-6">Rate-Distortion-Perception Results (Fig. 4 of the main paper)</li></ul>
+              <p class="has-text-centered">
+                <img src="static/figs/result_Fig4.png" >
+              </p>
+            </div>
+          </details>
+          <details open>
+            <summary class="title is-5">Qualitative Results (click to expand)</summary>
+            <div class="content">
+              <ul><li class="title is-6">Visual Comparison Results (Fig. 5 of the main paper)</li></ul>
+              <p class="has-text-centered">
+                <img src="static/figs/result_Fig5.png" >
+              </p>
+              <ul>
+                <details>
+                  <summary class="title is-6" style="margin-left: -0.8em;">More Results (click to expand)</summary>
+                  <div class="content">
+                    <ul><li class="title is-6">Rate-Distortion-Perception Results (Fig. 4 of the supplementary material)</li></ul>
+                    <p class="has-text-centered">
+                      <img src="static/figs/more_results4.png" >
+                    </p>
+                    <ul><li class="title is-6">Visual Comparison Results (Fig. 5 of the supplementary material)</li></ul>
+                    <p class="has-text-centered">
+                      <img src="static/figs/more_results3.png" >
+                    </p>
+                    <ul><li class="title is-6">Extended Qualitative Results (Fig. 6 of the supplementary material)</li></ul>
+                    <p class="has-text-centered">
+                      <img src="static/figs/more_results5.png" >
+                    </p>
+                    <ul><li class="title is-6">Additional Results on DIV2K-val (Fig. 7 of the supplementary material)</li></ul>
+                    <p class="has-text-centered">
+                      <img src="static/figs/more_results1.png" >
+                    </p>
+                    <ul><li class="title is-6">Additional Results on Kodak (Fig. 7 of the supplementary material)</li></ul>
+                    <p class="has-text-centered">
+                      <img src="static/figs/more_results2.png" >
+                    </p>
+                  </div>
+                </details>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Results Section -->
+
+<!-- BibTeX citation -->
+<section class="section hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-left">
+      <div class="column is-five-sixths">
+        <h2 class="title">BibTeX</h2>
+        <pre style="background-color: #ffffff; overflow-x: auto; white-space: pre-wrap;">
+<code>@article{chen2025steering,
+  title={Steering One-Step Diffusion Model with Fidelity-Rich Decoder for Fast Image Compression},
+  author={Chen, Zheng and Zhou, Mingde and Guo, Jinpei and Yuan, Jiale and Ji, Yifei and Zhang, Yulun},
+  journal={arXiv preprint arXiv:2508.04979},
+  year={2025}
+}</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End BibTeX citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
