@@ -5,7 +5,7 @@
 
 #### 🔥🔥🔥 News
 
-- **2025-09-30:** This repo is released.
+- **2025-10-05:** This repo is released.
 
 ---
 
@@ -26,22 +26,48 @@ To address these issues, we propose QuantDemoire, a post-training quantization f
 ## <a name="results"></a>🔎 Results
 
 <details open>
-<summary>&ensp;Quantitative Comparisons (click to expand) </summary>
-<li> Quantitative results on UHDM, FHDMi and LCDMoiré dataset. 
+<summary>Quantitative Results (click to expand)</summary>
+
+- Results in Tab. 4 of the main paper
+
 <p align="center">
-<img src="figs/comparison.png" >
+  <img width="900" src="figs/quantitative.png">
 </p>
-</li>
-</details>
-<details close>
-<summary>&ensp;Visual Comparisons (click to expand) </summary>
+
+- Results (Compression Ratio) in Tab. 3 of the supplementary material
+
 <p align="center">
-<img src="figs/visual.png">
-<img src="figs/visual_supp1.png">
-<img src="figs/visual_supp2.png">
+  <img width="900" src="figs/size.png">
 </p>
+
 </details>
 
+<details open>
+<summary>Qualitative Results (click to expand)</summary>
+
+- Results in Fig. 6 of the main paper
+
+<p align="center">
+  <img width="900" src="figs/visual.png">
+</p>
+<details>
+<summary>More Qualitative Results</summary>
+
+- More results in Fig. 1 of the supplementary material
+
+<p align="center">
+  <img width="900" src="figs/visual_supp1.png">
+</p>
+
+- More results in Fig. 2 of the supplementary material
+
+<p align="center">
+  <img width="900" src="figs/visual_supp2.png">
+</p>
+
+</details>
+
+</details>
 
 ## <a name="citation"></a>📎 Citation
 
