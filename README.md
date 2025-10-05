@@ -1,7 +1,17 @@
 # QuantDemoire: Quantization with Outlier Aware for Image Demoiréing
 [Zheng Chen](https://zhengchen1999.github.io/), [Kewei Zhang](https://github.com/Pushazf), [Xiaoyang Liu](https://xyliu339.github.io/), [Weihang Zhang](), [Mengfan Wang](), [Yifan Fu](), [Yulun Zhang](http://yulunzhang.com/),"QuantDemoire: Quantization with Outlier Aware for Image Demoiréing", arXiv, 2025
 
-[[project]()] [[paper]()] [[supplementary material]()]
+
+
+<div>
+<a href="https://github.com/zhengchen1999/QuantDemoire/releases" target='_blank' style="text-decoration: none;"><img src="https://img.shields.io/github/downloads/zhengchen1999/QuantDemoire/total?color=green&style=flat"></a>
+<a href="https://github.com/zhengchen1999/QuantDemoire" target='_blank' style="text-decoration: none;"><img src="https://visitor-badge.laobi.icu/badge?page_id=zhengchen1999/QuantDemoire"></a>
+<a href="https://github.com/zhengchen1999/QuantDemoire/stargazers" target='_blank' style="text-decoration: none;"><img src="https://img.shields.io/github/stars/zhengchen1999/QuantDemoire?style=social"></a>
+</div>
+
+
+
+[[arXiv]()] [[supplementary material](https://github.com/zhengchen1999/QuantDemoire/releases/download/v1/Supplementary_Material.pdf)] [[project]()] 
 
 #### 🔥🔥🔥 News
 
