@@ -11,7 +11,7 @@
 
 > **Abstract:** Demoiréing aims to remove moiré artifacts that often occur in images. While recent deep learning-based methods have achieved promising results, they typically require substantial computational resources, limiting their deployment on edge devices. Model quantization offers a compelling solution. However, directly applying existing quantization methods to demoiréing models introduces severe performance degradation. The main reasons are distribution outliers and weakened representations in smooth regions. To address these issues, we propose QuantDemoire, a post-training quantization framework tailored to demoiréing. It contains two key components. **First**, we introduce an outlier-aware quantizer to reduce errors from outliers. It uses sampling-based range estimation to reduce activation outliers, and keeps a few extreme weights in FP16 with negligible cost. **Second**, we design a frequency-aware calibration strategy. It emphasizes low- and mid-frequency components during fine-tuning, which mitigates banding artifacts caused by low-bit quantization. Extensive experiments validate that our QuantDemoire achieves large reductions in parameters and computation while maintaining quality. Meanwhile, it outperforms existing quantization methods by over **4 dB** on W4A4.
 
-<img src="figs/Performance.png" width="100%"/>
+<img src="figs/performance.png" width="100%"/>
 
 ## ⚒️ TODO
 
@@ -20,7 +20,7 @@
 
 ## 🔎 Method Overview
 
-<img src="figs/Overview.png" width="100%"/>
+<img src="figs/overview.png" width="100%"/>
 
 ## <a name="results"></a>🔎 Results
 
