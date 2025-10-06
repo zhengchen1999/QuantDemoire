@@ -1,4 +1,4 @@
-# Project: SODEC
+# Project: QuantDemoire
 
 https://zheng-chen.cn/QuantDemoire/
 
