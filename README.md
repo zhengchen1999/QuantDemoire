@@ -2,7 +2,7 @@
 
 https://zheng-chen.cn/QuantDemoire/
 
-Steering One-Step Diffusion Model with Fidelity-Rich Decoder for Fast Image Compression
+A post-training quantization framework tailored to demoiréing
 
 ## Acknowledgments
 
