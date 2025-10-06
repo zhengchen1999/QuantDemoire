@@ -1,6 +1,6 @@
 # Project: SODEC
 
-https://zheng-chen.cn/SODEC/
+https://zheng-chen.cn/QuantDemoire/
 
 Steering One-Step Diffusion Model with Fidelity-Rich Decoder for Fast Image Compression
 
