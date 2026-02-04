@@ -82,7 +82,7 @@
 If you find the code helpful in your research or work, please cite our work.
 
 ```
-@inproceedings{chen2025quantdemoire,
+@article{chen2025quantdemoire,
     title={QuantDemoire: Quantization with Outlier Aware for Image Demoiréing},
     author={Chen, Zheng and Zhang, Kewei and Liu, Xiaoyang and Zhang, Weihang and Wang, Mengfan and Fu, Yifan and Zhang, Yulun},
     journal={arXiv preprint arXiv:2510.04066},
