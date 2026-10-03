@@ -1,0 +1,92 @@
+{
+  "rows": [
+    {
+      "round": 0,
+      "bits": 4,
+      "packed_filter": false,
+      "median_ms": 81.26507186889648,
+      "peak_allocated_bytes": 2594161152,
+      "raw": "results/flat_filter_network_4_0_r0.json"
+    },
+    {
+      "round": 0,
+      "bits": 4,
+      "packed_filter": true,
+      "median_ms": 80.64401626586914,
+      "peak_allocated_bytes": 2594161152,
+      "raw": "results/flat_filter_network_4_1_r0.json"
+    },
+    {
+      "round": 0,
+      "bits": 8,
+      "packed_filter": false,
+      "median_ms": 95.2985610961914,
+      "peak_allocated_bytes": 2827205632,
+      "raw": "results/flat_filter_network_8_0_r0.json"
+    },
+    {
+      "round": 0,
+      "bits": 8,
+      "packed_filter": true,
+      "median_ms": 95.39481353759766,
+      "peak_allocated_bytes": 2827205632,
+      "raw": "results/flat_filter_network_8_1_r0.json"
+    },
+    {
+      "round": 1,
+      "bits": 8,
+      "packed_filter": true,
+      "median_ms": 95.45404815673828,
+      "peak_allocated_bytes": 2827205632,
+      "raw": "results/flat_filter_network_8_1_r1.json"
+    },
+    {
+      "round": 1,
+      "bits": 8,
+      "packed_filter": false,
+      "median_ms": 95.58208084106445,
+      "peak_allocated_bytes": 2827205632,
+      "raw": "results/flat_filter_network_8_0_r1.json"
+    },
+    {
+      "round": 1,
+      "bits": 4,
+      "packed_filter": true,
+      "median_ms": 81.31241607666016,
+      "peak_allocated_bytes": 2594161152,
+      "raw": "results/flat_filter_network_4_1_r1.json"
+    },
+    {
+      "round": 1,
+      "bits": 4,
+      "packed_filter": false,
+      "median_ms": 81.82763290405273,
+      "peak_allocated_bytes": 2594161152,
+      "raw": "results/flat_filter_network_4_0_r1.json"
+    }
+  ],
+  "summary": {
+    "4": {
+      "current": {
+        "median_ms": 81.54635238647461,
+        "peak_allocated_bytes": 2594161152
+      },
+      "packed_filter": {
+        "median_ms": 80.97821617126465,
+        "peak_allocated_bytes": 2594161152
+      }
+    },
+    "8": {
+      "current": {
+        "median_ms": 95.44032096862793,
+        "peak_allocated_bytes": 2827205632
+      },
+      "packed_filter": {
+        "median_ms": 95.42443084716797,
+        "peak_allocated_bytes": 2827205632
+      }
+    }
+  },
+  "complete": true,
+  "note": "W4 keeps the current FewChannels flag and replaces its filter iterator. W8 candidate enables FewChannels with the packed iterator; current W8 disables it. All other saved flags and plans preserved."
+}

@@ -1,0 +1,42 @@
+{
+  "complete": true,
+  "summary": {
+    "4": {
+      "layers": 10,
+      "main": {
+        "ordinary_ms": 5.004611247777938,
+        "packed_metadata_ms": 5.023728018999099,
+        "ratio": 1.0038198314064153
+      },
+      "joint": {
+        "ordinary_ms": 7.392793595790863,
+        "packed_metadata_ms": 7.1908416032791145,
+        "ratio": 0.9726825874556093
+      },
+      "prepared_joint": {
+        "ordinary_ms": 12.807718324661256,
+        "packed_metadata_ms": 12.592092728614807,
+        "ratio": 0.9831644020753282
+      }
+    },
+    "8": {
+      "layers": 10,
+      "main": {
+        "ordinary_ms": 7.543721520900726,
+        "packed_metadata_ms": 7.582915198802949,
+        "ratio": 1.0051955361546199
+      },
+      "joint": {
+        "ordinary_ms": 9.42647364139557,
+        "packed_metadata_ms": 9.240070426464081,
+        "ratio": 0.9802255623870931
+      },
+      "prepared_joint": {
+        "ordinary_ms": 15.425990438461305,
+        "packed_metadata_ms": 15.230816102027894,
+        "ratio": 0.987347694968954
+      }
+    }
+  },
+  "note": "First screen, not an adoption decision. Static packing excluded; model weights and serialized CSR unchanged."
+}

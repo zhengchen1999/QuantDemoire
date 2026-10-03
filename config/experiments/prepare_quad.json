@@ -1,0 +1,52 @@
+{
+  "environment": {
+    "QUANTDEMOIRE_PREPARE_IMPL": "pair",
+    "QUANTDEMOIRE_COMPACT_SPARSE": "1",
+    "QUANTDEMOIRE_MAIN_HALF": "1",
+    "QUANTDEMOIRE_SPARSE_IMPL": "csr",
+    "QUANTDEMOIRE_FUSE_NEXT_QUANT": "1",
+    "QUANTDEMOIRE_FUSE_ATTENTION": "1",
+    "QUANTDEMOIRE_FUSE_RESIDUAL": "1",
+    "QUANTDEMOIRE_CSR_KERNEL": "linear",
+    "QUANTDEMOIRE_JOINT_WARPS": "0",
+    "QUANTDEMOIRE_JOINT_PLAN": ""
+  },
+  "variants": [
+    {
+      "name": "w4_pair",
+      "backend": "cuda",
+      "model": "checkpoints/hf/esdnet-uhdm-w4a4",
+      "environment": {
+        "QUANTDEMOIRE_PREPARE_IMPL": "pair",
+        "QUANTDEMOIRE_JOINT_PLAN": "config/kernel_plans/uhdm_w4_mixed.json"
+      }
+    },
+    {
+      "name": "w4_quad",
+      "backend": "cuda",
+      "model": "checkpoints/hf/esdnet-uhdm-w4a4",
+      "environment": {
+        "QUANTDEMOIRE_PREPARE_IMPL": "quad",
+        "QUANTDEMOIRE_JOINT_PLAN": "config/kernel_plans/uhdm_w4_mixed.json"
+      }
+    },
+    {
+      "name": "w8_pair",
+      "backend": "cuda",
+      "model": "checkpoints/hf/esdnet-uhdm-w8a8",
+      "environment": {
+        "QUANTDEMOIRE_PREPARE_IMPL": "pair",
+        "QUANTDEMOIRE_JOINT_PLAN": "config/kernel_plans/uhdm_w8_mixed.json"
+      }
+    },
+    {
+      "name": "w8_quad",
+      "backend": "cuda",
+      "model": "checkpoints/hf/esdnet-uhdm-w8a8",
+      "environment": {
+        "QUANTDEMOIRE_PREPARE_IMPL": "quad",
+        "QUANTDEMOIRE_JOINT_PLAN": "config/kernel_plans/uhdm_w8_mixed.json"
+      }
+    }
+  ]
+}

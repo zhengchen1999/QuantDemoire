@@ -1,0 +1,320 @@
+{
+  "config": {
+    "environment": {
+      "QUANTDEMOIRE_PREPARE_IMPL": "pair",
+      "QUANTDEMOIRE_COMPACT_SPARSE": "1",
+      "QUANTDEMOIRE_MAIN_HALF": "1",
+      "QUANTDEMOIRE_SPARSE_IMPL": "csr"
+    },
+    "variants": [
+      {
+        "name": "w4_base",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w4a4",
+        "environment": {
+          "QUANTDEMOIRE_FUSE_NEXT_QUANT": "1",
+          "QUANTDEMOIRE_FUSE_ATTENTION": "0",
+          "QUANTDEMOIRE_FUSE_RESIDUAL": "0"
+        }
+      },
+      {
+        "name": "w4_attention",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w4a4",
+        "environment": {
+          "QUANTDEMOIRE_FUSE_NEXT_QUANT": "1",
+          "QUANTDEMOIRE_FUSE_ATTENTION": "1",
+          "QUANTDEMOIRE_FUSE_RESIDUAL": "0"
+        }
+      },
+      {
+        "name": "w4_residual",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w4a4",
+        "environment": {
+          "QUANTDEMOIRE_FUSE_NEXT_QUANT": "1",
+          "QUANTDEMOIRE_FUSE_ATTENTION": "0",
+          "QUANTDEMOIRE_FUSE_RESIDUAL": "1"
+        }
+      },
+      {
+        "name": "w4_both",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w4a4",
+        "environment": {
+          "QUANTDEMOIRE_FUSE_NEXT_QUANT": "1",
+          "QUANTDEMOIRE_FUSE_ATTENTION": "1",
+          "QUANTDEMOIRE_FUSE_RESIDUAL": "1"
+        }
+      },
+      {
+        "name": "w8_base",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w8a8",
+        "environment": {
+          "QUANTDEMOIRE_FUSE_NEXT_QUANT": "1",
+          "QUANTDEMOIRE_FUSE_ATTENTION": "0",
+          "QUANTDEMOIRE_FUSE_RESIDUAL": "0"
+        }
+      },
+      {
+        "name": "w8_attention",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w8a8",
+        "environment": {
+          "QUANTDEMOIRE_FUSE_NEXT_QUANT": "1",
+          "QUANTDEMOIRE_FUSE_ATTENTION": "1",
+          "QUANTDEMOIRE_FUSE_RESIDUAL": "0"
+        }
+      },
+      {
+        "name": "w8_residual",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w8a8",
+        "environment": {
+          "QUANTDEMOIRE_FUSE_NEXT_QUANT": "1",
+          "QUANTDEMOIRE_FUSE_ATTENTION": "0",
+          "QUANTDEMOIRE_FUSE_RESIDUAL": "1"
+        }
+      },
+      {
+        "name": "w8_both",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w8a8",
+        "environment": {
+          "QUANTDEMOIRE_FUSE_NEXT_QUANT": "1",
+          "QUANTDEMOIRE_FUSE_ATTENTION": "1",
+          "QUANTDEMOIRE_FUSE_RESIDUAL": "1"
+        }
+      },
+      {
+        "name": "fp16_base",
+        "backend": "fp16",
+        "model": "checkpoints/uhdm_checkpoint.pth",
+        "environment": {
+          "QUANTDEMOIRE_FUSE_NEXT_QUANT": "0",
+          "QUANTDEMOIRE_FUSE_ATTENTION": "0",
+          "QUANTDEMOIRE_FUSE_RESIDUAL": "0"
+        }
+      },
+      {
+        "name": "fp16_attention",
+        "backend": "fp16",
+        "model": "checkpoints/uhdm_checkpoint.pth",
+        "environment": {
+          "QUANTDEMOIRE_FUSE_NEXT_QUANT": "0",
+          "QUANTDEMOIRE_FUSE_ATTENTION": "1",
+          "QUANTDEMOIRE_FUSE_RESIDUAL": "0"
+        }
+      }
+    ]
+  },
+  "rounds": 2,
+  "repeats": 30,
+  "graph": false,
+  "rows": [
+    {
+      "round": 0,
+      "variant": "w4_base",
+      "backend": "cuda",
+      "median_ms": 112.23750686645508,
+      "peak_allocated_bytes": 2989904896,
+      "raw": "results/pointwise_e2e_w4_base_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "w4_attention",
+      "backend": "cuda",
+      "median_ms": 104.9697265625,
+      "peak_allocated_bytes": 2924605952,
+      "raw": "results/pointwise_e2e_w4_attention_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "w4_residual",
+      "backend": "cuda",
+      "median_ms": 110.62777709960938,
+      "peak_allocated_bytes": 2990691328,
+      "raw": "results/pointwise_e2e_w4_residual_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "w4_both",
+      "backend": "cuda",
+      "median_ms": 102.87958526611328,
+      "peak_allocated_bytes": 2924605952,
+      "raw": "results/pointwise_e2e_w4_both_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "w8_base",
+      "backend": "cuda",
+      "median_ms": 125.37940979003906,
+      "peak_allocated_bytes": 3159751168,
+      "raw": "results/pointwise_e2e_w8_base_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "w8_attention",
+      "backend": "cuda",
+      "median_ms": 117.72041702270508,
+      "peak_allocated_bytes": 3158309376,
+      "raw": "results/pointwise_e2e_w8_attention_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "w8_residual",
+      "backend": "cuda",
+      "median_ms": 123.52552032470703,
+      "peak_allocated_bytes": 3159751168,
+      "raw": "results/pointwise_e2e_w8_residual_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "w8_both",
+      "backend": "cuda",
+      "median_ms": 116.19421005249023,
+      "peak_allocated_bytes": 3158567424,
+      "raw": "results/pointwise_e2e_w8_both_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "fp16_base",
+      "backend": "fp16",
+      "median_ms": 136.70604705810547,
+      "peak_allocated_bytes": 3255251456,
+      "raw": "results/pointwise_e2e_fp16_base_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "fp16_attention",
+      "backend": "fp16",
+      "median_ms": 129.57491302490234,
+      "peak_allocated_bytes": 3253154304,
+      "raw": "results/pointwise_e2e_fp16_attention_r0.json"
+    },
+    {
+      "round": 1,
+      "variant": "fp16_attention",
+      "backend": "fp16",
+      "median_ms": 129.6331558227539,
+      "peak_allocated_bytes": 3253154304,
+      "raw": "results/pointwise_e2e_fp16_attention_r1.json"
+    },
+    {
+      "round": 1,
+      "variant": "fp16_base",
+      "backend": "fp16",
+      "median_ms": 137.1570587158203,
+      "peak_allocated_bytes": 3255251456,
+      "raw": "results/pointwise_e2e_fp16_base_r1.json"
+    },
+    {
+      "round": 1,
+      "variant": "w8_both",
+      "backend": "cuda",
+      "median_ms": 116.5301742553711,
+      "peak_allocated_bytes": 3158567424,
+      "raw": "results/pointwise_e2e_w8_both_r1.json"
+    },
+    {
+      "round": 1,
+      "variant": "w8_residual",
+      "backend": "cuda",
+      "median_ms": 123.9347038269043,
+      "peak_allocated_bytes": 3159751168,
+      "raw": "results/pointwise_e2e_w8_residual_r1.json"
+    },
+    {
+      "round": 1,
+      "variant": "w8_attention",
+      "backend": "cuda",
+      "median_ms": 118.36100769042969,
+      "peak_allocated_bytes": 3158309376,
+      "raw": "results/pointwise_e2e_w8_attention_r1.json"
+    },
+    {
+      "round": 1,
+      "variant": "w8_base",
+      "backend": "cuda",
+      "median_ms": 125.86962890625,
+      "peak_allocated_bytes": 3159751168,
+      "raw": "results/pointwise_e2e_w8_base_r1.json"
+    },
+    {
+      "round": 1,
+      "variant": "w4_both",
+      "backend": "cuda",
+      "median_ms": 103.3021469116211,
+      "peak_allocated_bytes": 2924605952,
+      "raw": "results/pointwise_e2e_w4_both_r1.json"
+    },
+    {
+      "round": 1,
+      "variant": "w4_residual",
+      "backend": "cuda",
+      "median_ms": 110.8167839050293,
+      "peak_allocated_bytes": 2990691328,
+      "raw": "results/pointwise_e2e_w4_residual_r1.json"
+    },
+    {
+      "round": 1,
+      "variant": "w4_attention",
+      "backend": "cuda",
+      "median_ms": 104.8642578125,
+      "peak_allocated_bytes": 2924605952,
+      "raw": "results/pointwise_e2e_w4_attention_r1.json"
+    },
+    {
+      "round": 1,
+      "variant": "w4_base",
+      "backend": "cuda",
+      "median_ms": 112.59588623046875,
+      "peak_allocated_bytes": 2989904896,
+      "raw": "results/pointwise_e2e_w4_base_r1.json"
+    }
+  ],
+  "complete": true,
+  "summary": {
+    "w4_base": {
+      "median_ms": 112.41669654846191,
+      "peak_allocated_bytes": 2989904896
+    },
+    "w4_attention": {
+      "median_ms": 104.9169921875,
+      "peak_allocated_bytes": 2924605952
+    },
+    "w4_residual": {
+      "median_ms": 110.72228050231934,
+      "peak_allocated_bytes": 2990691328
+    },
+    "w4_both": {
+      "median_ms": 103.09086608886719,
+      "peak_allocated_bytes": 2924605952
+    },
+    "w8_base": {
+      "median_ms": 125.62451934814453,
+      "peak_allocated_bytes": 3159751168
+    },
+    "w8_attention": {
+      "median_ms": 118.04071235656738,
+      "peak_allocated_bytes": 3158309376
+    },
+    "w8_residual": {
+      "median_ms": 123.73011207580566,
+      "peak_allocated_bytes": 3159751168
+    },
+    "w8_both": {
+      "median_ms": 116.36219215393066,
+      "peak_allocated_bytes": 3158567424
+    },
+    "fp16_base": {
+      "median_ms": 136.9315528869629,
+      "peak_allocated_bytes": 3255251456
+    },
+    "fp16_attention": {
+      "median_ms": 129.60403442382812,
+      "peak_allocated_bytes": 3253154304
+    }
+  }
+}

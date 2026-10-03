@@ -1,0 +1,165 @@
+{
+  "config": {
+    "environment": {},
+    "variants": [
+      {
+        "name": "fp16",
+        "backend": "fp16",
+        "model": "checkpoints/uhdm_checkpoint.pth",
+        "environment": {
+          "QUANTDEMOIRE_FUSE_ATTENTION": "1",
+          "QUANTDEMOIRE_FUSE_RESIDUAL": "1",
+          "QUANTDEMOIRE_RELEASE_FEATURES": "1"
+        }
+      },
+      {
+        "name": "w4a4",
+        "backend": "cuda",
+        "model": "checkpoints/release_20261001/w4a4",
+        "environment": {
+          "QUANTDEMOIRE_PREPARE_IMPL": "quad_swizzle",
+          "QUANTDEMOIRE_COMPACT_SPARSE": "1",
+          "QUANTDEMOIRE_SPARSE_IMPL": "csr",
+          "QUANTDEMOIRE_FUSE_NEXT_QUANT": "1",
+          "QUANTDEMOIRE_FUSE_ATTENTION": "1",
+          "QUANTDEMOIRE_FUSE_RESIDUAL": "1",
+          "QUANTDEMOIRE_CSR_KERNEL": "divmod",
+          "QUANTDEMOIRE_JOINT_WARPS": "0",
+          "QUANTDEMOIRE_JOINT_VARIANT": "9",
+          "QUANTDEMOIRE_SHARED_SKIP_PLANAR": "1",
+          "QUANTDEMOIRE_SHARED_SKIP_PREFIX_PLANAR": "1",
+          "QUANTDEMOIRE_JOINT_NEXT_QUANT": "2",
+          "QUANTDEMOIRE_BALANCE_CSR": "1",
+          "QUANTDEMOIRE_SHARED_RETAIN_STAGES": "0",
+          "QUANTDEMOIRE_FEW_CHANNELS": "1",
+          "QUANTDEMOIRE_PACKED_CSR_META": "1",
+          "QUANTDEMOIRE_FUSE_SECOND_QUANT": "1",
+          "QUANTDEMOIRE_OMIT_CACHED_FEATURES": "1",
+          "QUANTDEMOIRE_RELEASE_FEATURES": "1",
+          "QUANTDEMOIRE_JOINT_PLAN": "checkpoints/release_20261001/w4a4/joint_plan.json"
+        }
+      },
+      {
+        "name": "w8a8",
+        "backend": "cuda",
+        "model": "checkpoints/release_20261001/w8a8",
+        "environment": {
+          "QUANTDEMOIRE_PREPARE_IMPL": "quad_swizzle",
+          "QUANTDEMOIRE_COMPACT_SPARSE": "1",
+          "QUANTDEMOIRE_SPARSE_IMPL": "csr",
+          "QUANTDEMOIRE_FUSE_NEXT_QUANT": "1",
+          "QUANTDEMOIRE_FUSE_ATTENTION": "1",
+          "QUANTDEMOIRE_FUSE_RESIDUAL": "1",
+          "QUANTDEMOIRE_CSR_KERNEL": "divmod",
+          "QUANTDEMOIRE_JOINT_WARPS": "0",
+          "QUANTDEMOIRE_JOINT_VARIANT": "9",
+          "QUANTDEMOIRE_SHARED_SKIP_PLANAR": "1",
+          "QUANTDEMOIRE_SHARED_SKIP_PREFIX_PLANAR": "1",
+          "QUANTDEMOIRE_JOINT_NEXT_QUANT": "2",
+          "QUANTDEMOIRE_BALANCE_CSR": "1",
+          "QUANTDEMOIRE_SHARED_RETAIN_STAGES": "1",
+          "QUANTDEMOIRE_FEW_CHANNELS": "0",
+          "QUANTDEMOIRE_PACKED_CSR_META": "1",
+          "QUANTDEMOIRE_FUSE_SECOND_QUANT": "1",
+          "QUANTDEMOIRE_OMIT_CACHED_FEATURES": "2",
+          "QUANTDEMOIRE_RELEASE_FEATURES": "1",
+          "QUANTDEMOIRE_JOINT_PLAN": "checkpoints/release_20261001/w8a8/joint_plan.json"
+        }
+      }
+    ]
+  },
+  "rounds": 3,
+  "repeats": 30,
+  "warmup": 7,
+  "image": "data/UHDM-full/test/0000_moire.jpg",
+  "graph": false,
+  "rows": [
+    {
+      "round": 0,
+      "variant": "fp16",
+      "backend": "fp16",
+      "median_ms": 129.3937759399414,
+      "peak_allocated_bytes": 2218275328,
+      "raw": "results/release_20261001/e2e_eager_fp16_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "w4a4",
+      "backend": "cuda",
+      "median_ms": 78.97139358520508,
+      "peak_allocated_bytes": 1437582336,
+      "raw": "results/release_20261001/e2e_eager_w4a4_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "w8a8",
+      "backend": "cuda",
+      "median_ms": 94.15523147583008,
+      "peak_allocated_bytes": 1749724160,
+      "raw": "results/release_20261001/e2e_eager_w8a8_r0.json"
+    },
+    {
+      "round": 1,
+      "variant": "w8a8",
+      "backend": "cuda",
+      "median_ms": 94.17520141601562,
+      "peak_allocated_bytes": 1749724160,
+      "raw": "results/release_20261001/e2e_eager_w8a8_r1.json"
+    },
+    {
+      "round": 1,
+      "variant": "w4a4",
+      "backend": "cuda",
+      "median_ms": 78.81331253051758,
+      "peak_allocated_bytes": 1437582336,
+      "raw": "results/release_20261001/e2e_eager_w4a4_r1.json"
+    },
+    {
+      "round": 1,
+      "variant": "fp16",
+      "backend": "fp16",
+      "median_ms": 128.7950210571289,
+      "peak_allocated_bytes": 2218275328,
+      "raw": "results/release_20261001/e2e_eager_fp16_r1.json"
+    },
+    {
+      "round": 2,
+      "variant": "fp16",
+      "backend": "fp16",
+      "median_ms": 128.6331024169922,
+      "peak_allocated_bytes": 2218275328,
+      "raw": "results/release_20261001/e2e_eager_fp16_r2.json"
+    },
+    {
+      "round": 2,
+      "variant": "w4a4",
+      "backend": "cuda",
+      "median_ms": 78.62886047363281,
+      "peak_allocated_bytes": 1437582336,
+      "raw": "results/release_20261001/e2e_eager_w4a4_r2.json"
+    },
+    {
+      "round": 2,
+      "variant": "w8a8",
+      "backend": "cuda",
+      "median_ms": 93.93513870239258,
+      "peak_allocated_bytes": 1749724160,
+      "raw": "results/release_20261001/e2e_eager_w8a8_r2.json"
+    }
+  ],
+  "complete": true,
+  "summary": {
+    "fp16": {
+      "median_ms": 128.7950210571289,
+      "peak_allocated_bytes": 2218275328
+    },
+    "w4a4": {
+      "median_ms": 78.81331253051758,
+      "peak_allocated_bytes": 1437582336
+    },
+    "w8a8": {
+      "median_ms": 94.15523147583008,
+      "peak_allocated_bytes": 1749724160
+    }
+  }
+}

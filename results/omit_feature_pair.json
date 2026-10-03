@@ -1,0 +1,189 @@
+{
+  "complete": true,
+  "note": "Fresh-process, alternating-order E2E and peak-memory omission experiment.",
+  "rows": [
+    {
+      "round": 0,
+      "bits": 4,
+      "omit_feature": false,
+      "median_ms": 79.97687911987305,
+      "peak_allocated_bytes": 2594161152,
+      "model_allocated_bytes": 5521920,
+      "raw": "results/omit_feature_pair_4_0_r0.json"
+    },
+    {
+      "round": 0,
+      "bits": 4,
+      "omit_feature": true,
+      "median_ms": 79.61185455322266,
+      "peak_allocated_bytes": 2592719360,
+      "model_allocated_bytes": 5521920,
+      "raw": "results/omit_feature_pair_4_1_r0.json"
+    },
+    {
+      "round": 0,
+      "bits": 8,
+      "omit_feature": false,
+      "median_ms": 94.87627029418945,
+      "peak_allocated_bytes": 2825370624,
+      "model_allocated_bytes": 8407552,
+      "raw": "results/omit_feature_pair_8_0_r0.json"
+    },
+    {
+      "round": 0,
+      "bits": 8,
+      "omit_feature": true,
+      "median_ms": 94.56332778930664,
+      "peak_allocated_bytes": 2826157056,
+      "model_allocated_bytes": 8407552,
+      "raw": "results/omit_feature_pair_8_1_r0.json"
+    },
+    {
+      "round": 1,
+      "bits": 8,
+      "omit_feature": true,
+      "median_ms": 94.78400039672852,
+      "peak_allocated_bytes": 2826157056,
+      "model_allocated_bytes": 8407552,
+      "raw": "results/omit_feature_pair_8_1_r1.json"
+    },
+    {
+      "round": 1,
+      "bits": 8,
+      "omit_feature": false,
+      "median_ms": 95.33900833129883,
+      "peak_allocated_bytes": 2825370624,
+      "model_allocated_bytes": 8407552,
+      "raw": "results/omit_feature_pair_8_0_r1.json"
+    },
+    {
+      "round": 1,
+      "bits": 4,
+      "omit_feature": true,
+      "median_ms": 80.16732788085938,
+      "peak_allocated_bytes": 2592719360,
+      "model_allocated_bytes": 5521920,
+      "raw": "results/omit_feature_pair_4_1_r1.json"
+    },
+    {
+      "round": 1,
+      "bits": 4,
+      "omit_feature": false,
+      "median_ms": 80.60823822021484,
+      "peak_allocated_bytes": 2594161152,
+      "model_allocated_bytes": 5521920,
+      "raw": "results/omit_feature_pair_4_0_r1.json"
+    },
+    {
+      "round": 2,
+      "bits": 4,
+      "omit_feature": false,
+      "median_ms": 80.66900634765625,
+      "peak_allocated_bytes": 2594161152,
+      "model_allocated_bytes": 5521920,
+      "raw": "results/omit_feature_pair_4_0_r2.json"
+    },
+    {
+      "round": 2,
+      "bits": 4,
+      "omit_feature": true,
+      "median_ms": 80.19200134277344,
+      "peak_allocated_bytes": 2592719360,
+      "model_allocated_bytes": 5521920,
+      "raw": "results/omit_feature_pair_4_1_r2.json"
+    },
+    {
+      "round": 2,
+      "bits": 8,
+      "omit_feature": false,
+      "median_ms": 95.39921569824219,
+      "peak_allocated_bytes": 2825370624,
+      "model_allocated_bytes": 8407552,
+      "raw": "results/omit_feature_pair_8_0_r2.json"
+    },
+    {
+      "round": 2,
+      "bits": 8,
+      "omit_feature": true,
+      "median_ms": 95.00051498413086,
+      "peak_allocated_bytes": 2826157056,
+      "model_allocated_bytes": 8407552,
+      "raw": "results/omit_feature_pair_8_1_r2.json"
+    },
+    {
+      "round": 3,
+      "bits": 8,
+      "omit_feature": true,
+      "median_ms": 95.06665802001953,
+      "peak_allocated_bytes": 2826157056,
+      "model_allocated_bytes": 8407552,
+      "raw": "results/omit_feature_pair_8_1_r3.json"
+    },
+    {
+      "round": 3,
+      "bits": 8,
+      "omit_feature": false,
+      "median_ms": 95.44708633422852,
+      "peak_allocated_bytes": 2825370624,
+      "model_allocated_bytes": 8407552,
+      "raw": "results/omit_feature_pair_8_0_r3.json"
+    },
+    {
+      "round": 3,
+      "bits": 4,
+      "omit_feature": true,
+      "median_ms": 80.28047943115234,
+      "peak_allocated_bytes": 2592719360,
+      "model_allocated_bytes": 5521920,
+      "raw": "results/omit_feature_pair_4_1_r3.json"
+    },
+    {
+      "round": 3,
+      "bits": 4,
+      "omit_feature": false,
+      "median_ms": 80.71167755126953,
+      "peak_allocated_bytes": 2594161152,
+      "model_allocated_bytes": 5521920,
+      "raw": "results/omit_feature_pair_4_0_r3.json"
+    }
+  ],
+  "warning": "Both modes use the same process-local Python routing adapter. Existing production source, plans, weights and runtime profiles are unchanged.",
+  "summary": {
+    "4": {
+      "baseline": {
+        "median_ms": 80.63862228393555,
+        "peak_allocated_bytes": 2594161152,
+        "model_allocated_bytes": 5521920
+      },
+      "omission": {
+        "median_ms": 80.1796646118164,
+        "peak_allocated_bytes": 2592719360,
+        "model_allocated_bytes": 5521920
+      },
+      "paired_savings_ms": [
+        0.3650245666503906,
+        0.44091033935546875,
+        0.4770050048828125,
+        0.4311981201171875
+      ]
+    },
+    "8": {
+      "baseline": {
+        "median_ms": 95.36911201477051,
+        "peak_allocated_bytes": 2825370624,
+        "model_allocated_bytes": 8407552
+      },
+      "omission": {
+        "median_ms": 94.89225769042969,
+        "peak_allocated_bytes": 2826157056,
+        "model_allocated_bytes": 8407552
+      },
+      "paired_savings_ms": [
+        0.3129425048828125,
+        0.5550079345703125,
+        0.3987007141113281,
+        0.3804283142089844
+      ]
+    }
+  }
+}

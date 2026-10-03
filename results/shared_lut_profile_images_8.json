@@ -1,0 +1,76 @@
+{
+  "backend": "cuda",
+  "model": "checkpoints/hf/esdnet-uhdm-w8a8",
+  "model_sha256": "57be96cc6f2ec6c4faba12f0787e222952059fb8194d5dafb0d23b91aa7df001",
+  "config_sha256": "41f4460ad59b680c0928087a49c4c435d4e0e7e9eaa8a81250b85e2f84b51bb9",
+  "graph": true,
+  "rows": [
+    {
+      "image": "0000_moire.jpg",
+      "input_sha256": "93f64bf80f4b413ebde917e745619687d053ee8b6456cd2f1bbbb3e140bf3a1c",
+      "bitwise_equal": [
+        true,
+        true,
+        true
+      ],
+      "graph_bitwise_equal": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "image": "0001_moire.jpg",
+      "input_sha256": "b3185cdc7c1c59364b824ea1fc4aecad8b86d31c95a45bf6d1d37b59e7fd2a61",
+      "bitwise_equal": [
+        true,
+        true,
+        true
+      ],
+      "graph_bitwise_equal": [
+        true,
+        true,
+        true
+      ]
+    }
+  ],
+  "attention_modules": 6,
+  "residual_modules": 6,
+  "csr_kernel": "divmod",
+  "joint_warps": 0,
+  "note": "Reference disables attention/residual fusions and uses legacy CSR; candidate enables both and the requested CSR/joint kernel. Joint prefix production is controlled by QUANTDEMOIRE_JOINT_NEXT_QUANT and the optional per-layer plan; all numerical quantization parameters are identical.",
+  "count": 2,
+  "complete": true,
+  "environment": {
+    "torch": "2.2.2+cu121",
+    "cuda": "12.1",
+    "cudnn": 8902,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "fp16_convolution_accumulator": "float32",
+    "cudnn_api": "v7",
+    "tf32": false,
+    "fp16_reduced_precision_reduction": false,
+    "sparse_implementation": "csr",
+    "csr_kernel": "divmod",
+    "joint_warps": 0,
+    "joint_variant": 9,
+    "joint_next_quant": 2,
+    "balance_csr": true,
+    "shared_retain_stages": true,
+    "few_channels": false,
+    "packed_csr_meta": true,
+    "omit_cached_features": 2,
+    "shared_skip_planar": true,
+    "shared_skip_prefix_planar": true,
+    "joint_plan_sha256": "5ea8c894920495b25d3d812dbcdf1a303bea00c0eefa1db28f5ccaee93913434",
+    "main_half_override": "1",
+    "compact_sparse": true,
+    "prepare_implementation": "quad_swizzle",
+    "fuse_next_quant": true,
+    "fuse_second_quant": true,
+    "fuse_attention": true,
+    "fuse_residual": true,
+    "deployment_source_sha256": "695920166af950b469487d1cc669fa617ef281f03518e15c0bc43f41532a5376",
+    "kernel_source_sha256": "9d3dfc3a839405b96d15c57f7d7bc202279aef9941d6614d7e4a609efb531cd2"
+  }
+}

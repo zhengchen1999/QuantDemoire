@@ -1,0 +1,3261 @@
+{
+  "complete": true,
+  "rows": [
+    {
+      "bits": 4,
+      "shape": [
+        48,
+        12,
+        5,
+        1,
+        1,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        48,
+        12,
+        5,
+        1,
+        1,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        36,
+        48,
+        3,
+        2,
+        3,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        36,
+        48,
+        3,
+        2,
+        3,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        32,
+        80,
+        3,
+        1,
+        1,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        32,
+        80,
+        3,
+        1,
+        1,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        64,
+        144,
+        1,
+        1,
+        1,
+        9,
+        11
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        64,
+        144,
+        1,
+        1,
+        1,
+        9,
+        11
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        12,
+        64,
+        3,
+        1,
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        12,
+        64,
+        3,
+        1,
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        96,
+        80,
+        3,
+        1,
+        2,
+        13,
+        21
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        96,
+        80,
+        3,
+        1,
+        2,
+        13,
+        21
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        32,
+        16,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        32,
+        16,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        32,
+        32,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        32,
+        32,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        32,
+        63,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        32,
+        63,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        32,
+        65,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        32,
+        65,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        32,
+        96,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        32,
+        96,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        32,
+        127,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        32,
+        127,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        32,
+        129,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        32,
+        129,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        32,
+        192,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        32,
+        192,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        32,
+        255,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        32,
+        255,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        32,
+        257,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        32,
+        257,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        32,
+        384,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        32,
+        384,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        32,
+        513,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        32,
+        513,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        48,
+        12,
+        5,
+        1,
+        1,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        48,
+        12,
+        5,
+        1,
+        1,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        36,
+        48,
+        3,
+        2,
+        3,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        36,
+        48,
+        3,
+        2,
+        3,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        32,
+        80,
+        3,
+        1,
+        1,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        32,
+        80,
+        3,
+        1,
+        1,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        64,
+        144,
+        1,
+        1,
+        1,
+        9,
+        11
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        64,
+        144,
+        1,
+        1,
+        1,
+        9,
+        11
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        12,
+        64,
+        3,
+        1,
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        12,
+        64,
+        3,
+        1,
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        96,
+        80,
+        3,
+        1,
+        2,
+        13,
+        21
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        96,
+        80,
+        3,
+        1,
+        2,
+        13,
+        21
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        32,
+        16,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        32,
+        16,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        32,
+        32,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        32,
+        32,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        32,
+        63,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        32,
+        63,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        32,
+        65,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        32,
+        65,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        32,
+        96,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        32,
+        96,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        32,
+        127,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        32,
+        127,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        32,
+        129,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        32,
+        129,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        32,
+        192,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        32,
+        192,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        32,
+        255,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        32,
+        255,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        32,
+        257,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        32,
+        257,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        32,
+        384,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        32,
+        384,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        32,
+        513,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        32,
+        513,
+        3,
+        1,
+        1,
+        7,
+        9
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 4,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 4,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": false,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        2,
+        17,
+        19,
+        2
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 0,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": false,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "kind": "next",
+      "bits": 8,
+      "next_bits": 8,
+      "shared": true,
+      "geometry": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strategy": 1,
+      "prefixed": true,
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    }
+  ]
+}

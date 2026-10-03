@@ -1,0 +1,261 @@
+{
+  "rows": [
+    {
+      "bits": 4,
+      "shape": [
+        36,
+        48,
+        3,
+        2,
+        3,
+        17,
+        19,
+        3
+      ],
+      "shared": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        32,
+        80,
+        3,
+        1,
+        1,
+        17,
+        19,
+        1
+      ],
+      "shared": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        64,
+        144,
+        1,
+        1,
+        1,
+        9,
+        11,
+        0
+      ],
+      "shared": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        12,
+        64,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "shared": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        96,
+        80,
+        3,
+        1,
+        2,
+        13,
+        21,
+        2
+      ],
+      "shared": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        96,
+        80,
+        1,
+        1,
+        1,
+        9,
+        11,
+        0
+      ],
+      "shared": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        32,
+        240,
+        3,
+        1,
+        1,
+        9,
+        13,
+        1
+      ],
+      "shared": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "shape": [
+        36,
+        48,
+        1,
+        2,
+        1,
+        9,
+        11,
+        2
+      ],
+      "shared": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        36,
+        48,
+        3,
+        2,
+        3,
+        17,
+        19,
+        3
+      ],
+      "shared": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        32,
+        80,
+        3,
+        1,
+        1,
+        17,
+        19,
+        1
+      ],
+      "shared": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        64,
+        144,
+        1,
+        1,
+        1,
+        9,
+        11,
+        0
+      ],
+      "shared": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        12,
+        64,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "shared": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        96,
+        80,
+        3,
+        1,
+        2,
+        13,
+        21,
+        2
+      ],
+      "shared": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        96,
+        80,
+        1,
+        1,
+        1,
+        9,
+        11,
+        0
+      ],
+      "shared": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        32,
+        240,
+        3,
+        1,
+        1,
+        9,
+        13,
+        1
+      ],
+      "shared": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "shape": [
+        36,
+        48,
+        1,
+        2,
+        1,
+        9,
+        11,
+        2
+      ],
+      "shared": true,
+      "equal": true,
+      "graph": true
+    }
+  ],
+  "complete": true
+}

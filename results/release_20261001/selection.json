@@ -1,0 +1,115 @@
+{
+  "rule": "Frozen from held-out training results on 2026-10-01; no test-set selection",
+  "models": [
+    {
+      "rule": "highest PSNR on the same heldout training subset; no test evaluation used",
+      "candidates": [
+        {
+          "model": "/home/featurize/work/QuantDemoire-release/checkpoints/reproduced-ptq/deploy-w4a4-full_if_pooled-g0.01",
+          "model_sha256": "d807d806c9fbec90f284e3e74f117735102fea899687a43e0447bc36641f47d8",
+          "config_sha256": "97b18b7e326c319f0a288399d37d61d846cadea7e9a08d763617b9c7d909f2e0",
+          "quality_report": "results/release_20260930/holdout_deploy-w4a4-full_if_pooled-g0.01.json",
+          "quality_report_sha256": "3463633100fb9f6e22d3e5329db614b3bedb87fb28ce6086613aa074c02b33ea",
+          "mean": {
+            "psnr": 21.358468850453693,
+            "ssim": 0.7768844695140918,
+            "lpips": 0.25090762476126355
+          },
+          "branch_report": "results/release_20260930/branch_deploy-w4a4-full_if_pooled-g0.01.json",
+          "branch_report_sha256": "f8f10249a5bd1104bdcb482b881f9ba3b64fc29cad02ffc67268edad6409d058",
+          "R_core": 0.5859864394863982,
+          "aggregate_below_30pct": false
+        },
+        {
+          "model": "/home/featurize/work/QuantDemoire-release/checkpoints/reproduced-ptq/deploy-w4a4-full_if_pooled-g0.01-a1",
+          "model_sha256": "1551e77fd7c8071ca304880f1c8cffc8245107ef44b868f675805563e334a446",
+          "config_sha256": "0d69ea2c07575a41668bbc2342099a73a8c14b322ce86afa65a5be1f5921adde",
+          "quality_report": "results/release_20260930/holdout_deploy-w4a4-full_if_pooled-g0.01-a1.json",
+          "quality_report_sha256": "c9c58c6787fd108bef0df9d9638f6467a046ceadcc346d10be4f6817eefa3736",
+          "mean": {
+            "psnr": 11.165864050388336,
+            "ssim": 0.46560337332387763,
+            "lpips": 0.6380252987146378
+          },
+          "branch_report": "results/release_20260930/branch_deploy-w4a4-full_if_pooled-g0.01-a1.json",
+          "branch_report_sha256": "eeae73ec5d6c9ef3d5644898b61c2843a605c9573f131cc6b44843e735eed1f8",
+          "R_core": 0.49788182151255284,
+          "aggregate_below_30pct": false
+        }
+      ],
+      "selected": {
+        "model": "/home/featurize/work/QuantDemoire-release/checkpoints/reproduced-ptq/deploy-w4a4-full_if_pooled-g0.01",
+        "model_sha256": "d807d806c9fbec90f284e3e74f117735102fea899687a43e0447bc36641f47d8",
+        "config_sha256": "97b18b7e326c319f0a288399d37d61d846cadea7e9a08d763617b9c7d909f2e0",
+        "quality_report": "results/release_20260930/holdout_deploy-w4a4-full_if_pooled-g0.01.json",
+        "quality_report_sha256": "3463633100fb9f6e22d3e5329db614b3bedb87fb28ce6086613aa074c02b33ea",
+        "mean": {
+          "psnr": 21.358468850453693,
+          "ssim": 0.7768844695140918,
+          "lpips": 0.25090762476126355
+        },
+        "branch_report": "results/release_20260930/branch_deploy-w4a4-full_if_pooled-g0.01.json",
+        "branch_report_sha256": "f8f10249a5bd1104bdcb482b881f9ba3b64fc29cad02ffc67268edad6409d058",
+        "R_core": 0.5859864394863982,
+        "aggregate_below_30pct": false
+      },
+      "branch_target_passed": false,
+      "paper_result_reproduced": false
+    },
+    {
+      "rule": "highest PSNR on the same heldout training subset; no test evaluation used",
+      "candidates": [
+        {
+          "model": "/home/featurize/work/QuantDemoire-release/checkpoints/reproduced-ptq/deploy-w8a8-full_if_pooled-g0.05",
+          "model_sha256": "0c7b77d34fd29613f6b8664ce8c0053c28f60d6d7788c0fea0592e2c834fb739",
+          "config_sha256": "1d1ec255b5ba7973e124cb748685517924d2ddcf37011c302ea006f5a08bad46",
+          "quality_report": "results/release_20260930/holdout_deploy-w8a8-full_if_pooled-g0.05.json",
+          "quality_report_sha256": "4f7bf568d1279056b85d686b5625f15ccb7a8e83146654bc24c008582ec91f2b",
+          "mean": {
+            "psnr": 21.992275714874268,
+            "ssim": 0.8080560838182768,
+            "lpips": 0.19420928011337915
+          },
+          "branch_report": "results/release_20260930/branch_deploy-w8a8-full_if_pooled-g0.05.json",
+          "branch_report_sha256": "31931551949f0ddc4182d809bdbf027a3605c0745cc0029e340cfa9fcef08fd8",
+          "R_core": 0.3948725158268682,
+          "aggregate_below_30pct": false
+        },
+        {
+          "model": "/home/featurize/work/QuantDemoire-release/checkpoints/reproduced-ptq/deploy-w8a8-full_if_pooled-g0.05-a1",
+          "model_sha256": "1cb678d33e6951100e28802a01b1a6da35d5c8067706a1696636257db7201883",
+          "config_sha256": "ae8c1cdd35aafd76666f565d7e9596ae1328ead2a77fe294aabd56476426dec3",
+          "quality_report": "results/release_20260930/holdout_deploy-w8a8-full_if_pooled-g0.05-a1.json",
+          "quality_report_sha256": "eabc31f2fa21ac717504eb6e6d962a03bade6f96f5dcc2954d0753368a0e3c80",
+          "mean": {
+            "psnr": 20.800864775975544,
+            "ssim": 0.777045210202535,
+            "lpips": 0.24572059030955037
+          },
+          "branch_report": "results/release_20260930/branch_deploy-w8a8-full_if_pooled-g0.05-a1.json",
+          "branch_report_sha256": "f8e93af15761fe233c1e7b073f4891cbfe70a2d0eb2f553be3c29b78dc6ababa",
+          "R_core": 0.3287810708848896,
+          "aggregate_below_30pct": false
+        }
+      ],
+      "selected": {
+        "model": "/home/featurize/work/QuantDemoire-release/checkpoints/reproduced-ptq/deploy-w8a8-full_if_pooled-g0.05",
+        "model_sha256": "0c7b77d34fd29613f6b8664ce8c0053c28f60d6d7788c0fea0592e2c834fb739",
+        "config_sha256": "1d1ec255b5ba7973e124cb748685517924d2ddcf37011c302ea006f5a08bad46",
+        "quality_report": "results/release_20260930/holdout_deploy-w8a8-full_if_pooled-g0.05.json",
+        "quality_report_sha256": "4f7bf568d1279056b85d686b5625f15ccb7a8e83146654bc24c008582ec91f2b",
+        "mean": {
+          "psnr": 21.992275714874268,
+          "ssim": 0.8080560838182768,
+          "lpips": 0.19420928011337915
+        },
+        "branch_report": "results/release_20260930/branch_deploy-w8a8-full_if_pooled-g0.05.json",
+        "branch_report_sha256": "31931551949f0ddc4182d809bdbf027a3605c0745cc0029e340cfa9fcef08fd8",
+        "R_core": 0.3948725158268682,
+        "aggregate_below_30pct": false
+      },
+      "branch_target_passed": false,
+      "paper_result_reproduced": false
+    }
+  ]
+}

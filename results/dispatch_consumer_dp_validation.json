@@ -1,0 +1,8 @@
+{
+  "cases": 168,
+  "max_chain_length": 7,
+  "legacy_and_consumer_dependent": true,
+  "oracle": "exhaustive enumeration of all binary dispatch paths",
+  "seed": 915,
+  "complete": true
+}

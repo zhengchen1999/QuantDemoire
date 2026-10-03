@@ -1,0 +1,99 @@
+{
+  "frozen_before_full_test": true,
+  "selection_rule": "highest PSNR on 24 disjoint heldout training pairs, center 512 crop",
+  "small_tensor_policy": "full_if_pooled",
+  "gamma_user_authorized": true,
+  "tail_fraction_each": 0.005,
+  "smooth_alpha": 0.5,
+  "strict_original_hyperparameter_replication": false,
+  "rows": [
+    {
+      "bits": 4,
+      "candidates": [
+        {
+          "gamma": 0.01,
+          "report": "holdout_paper_w4_pooled_g01.json",
+          "report_sha256": "5e29918d4f495a337735bde5f210eecafab1b65bf1af5cfb16a9985c63b9eacf",
+          "mean": {
+            "psnr": 21.16760516166687,
+            "ssim": 0.7747601916392645,
+            "lpips": 0.23954975077261528
+          },
+          "model": "/home/featurize/work/QuantDemoire-release/checkpoints/reproduced-ptq/paper-w4a4-full_if_pooled-g0.01",
+          "model_sha256": "b02c1f573cb8118391ff81a7230ae1ca85d9fb4c29b17b2c7858532ef07ab0a5",
+          "config_sha256": "221518446b8957e6c92a36de76a5c0ade68e0bc0d6b0cd23e62de7f6bc82cf3e"
+        },
+        {
+          "gamma": 0.05,
+          "report": "holdout_paper_w4_pooled_g05.json",
+          "report_sha256": "319525d2ca83793954753c07bf4c4531f9cdbedc7131a7cdfcaebaeb0f738ecd",
+          "mean": {
+            "psnr": 20.83624541759491,
+            "ssim": 0.7711176580439011,
+            "lpips": 0.2468921810699006
+          },
+          "model": "/home/featurize/work/QuantDemoire-release/checkpoints/reproduced-ptq/paper-w4a4-full_if_pooled-g0.05",
+          "model_sha256": "7b940233a2bac58093d2e10a761900088b14a8da50832711535fab57010b9c4d",
+          "config_sha256": "9cccb44bfb2dc8f77c9d51f8b286e1628a3b35f21dc11e31bd12121e38192f74"
+        }
+      ],
+      "selected": {
+        "gamma": 0.01,
+        "report": "holdout_paper_w4_pooled_g01.json",
+        "report_sha256": "5e29918d4f495a337735bde5f210eecafab1b65bf1af5cfb16a9985c63b9eacf",
+        "mean": {
+          "psnr": 21.16760516166687,
+          "ssim": 0.7747601916392645,
+          "lpips": 0.23954975077261528
+        },
+        "model": "/home/featurize/work/QuantDemoire-release/checkpoints/reproduced-ptq/paper-w4a4-full_if_pooled-g0.01",
+        "model_sha256": "b02c1f573cb8118391ff81a7230ae1ca85d9fb4c29b17b2c7858532ef07ab0a5",
+        "config_sha256": "221518446b8957e6c92a36de76a5c0ade68e0bc0d6b0cd23e62de7f6bc82cf3e"
+      }
+    },
+    {
+      "bits": 8,
+      "candidates": [
+        {
+          "gamma": 0.01,
+          "report": "holdout_paper_w8_pooled_g01.json",
+          "report_sha256": "75ad748fd0c8e85359a6dae34bda3128af6dc5bd7f72bc2c47d9db7ac7de02a2",
+          "mean": {
+            "psnr": 21.829387426376343,
+            "ssim": 0.806646549453338,
+            "lpips": 0.19557672552764416
+          },
+          "model": "/home/featurize/work/QuantDemoire-release/checkpoints/reproduced-ptq/paper-w8a8-full_if_pooled-g0.01",
+          "model_sha256": "a88e1c0cee08329cfa3c19a36b18eacea9458b61b3b3758af63670ae530e9cd0",
+          "config_sha256": "11c661b35a0eae034946e26ec3fafee385dbd3ec103114b8288a745abe175466"
+        },
+        {
+          "gamma": 0.05,
+          "report": "holdout_paper_w8_pooled_g05.json",
+          "report_sha256": "f8bb7676cebdf6a2deb00792fd2b0386fb115436f9b0a46acbc2aacccc83f032",
+          "mean": {
+            "psnr": 21.968225955963135,
+            "ssim": 0.8079898972064257,
+            "lpips": 0.1940194695877532
+          },
+          "model": "/home/featurize/work/QuantDemoire-release/checkpoints/reproduced-ptq/paper-w8a8-full_if_pooled-g0.05",
+          "model_sha256": "1de4a27834f831d0ce4421a71187a43b3511e797b19fd817084f5f76278abf81",
+          "config_sha256": "a20dc4ee13c7cfa584a0f7b50fa1c3c728ab2ce3f93bb50fec58a3d220ee34a4"
+        }
+      ],
+      "selected": {
+        "gamma": 0.05,
+        "report": "holdout_paper_w8_pooled_g05.json",
+        "report_sha256": "f8bb7676cebdf6a2deb00792fd2b0386fb115436f9b0a46acbc2aacccc83f032",
+        "mean": {
+          "psnr": 21.968225955963135,
+          "ssim": 0.8079898972064257,
+          "lpips": 0.1940194695877532
+        },
+        "model": "/home/featurize/work/QuantDemoire-release/checkpoints/reproduced-ptq/paper-w8a8-full_if_pooled-g0.05",
+        "model_sha256": "1de4a27834f831d0ce4421a71187a43b3511e797b19fd817084f5f76278abf81",
+        "config_sha256": "a20dc4ee13c7cfa584a0f7b50fa1c3c728ab2ce3f93bb50fec58a3d220ee34a4"
+      }
+    }
+  ]
+}

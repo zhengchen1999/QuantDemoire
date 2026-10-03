@@ -1,0 +1,16 @@
+{
+  "complete": true,
+  "results": {
+    "4": {
+      "layers": 41,
+      "with_prepare_old_sum_ms": 12.309583973512053,
+      "with_prepare_retained_sum_ms": 12.25502729192376
+    },
+    "8": {
+      "layers": 36,
+      "with_prepare_old_sum_ms": 17.69399373978376,
+      "with_prepare_retained_sum_ms": 14.899647998064758
+    }
+  },
+  "note": "Isolated pointwise layers only, balanced CSR in both cases. Includes preparation, excludes next-prefix interactions; not end-to-end timing."
+}

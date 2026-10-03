@@ -1,0 +1,15 @@
+{
+  "complete": true,
+  "started_utc": "2026-09-30T22:57:28.203845+00:00",
+  "cache_initially_absent": true,
+  "torch": "2.2.2+cu121",
+  "cuda": "12.1",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "cuda_home": "/home/featurize/work/UHDM/out_dir/tools/cuda-12.1",
+  "cutlass_root": "/home/featurize/work/UHDM/out_dir/tools/cutlass-v3.5.1",
+  "cutlass_commit": "f7b19de32c5d1f3cedfc735c2849f12b537522ee",
+  "binary": "/home/featurize/work/QuantDemoire-release/outputs/release_20260930/build_clean/quantdemoire_integer_v1/quantdemoire_integer_v1.so",
+  "binary_sha256": "a4cc1dc400bf45e1f53f38921398674da9808bc432dc9810078995a7fc85415c",
+  "kernel_source_sha256": "9d3dfc3a839405b96d15c57f7d7bc202279aef9941d6614d7e4a609efb531cd2",
+  "seconds": 548.7429206859997
+}

@@ -1,0 +1,126 @@
+{
+  "selection": "24 heldout training pairs, center 512 crop; never the test split",
+  "rows": [
+    {
+      "report": "holdout_fp32.json",
+      "count": 24,
+      "mean": {
+        "psnr": 22.3031032482783,
+        "ssim": 0.8114951544751724,
+        "lpips": 0.1928356345742941
+      },
+      "model_sha256": "254235cd25f90a3f1785885385dc6cb3f2178e053291ab53d1943bd7c2f7de65",
+      "selection_manifest_sha256": "3743bcc7c2b02870721aeb8edbaf3fcf2eeae2033301d641c39f171ce1911c80"
+    },
+    {
+      "report": "holdout_paper_w4_v1.json",
+      "count": 24,
+      "mean": {
+        "psnr": 16.748637159665424,
+        "ssim": 0.6718739562978348,
+        "lpips": 0.45127102235953015
+      },
+      "model_sha256": "af5176e277dfed3a132cee1e50df6a2d063223b8117b248c184e12ffa721dc4e",
+      "selection_manifest_sha256": "3743bcc7c2b02870721aeb8edbaf3fcf2eeae2033301d641c39f171ce1911c80"
+    },
+    {
+      "report": "holdout_paper_w4_guard.json",
+      "count": 24,
+      "mean": {
+        "psnr": 20.031698147455852,
+        "ssim": 0.7140821454425653,
+        "lpips": 0.3546634651720524
+      },
+      "model_sha256": "eae5b181715985d2bb996cd7f05e13340c3b13fa14a55e49adb6984f9ae1fcd9",
+      "selection_manifest_sha256": "3743bcc7c2b02870721aeb8edbaf3fcf2eeae2033301d641c39f171ce1911c80"
+    },
+    {
+      "report": "holdout_paper_w8_guard.json",
+      "count": 24,
+      "mean": {
+        "psnr": 21.524763544400532,
+        "ssim": 0.8027437751491865,
+        "lpips": 0.19776387341941395
+      },
+      "model_sha256": "173cb67f83445e2b6fc1221c236e16d152ee84bd087e65f7e183e8841a448544",
+      "selection_manifest_sha256": "3743bcc7c2b02870721aeb8edbaf3fcf2eeae2033301d641c39f171ce1911c80"
+    },
+    {
+      "report": "holdout_paper_w4_extrema.json",
+      "count": 24,
+      "mean": {
+        "psnr": 8.692588746547699,
+        "ssim": 0.43018149755274254,
+        "lpips": 0.7762645905216535
+      },
+      "model_sha256": "e30d44a0194350c9e033a8651dadbd07cf18a127cf7c2a025b1c7e49b408d626",
+      "selection_manifest_sha256": "3743bcc7c2b02870721aeb8edbaf3fcf2eeae2033301d641c39f171ce1911c80"
+    },
+    {
+      "report": "holdout_paper_w4_g01.json",
+      "count": 24,
+      "mean": {
+        "psnr": 20.282694737116497,
+        "ssim": 0.7655436700830857,
+        "lpips": 0.26873628112177056
+      },
+      "model_sha256": "65623be2edbd26c3a686763ba462e7edcc9a2e62942b3ab5ed6320228f60614e",
+      "selection_manifest_sha256": "3743bcc7c2b02870721aeb8edbaf3fcf2eeae2033301d641c39f171ce1911c80"
+    },
+    {
+      "report": "holdout_paper_w8_g01.json",
+      "count": 24,
+      "mean": {
+        "psnr": 20.960875352223713,
+        "ssim": 0.7964733249197403,
+        "lpips": 0.20786223436395326
+      },
+      "model_sha256": "99e6f95830facb6e00289340f81b7886a25f9a76e72ab6e51b50388428077ab9",
+      "selection_manifest_sha256": "3743bcc7c2b02870721aeb8edbaf3fcf2eeae2033301d641c39f171ce1911c80"
+    },
+    {
+      "report": "holdout_paper_w4_pooled_g01.json",
+      "count": 24,
+      "mean": {
+        "psnr": 21.16760516166687,
+        "ssim": 0.7747601916392645,
+        "lpips": 0.23954975077261528
+      },
+      "model_sha256": "b02c1f573cb8118391ff81a7230ae1ca85d9fb4c29b17b2c7858532ef07ab0a5",
+      "selection_manifest_sha256": "3743bcc7c2b02870721aeb8edbaf3fcf2eeae2033301d641c39f171ce1911c80"
+    },
+    {
+      "report": "holdout_paper_w8_pooled_g01.json",
+      "count": 24,
+      "mean": {
+        "psnr": 21.829387426376343,
+        "ssim": 0.806646549453338,
+        "lpips": 0.19557672552764416
+      },
+      "model_sha256": "a88e1c0cee08329cfa3c19a36b18eacea9458b61b3b3758af63670ae530e9cd0",
+      "selection_manifest_sha256": "3743bcc7c2b02870721aeb8edbaf3fcf2eeae2033301d641c39f171ce1911c80"
+    },
+    {
+      "report": "holdout_paper_w4_pooled_g05.json",
+      "count": 24,
+      "mean": {
+        "psnr": 20.83624541759491,
+        "ssim": 0.7711176580439011,
+        "lpips": 0.2468921810699006
+      },
+      "model_sha256": "7b940233a2bac58093d2e10a761900088b14a8da50832711535fab57010b9c4d",
+      "selection_manifest_sha256": "3743bcc7c2b02870721aeb8edbaf3fcf2eeae2033301d641c39f171ce1911c80"
+    },
+    {
+      "report": "holdout_paper_w8_pooled_g05.json",
+      "count": 24,
+      "mean": {
+        "psnr": 21.968225955963135,
+        "ssim": 0.8079898972064257,
+        "lpips": 0.1940194695877532
+      },
+      "model_sha256": "1de4a27834f831d0ce4421a71187a43b3511e797b19fd817084f5f76278abf81",
+      "selection_manifest_sha256": "3743bcc7c2b02870721aeb8edbaf3fcf2eeae2033301d641c39f171ce1911c80"
+    }
+  ]
+}

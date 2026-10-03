@@ -1,0 +1,147 @@
+{
+  "config": {
+    "environment": {
+      "QUANTDEMOIRE_PREPARE_IMPL": "quad_swizzle",
+      "QUANTDEMOIRE_COMPACT_SPARSE": "1",
+      "QUANTDEMOIRE_MAIN_HALF": "1",
+      "QUANTDEMOIRE_SPARSE_IMPL": "csr",
+      "QUANTDEMOIRE_FUSE_NEXT_QUANT": "1",
+      "QUANTDEMOIRE_FUSE_ATTENTION": "1",
+      "QUANTDEMOIRE_FUSE_RESIDUAL": "1",
+      "QUANTDEMOIRE_CSR_KERNEL": "linear",
+      "QUANTDEMOIRE_JOINT_WARPS": "0",
+      "QUANTDEMOIRE_JOINT_PLAN": "",
+      "QUANTDEMOIRE_JOINT_VARIANT": "0"
+    },
+    "variants": [
+      {
+        "name": "w4_base",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w4a4",
+        "environment": {
+          "QUANTDEMOIRE_JOINT_VARIANT": "8",
+          "QUANTDEMOIRE_JOINT_WARPS": "0",
+          "QUANTDEMOIRE_JOINT_PLAN": "config/kernel_plans/uhdm_w4_chain.json"
+        }
+      },
+      {
+        "name": "w4_shared",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w4a4",
+        "environment": {
+          "QUANTDEMOIRE_JOINT_VARIANT": "9",
+          "QUANTDEMOIRE_JOINT_WARPS": "0",
+          "QUANTDEMOIRE_JOINT_PLAN": "config/kernel_plans/uhdm_w4_chain.json"
+        }
+      },
+      {
+        "name": "w8_base",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w8a8",
+        "environment": {
+          "QUANTDEMOIRE_JOINT_VARIANT": "8",
+          "QUANTDEMOIRE_JOINT_WARPS": "0",
+          "QUANTDEMOIRE_JOINT_PLAN": "config/kernel_plans/uhdm_w8_chain.json"
+        }
+      },
+      {
+        "name": "w8_shared",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w8a8",
+        "environment": {
+          "QUANTDEMOIRE_JOINT_VARIANT": "9",
+          "QUANTDEMOIRE_JOINT_WARPS": "0",
+          "QUANTDEMOIRE_JOINT_PLAN": "config/kernel_plans/uhdm_w8_chain.json"
+        }
+      }
+    ]
+  },
+  "rounds": 2,
+  "repeats": 30,
+  "graph": false,
+  "rows": [
+    {
+      "round": 0,
+      "variant": "w4_base",
+      "backend": "cuda",
+      "median_ms": 86.58483123779297,
+      "peak_allocated_bytes": 2702411264,
+      "raw": "results/joint_shared_compute_e2e_w4_base_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "w4_shared",
+      "backend": "cuda",
+      "median_ms": 85.26233673095703,
+      "peak_allocated_bytes": 2702411264,
+      "raw": "results/joint_shared_compute_e2e_w4_shared_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "w8_base",
+      "backend": "cuda",
+      "median_ms": 100.18091201782227,
+      "peak_allocated_bytes": 2933497344,
+      "raw": "results/joint_shared_compute_e2e_w8_base_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "w8_shared",
+      "backend": "cuda",
+      "median_ms": 100.39740753173828,
+      "peak_allocated_bytes": 2933497344,
+      "raw": "results/joint_shared_compute_e2e_w8_shared_r0.json"
+    },
+    {
+      "round": 1,
+      "variant": "w8_shared",
+      "backend": "cuda",
+      "median_ms": 100.3711051940918,
+      "peak_allocated_bytes": 2933497344,
+      "raw": "results/joint_shared_compute_e2e_w8_shared_r1.json"
+    },
+    {
+      "round": 1,
+      "variant": "w8_base",
+      "backend": "cuda",
+      "median_ms": 100.4824447631836,
+      "peak_allocated_bytes": 2933497344,
+      "raw": "results/joint_shared_compute_e2e_w8_base_r1.json"
+    },
+    {
+      "round": 1,
+      "variant": "w4_shared",
+      "backend": "cuda",
+      "median_ms": 85.41228866577148,
+      "peak_allocated_bytes": 2702411264,
+      "raw": "results/joint_shared_compute_e2e_w4_shared_r1.json"
+    },
+    {
+      "round": 1,
+      "variant": "w4_base",
+      "backend": "cuda",
+      "median_ms": 87.15536117553711,
+      "peak_allocated_bytes": 2702411264,
+      "raw": "results/joint_shared_compute_e2e_w4_base_r1.json"
+    }
+  ],
+  "complete": true,
+  "summary": {
+    "w4_base": {
+      "median_ms": 86.87009620666504,
+      "peak_allocated_bytes": 2702411264
+    },
+    "w4_shared": {
+      "median_ms": 85.33731269836426,
+      "peak_allocated_bytes": 2702411264
+    },
+    "w8_base": {
+      "median_ms": 100.33167839050293,
+      "peak_allocated_bytes": 2933497344
+    },
+    "w8_shared": {
+      "median_ms": 100.38425636291504,
+      "peak_allocated_bytes": 2933497344
+    }
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "config": {
+    "environment": {
+      "QUANTDEMOIRE_PREPARE_IMPL": "quad_swizzle",
+      "QUANTDEMOIRE_COMPACT_SPARSE": "1",
+      "QUANTDEMOIRE_MAIN_HALF": "1",
+      "QUANTDEMOIRE_SPARSE_IMPL": "csr",
+      "QUANTDEMOIRE_FUSE_NEXT_QUANT": "1",
+      "QUANTDEMOIRE_FUSE_ATTENTION": "1",
+      "QUANTDEMOIRE_FUSE_RESIDUAL": "1",
+      "QUANTDEMOIRE_CSR_KERNEL": "linear",
+      "QUANTDEMOIRE_JOINT_WARPS": "0",
+      "QUANTDEMOIRE_JOINT_PLAN": "",
+      "QUANTDEMOIRE_JOINT_VARIANT": "0",
+      "QUANTDEMOIRE_SHARED_SKIP_PLANAR": "0",
+      "QUANTDEMOIRE_SHARED_SKIP_PREFIX_PLANAR": "0",
+      "QUANTDEMOIRE_JOINT_NEXT_QUANT": "0",
+      "QUANTDEMOIRE_BALANCE_CSR": "0",
+      "QUANTDEMOIRE_SHARED_RETAIN_STAGES": "0",
+      "QUANTDEMOIRE_FEW_CHANNELS": "0",
+      "QUANTDEMOIRE_PACKED_CSR_META": "0"
+    },
+    "variants": [
+      {
+        "name": "w4_flat_filter",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w4a4",
+        "environment": {
+          "QUANTDEMOIRE_JOINT_VARIANT": "9",
+          "QUANTDEMOIRE_JOINT_WARPS": "0",
+          "QUANTDEMOIRE_JOINT_PLAN": "config/kernel_plans/uhdm_w4_joint_next_memory.json",
+          "QUANTDEMOIRE_SHARED_SKIP_PLANAR": "1",
+          "QUANTDEMOIRE_SHARED_SKIP_PREFIX_PLANAR": "1",
+          "QUANTDEMOIRE_CSR_KERNEL": "divmod",
+          "QUANTDEMOIRE_JOINT_NEXT_QUANT": "2",
+          "QUANTDEMOIRE_BALANCE_CSR": "1",
+          "QUANTDEMOIRE_FEW_CHANNELS": "1",
+          "QUANTDEMOIRE_PACKED_CSR_META": "1"
+        }
+      },
+      {
+        "name": "w8_metadata",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w8a8",
+        "environment": {
+          "QUANTDEMOIRE_JOINT_VARIANT": "9",
+          "QUANTDEMOIRE_JOINT_WARPS": "0",
+          "QUANTDEMOIRE_JOINT_PLAN": "config/kernel_plans/uhdm_w8_joint_next_memory.json",
+          "QUANTDEMOIRE_CSR_KERNEL": "divmod",
+          "QUANTDEMOIRE_JOINT_NEXT_QUANT": "2",
+          "QUANTDEMOIRE_BALANCE_CSR": "1",
+          "QUANTDEMOIRE_SHARED_SKIP_PLANAR": "1",
+          "QUANTDEMOIRE_SHARED_SKIP_PREFIX_PLANAR": "1",
+          "QUANTDEMOIRE_SHARED_RETAIN_STAGES": "1",
+          "QUANTDEMOIRE_PACKED_CSR_META": "1"
+        }
+      },
+      {
+        "name": "fp16_attention",
+        "backend": "fp16",
+        "model": "checkpoints/uhdm_checkpoint.pth",
+        "environment": {}
+      }
+    ]
+  },
+  "rounds": 2,
+  "repeats": 30,
+  "graph": false,
+  "rows": [
+    {
+      "round": 0,
+      "variant": "w4_flat_filter",
+      "backend": "cuda",
+      "median_ms": 81.26649856567383,
+      "peak_allocated_bytes": 2594161152,
+      "raw": "results/flat_filter_selected_e2e_w4_flat_filter_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "w8_metadata",
+      "backend": "cuda",
+      "median_ms": 95.57854461669922,
+      "peak_allocated_bytes": 2827205632,
+      "raw": "results/flat_filter_selected_e2e_w8_metadata_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "fp16_attention",
+      "backend": "fp16",
+      "median_ms": 129.67625427246094,
+      "peak_allocated_bytes": 3253154304,
+      "raw": "results/flat_filter_selected_e2e_fp16_attention_r0.json"
+    },
+    {
+      "round": 1,
+      "variant": "fp16_attention",
+      "backend": "fp16",
+      "median_ms": 130.09459686279297,
+      "peak_allocated_bytes": 3253154304,
+      "raw": "results/flat_filter_selected_e2e_fp16_attention_r1.json"
+    },
+    {
+      "round": 1,
+      "variant": "w8_metadata",
+      "backend": "cuda",
+      "median_ms": 95.17363357543945,
+      "peak_allocated_bytes": 2827205632,
+      "raw": "results/flat_filter_selected_e2e_w8_metadata_r1.json"
+    },
+    {
+      "round": 1,
+      "variant": "w4_flat_filter",
+      "backend": "cuda",
+      "median_ms": 80.99516677856445,
+      "peak_allocated_bytes": 2594161152,
+      "raw": "results/flat_filter_selected_e2e_w4_flat_filter_r1.json"
+    }
+  ],
+  "complete": true,
+  "summary": {
+    "w4_flat_filter": {
+      "median_ms": 81.13083267211914,
+      "peak_allocated_bytes": 2594161152
+    },
+    "w8_metadata": {
+      "median_ms": 95.37608909606934,
+      "peak_allocated_bytes": 2827205632
+    },
+    "fp16_attention": {
+      "median_ms": 129.88542556762695,
+      "peak_allocated_bytes": 3253154304
+    }
+  }
+}

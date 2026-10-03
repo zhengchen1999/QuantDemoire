@@ -1,0 +1,322 @@
+{
+  "backend": "cuda",
+  "model": "checkpoints/hf/esdnet-uhdm-w4a4",
+  "input": [
+    1,
+    3,
+    2176,
+    3840
+  ],
+  "environment": {
+    "torch": "2.2.2+cu121",
+    "cuda": "12.1",
+    "cudnn": 8902,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "fp16_convolution_accumulator": "float32",
+    "cudnn_api": "v7",
+    "tf32": false,
+    "fp16_reduced_precision_reduction": false,
+    "sparse_implementation": "csr",
+    "main_half_override": null,
+    "compact_sparse": true,
+    "prepare_implementation": "pair",
+    "fuse_next_quant": true,
+    "deployment_source_sha256": "4b50f72db57b611e68a53d9938624ab2602dcbc0ffa24db358779eaa4de5d273",
+    "kernel_source_sha256": "0375524634485c9c6f11593726a85d608bc0773e0eb5784ef463161936f8bf6c"
+  },
+  "weights_sha256": "4f6c50aac8d73b4823ff9d7df7948b0e9c522320920b5767ebfada1c5aaf4469",
+  "config_sha256": "cb48b687858881ee584e2f078941e9d1f691e441b17fb8c5669067b040834720",
+  "sparse_enabled": true,
+  "accuracy_valid": true,
+  "unprofiled_timing": {
+    "mode": "eager",
+    "graph_batch": 1,
+    "median_ms": 112.43974304199219,
+    "p90_ms": 112.55940017700195,
+    "min_ms": 112.38912200927734,
+    "samples_ms": [
+      112.54271697998047,
+      112.48953247070312,
+      112.40959930419922,
+      112.4208984375,
+      112.38912200927734,
+      112.46489715576172,
+      112.4109115600586,
+      112.45075225830078,
+      112.42176055908203,
+      112.40243530273438,
+      112.43711853027344,
+      112.44236755371094,
+      112.3983383178711,
+      112.45772552490234,
+      112.42902374267578,
+      112.39321899414062,
+      112.52729797363281,
+      112.54886627197266,
+      112.6563491821289,
+      112.65420532226562
+    ]
+  },
+  "profiled_frames": 3,
+  "profiled_cuda_kernel_sum_ms": 112.6136666666667,
+  "profiled_gpu_span_ms": 113.51766666666667,
+  "groups": {
+    "fp16_sparse_merge_and_next_quant": {
+      "total_ms": 26.984333333333332,
+      "launches": 107.99999999999955,
+      "fraction": 0.239618637169556
+    },
+    "quantize_smooth_pack": {
+      "total_ms": 25.51933333333334,
+      "launches": 157.00000000000009,
+      "fraction": 0.22660955893452836
+    },
+    "integer_convolution_and_epilogue": {
+      "total_ms": 21.30666666666667,
+      "launches": 157.00000000000009,
+      "fraction": 0.1892014290746238
+    },
+    "pointwise": {
+      "total_ms": 13.584000000000021,
+      "launches": 61.000000000000156,
+      "fraction": 0.12062479095195684
+    },
+    "fp16_sparse_merge": {
+      "total_ms": 9.879000000000005,
+      "launches": 49.00000000000007,
+      "fraction": 0.08772469889681835
+    },
+    "interpolation": {
+      "total_ms": 9.431,
+      "launches": 25.999999999999975,
+      "fraction": 0.08374649613279617
+    },
+    "pooling_reduction": {
+      "total_ms": 2.882666666666667,
+      "launches": 18.000000000000004,
+      "fraction": 0.025597840404213812
+    },
+    "fp16_convolution": {
+      "total_ms": 2.7676666666666665,
+      "launches": 6.999999999999997,
+      "fraction": 0.024576649962556343
+    },
+    "pixel_shuffle": {
+      "total_ms": 0.25,
+      "launches": 4.0,
+      "fraction": 0.002219979220994491
+    },
+    "concatenation": {
+      "total_ms": 0.009,
+      "launches": 5.999999999999998,
+      "fraction": 7.991925195580166e-05
+    }
+  },
+  "kernels": [
+    {
+      "name": "void sparse_half_kernel<4>(signed char const*, __half const*, __half*, int const*, int const*, __half const*, float const*, float const*, float const*, int, int, int, int, int, int, int, int, int, int, int, int, bool, bool, unsigned char*, signed char*, float const*, float const*, int const*, int, int)",
+      "cpu_operation": "unscoped_extension",
+      "group": "fp16_sparse_merge_and_next_quant",
+      "total_ms": 22.61066666666667,
+      "launches": 86.99999999999984
+    },
+    {
+      "name": "void prepare_pair_kernel<4, true, 128, true>(Segments, float const*, float const*, unsigned char*, signed char*, int, int, int, int, int, int const*, int, int)",
+      "cpu_operation": "unscoped_extension",
+      "group": "quantize_smooth_pack",
+      "total_ms": 20.763333333333318,
+      "launches": 107.99999999999955
+    },
+    {
+      "name": "_ZN7cutlass6KernelINS_4conv6kernel40ImplicitGemmConvolutionWithFusedEpilogueINS1_11threadblock22ImplicitGemmMultistageINS_4gemm9GemmShapeILi128ELi32ELi128EEENS4_48Conv2dFpropActivationTileAccessIteratorOptimizedINS_11MatrixShapeILi128ELi128EEENS_15integer_subbyteILi4ELb1EEENS_6layout10TensorNHWCENS_9transform29PitchLinearWarpRakedThreadMapINS_16PitchLinearShapeILi128ELi128EEELi128ENSI_ILi4ELi8EEELi32EEENS_12AlignedArrayISD_Li32ELi16EEEEENSG_11threadblock25RegularTileAccessIteratorISB_SD_NSE_37RowMajorTensorOpMultiplicandCrosswiseILi4ELi128EEELi0ESL_Li16EEELNS_4arch14CacheOperation4KindE0ENS4_44Conv2dFpropFilterTileAccessIteratorOptimizedINSA_ILi128ELi32EEESD_SF_NSH_INSI_ILi128ELi32EEELi128ESK_Li32EEESN_Lb0EEENSQ_ISY_SD_NSE_40ColumnMajorTensorOpMultiplicandCrosswiseILi4ELi128EEELi1ES10_Li16EEELSW_1ENS6_11threadblock9MmaPolicyINS6_4warp11MmaTensorOpINS7_ILi32ELi32ELi128EEESD_SS_SD_S13_iNSE_8RowMajorENS17_17MmaTensorOpPolicyINSU_3MmaINS7_ILi16ELi8ELi64EEELi32ESD_S1A_SD_NSE_11ColumnMajorEiS1A_NSU_21OpMultiplyAddSaturateEEENSA_ILi1ELi1EEEEELi1ELb0EbEENSA_ILi0ELi0EEES1K_Li1EEELi3EbEENS_8epilogue11threadblock21EpilogueWithBroadcastIS8_S1J_Li1ENS1O_22PredicatedTileIteratorINS1O_26OutputTileOptimalThreadMapINS1O_15OutputTileShapeILi32ELi8ELi4ELi1ELi1EEENS1S_ILi1ELi4ELi1ELi1ELi4EEELi128ELi8ELi16EEENS_6half_tELb0ENSE_9NoPermuteELb0EEES1Y_fNS1N_4warp24FragmentIteratorTensorOpIS19_S1D_iNS_5ArrayIiLi4ELb1EEES1A_EENS1Z_25TileIteratorTensorOpMixedIS19_S1D_iLi32ELi16ELi8ELi8ELb0EEENS1O_23SharedLoadIteratorMixedINS1V_18CompactedThreadMapEiLi32ELi16ELi8ELi8ELb0EEEN40_GLOBAL__N__ce22c8c9_8_fused_cu_737534c711FusedOutputILi8ELb0EEENSA_ILi0ELi8EEELi2ELi1ELb1EEENS15_30GemmIdentityThreadblockSwizzleILi1EEELNS1_8OperatorE0ENS1_17Conv2dProblemSizeEEEEEvNT_6ParamsE",
+      "cpu_operation": "aten::empty",
+      "group": "integer_convolution_and_epilogue",
+      "total_ms": 11.886666666666665,
+      "launches": 93.99999999999974
+    },
+    {
+      "name": "void at::native::(anonymous namespace)::upsample_bilinear2d_nhwc_out_frame<c10::Half, float>(float, float, bool, int, int, int, int, int, c10::Half const*, c10::Half*, int)",
+      "cpu_operation": "aten::upsample_bilinear2d > aten::upsample_bilinear2d",
+      "group": "interpolation",
+      "total_ms": 9.431,
+      "launches": 25.999999999999975
+    },
+    {
+      "name": "_ZN7cutlass6KernelINS_4conv6kernel40ImplicitGemmConvolutionWithFusedEpilogueINS1_11threadblock22ImplicitGemmMultistageINS_4gemm9GemmShapeILi128ELi32ELi128EEENS4_48Conv2dFpropActivationTileAccessIteratorOptimizedINS_11MatrixShapeILi128ELi128EEENS_15integer_subbyteILi4ELb1EEENS_6layout10TensorNHWCENS_9transform29PitchLinearWarpRakedThreadMapINS_16PitchLinearShapeILi128ELi128EEELi128ENSI_ILi4ELi8EEELi32EEENS_12AlignedArrayISD_Li32ELi16EEEEENSG_11threadblock25RegularTileAccessIteratorISB_SD_NSE_37RowMajorTensorOpMultiplicandCrosswiseILi4ELi128EEELi0ESL_Li16EEELNS_4arch14CacheOperation4KindE0ENS4_44Conv2dFpropFilterTileAccessIteratorOptimizedINSA_ILi128ELi32EEESD_SF_NSH_INSI_ILi128ELi32EEELi128ESK_Li32EEESN_Lb0EEENSQ_ISY_SD_NSE_40ColumnMajorTensorOpMultiplicandCrosswiseILi4ELi128EEELi1ES10_Li16EEELSW_1ENS6_11threadblock9MmaPolicyINS6_4warp11MmaTensorOpINS7_ILi32ELi32ELi128EEESD_SS_SD_S13_iNSE_8RowMajorENS17_17MmaTensorOpPolicyINSU_3MmaINS7_ILi16ELi8ELi64EEELi32ESD_S1A_SD_NSE_11ColumnMajorEiS1A_NSU_21OpMultiplyAddSaturateEEENSA_ILi1ELi1EEEEELi1ELb0EbEENSA_ILi0ELi0EEES1K_Li1EEELi3EbEENS_8epilogue11threadblock21EpilogueWithBroadcastIS8_S1J_Li1ENS1O_22PredicatedTileIteratorINS1O_26OutputTileOptimalThreadMapINS1O_15OutputTileShapeILi32ELi8ELi4ELi1ELi1EEENS1S_ILi1ELi4ELi1ELi1ELi4EEELi128ELi8ELi16EEENS_6half_tELb0ENSE_9NoPermuteELb0EEES1Y_fNS1N_4warp24FragmentIteratorTensorOpIS19_S1D_iNS_5ArrayIiLi4ELb1EEES1A_EENS1Z_25TileIteratorTensorOpMixedIS19_S1D_iLi32ELi16ELi8ELi8ELb0EEENS1O_23SharedLoadIteratorMixedINS1V_18CompactedThreadMapEiLi32ELi16ELi8ELi8ELb0EEEN40_GLOBAL__N__ce22c8c9_8_fused_cu_737534c711FusedOutputILi8ELb0EEENSA_ILi0ELi8EEELi2ELi1ELb1EEENS15_30GemmIdentityThreadblockSwizzleILi1EEELNS1_8OperatorE0ENS1_17Conv2dProblemSizeEEEEEvNT_6ParamsE",
+      "cpu_operation": "unscoped_extension",
+      "group": "integer_convolution_and_epilogue",
+      "total_ms": 9.233333333333329,
+      "launches": 59.00000000000014
+    },
+    {
+      "name": "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctor_add<c10::Half>, at::detail::Array<char*, 3> >(int, at::native::CUDAFunctor_add<c10::Half>, at::detail::Array<char*, 3>)",
+      "cpu_operation": "aten::add",
+      "group": "pointwise",
+      "total_ms": 8.762,
+      "launches": 23.999999999999982
+    },
+    {
+      "name": "void prepare_pair_kernel<4, true, 128, false>(Segments, float const*, float const*, unsigned char*, signed char*, int, int, int, int, int, int const*, int, int)",
+      "cpu_operation": "unscoped_extension",
+      "group": "quantize_smooth_pack",
+      "total_ms": 4.456333333333332,
+      "launches": 26.66666666666664
+    },
+    {
+      "name": "void at::native::elementwise_kernel<128, 4, at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<c10::Half, c10::Half, c10::Half, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BinaryFunctor<c10::Half, c10::Half, c10::Half, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<c10::Half, c10::Half, c10::Half, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BinaryFunctor<c10::Half, c10::Half, c10::Half, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1})",
+      "cpu_operation": "aten::mul",
+      "group": "pointwise",
+      "total_ms": 4.3889999999999985,
+      "launches": 18.000000000000004
+    },
+    {
+      "name": "void sparse_half_kernel<4>(signed char const*, __half const*, __half*, int const*, int const*, __half const*, float const*, float const*, float const*, int, int, int, int, int, int, int, int, int, int, int, int, bool, bool, unsigned char*, signed char*, float const*, float const*, int const*, int, int)",
+      "cpu_operation": "aten::empty",
+      "group": "fp16_sparse_merge_and_next_quant",
+      "total_ms": 4.373666666666665,
+      "launches": 20.999999999999993
+    },
+    {
+      "name": "void sparse_half_kernel<0>(signed char const*, __half const*, __half*, int const*, int const*, __half const*, float const*, float const*, float const*, int, int, int, int, int, int, int, int, int, int, int, int, bool, bool, unsigned char*, signed char*, float const*, float const*, int const*, int, int)",
+      "cpu_operation": "aten::empty_like",
+      "group": "fp16_sparse_merge",
+      "total_ms": 3.6673333333333327,
+      "launches": 13.000000000000005
+    },
+    {
+      "name": "void sparse_half_kernel<0>(signed char const*, __half const*, __half*, int const*, int const*, __half const*, float const*, float const*, float const*, int, int, int, int, int, int, int, int, int, int, int, int, bool, bool, unsigned char*, signed char*, float const*, float const*, int const*, int, int)",
+      "cpu_operation": "unscoped_extension",
+      "group": "fp16_sparse_merge",
+      "total_ms": 3.4866666666666637,
+      "launches": 23.66666666666665
+    },
+    {
+      "name": "void at::native::reduce_kernel<128, 4, at::native::ReduceOp<c10::Half, at::native::MeanOps<c10::Half, float, float, c10::Half>, unsigned int, c10::Half, 4> >(at::native::ReduceOp<c10::Half, at::native::MeanOps<c10::Half, float, float, c10::Half>, unsigned int, c10::Half, 4>)",
+      "cpu_operation": "aten::adaptive_avg_pool2d > aten::mean",
+      "group": "pooling_reduction",
+      "total_ms": 2.882666666666667,
+      "launches": 18.000000000000004
+    },
+    {
+      "name": "void sparse_half_kernel<0>(signed char const*, __half const*, __half*, int const*, int const*, __half const*, float const*, float const*, float const*, int, int, int, int, int, int, int, int, int, int, int, int, bool, bool, unsigned char*, signed char*, float const*, float const*, int const*, int, int)",
+      "cpu_operation": "aten::empty_like > aten::empty_strided",
+      "group": "fp16_sparse_merge",
+      "total_ms": 2.7249999999999996,
+      "launches": 12.333333333333337
+    },
+    {
+      "name": "void cutlass_cudnn_infer::Kernel<cutlass_tensorop_f16_s16816fprop_optimized_f16_256x64_32x4_nhwc_align8>(cutlass_tensorop_f16_s16816fprop_optimized_f16_256x64_32x4_nhwc_align8::Params)",
+      "cpu_operation": "aten::conv2d > aten::convolution > aten::_convolution > aten::cudnn_convolution",
+      "group": "fp16_convolution",
+      "total_ms": 1.4333333333333333,
+      "launches": 1.0
+    },
+    {
+      "name": "sm80_xmma_fprop_implicit_gemm_indexed_wo_smem_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize128x32x64_stage1_warpsize4x1x1_g1_tensor16x8x16_alignc8_execute_kernel_cudnn_infer",
+      "cpu_operation": "aten::conv2d > aten::convolution > aten::_convolution > aten::cudnn_convolution",
+      "group": "fp16_convolution",
+      "total_ms": 0.5613333333333335,
+      "launches": 1.0
+    },
+    {
+      "name": "void at::native::elementwise_kernel<128, 4, at::native::gpu_kernel_impl_nocast<at::native::CUDAFunctor_add<c10::Half> >(at::TensorIteratorBase&, at::native::CUDAFunctor_add<c10::Half> const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::CUDAFunctor_add<c10::Half> >(at::TensorIteratorBase&, at::native::CUDAFunctor_add<c10::Half> const&)::{lambda(int)#1})",
+      "cpu_operation": "aten::conv2d > aten::convolution > aten::_convolution > aten::add_",
+      "group": "fp16_convolution",
+      "total_ms": 0.5583333333333333,
+      "launches": 1.9999999999999998
+    },
+    {
+      "name": "void at::native::vectorized_elementwise_kernel<4, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#8}::operator()() const::{lambda(c10::Half)#1}, at::detail::Array<char*, 2> >(int, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#8}::operator()() const::{lambda(c10::Half)#1}, at::detail::Array<char*, 2>)",
+      "cpu_operation": "aten::relu_ > aten::clamp_min_",
+      "group": "pointwise",
+      "total_ms": 0.4149999999999999,
+      "launches": 1.0
+    },
+    {
+      "name": "void prepare_pair_kernel<4, true, 128, false>(Segments, float const*, float const*, unsigned char*, signed char*, int, int, int, int, int, int const*, int, int)",
+      "cpu_operation": "aten::empty",
+      "group": "quantize_smooth_pack",
+      "total_ms": 0.24200000000000002,
+      "launches": 4.333333333333333
+    },
+    {
+      "name": "void at::native::elementwise_kernel<128, 4, at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#10}::operator()() const::{lambda(c10::Half)#1}>(at::TensorIteratorBase&, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#10}::operator()() const::{lambda(c10::Half)#1} const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#10}::operator()() const::{lambda(c10::Half)#1}>(at::TensorIteratorBase&, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#10}::operator()() const::{lambda(c10::Half)#1} const&)::{lambda(int)#1})",
+      "cpu_operation": "aten::pixel_unshuffle > aten::clone > aten::copy_",
+      "group": "pixel_shuffle",
+      "total_ms": 0.15633333333333332,
+      "launches": 1.0
+    },
+    {
+      "name": "void nhwcAddPaddingKernel<__half, __half, float, true, (cudnnKernelDataType_t)0>(int, int, int, int, int, int, int, int, __half const*, __half*, int, int, int, int, float, float, cudnn::reduced_divisor, cudnn::reduced_divisor, cudnn::reduced_divisor)",
+      "cpu_operation": "aten::conv2d > aten::convolution > aten::_convolution > aten::cudnn_convolution",
+      "group": "fp16_convolution",
+      "total_ms": 0.125,
+      "launches": 1.9999999999999998
+    },
+    {
+      "name": "_ZN7cutlass6KernelINS_4conv6kernel40ImplicitGemmConvolutionWithFusedEpilogueINS1_11threadblock22ImplicitGemmMultistageINS_4gemm9GemmShapeILi128ELi32ELi128EEENS4_48Conv2dFpropActivationTileAccessIteratorOptimizedINS_11MatrixShapeILi128ELi128EEENS_15integer_subbyteILi4ELb1EEENS_6layout10TensorNHWCENS_9transform29PitchLinearWarpRakedThreadMapINS_16PitchLinearShapeILi128ELi128EEELi128ENSI_ILi4ELi8EEELi32EEENS_12AlignedArrayISD_Li32ELi16EEEEENSG_11threadblock25RegularTileAccessIteratorISB_SD_NSE_37RowMajorTensorOpMultiplicandCrosswiseILi4ELi128EEELi0ESL_Li16EEELNS_4arch14CacheOperation4KindE0ENS4_44Conv2dFpropFilterTileAccessIteratorOptimizedINSA_ILi128ELi32EEESD_SF_NSH_INSI_ILi128ELi32EEELi128ESK_Li32EEESN_Lb0EEENSQ_ISY_SD_NSE_40ColumnMajorTensorOpMultiplicandCrosswiseILi4ELi128EEELi1ES10_Li16EEELSW_1ENS6_11threadblock9MmaPolicyINS6_4warp11MmaTensorOpINS7_ILi32ELi32ELi128EEESD_SS_SD_S13_iNSE_8RowMajorENS17_17MmaTensorOpPolicyINSU_3MmaINS7_ILi16ELi8ELi64EEELi32ESD_S1A_SD_NSE_11ColumnMajorEiS1A_NSU_21OpMultiplyAddSaturateEEENSA_ILi1ELi1EEEEELi1ELb0EbEENSA_ILi0ELi0EEES1K_Li1EEELi3EbEENS_8epilogue11threadblock21EpilogueWithBroadcastIS8_S1J_Li1ENS1O_22PredicatedTileIteratorINS1O_26OutputTileOptimalThreadMapINS1O_15OutputTileShapeILi32ELi8ELi4ELi1ELi1EEENS1S_ILi1ELi4ELi1ELi1ELi4EEELi128ELi4ELi16EEENS_6half_tELb0ENSE_9NoPermuteELb0EEES1Y_fNS1N_4warp24FragmentIteratorTensorOpIS19_S1D_iNS_5ArrayIiLi4ELb1EEES1A_EENS1Z_20TileIteratorTensorOpIS19_S1D_iS1A_EENS1O_18SharedLoadIteratorINS1V_18CompactedThreadMapEiLi16EEEN40_GLOBAL__N__ce22c8c9_8_fused_cu_737534c711FusedOutputILi4ELb0EEENSA_ILi0ELi8EEELi1ELi1ELb1EEENS15_30GemmIdentityThreadblockSwizzleILi1EEELNS1_8OperatorE0ENS1_17Conv2dProblemSizeEEEEEvNT_6ParamsE",
+      "cpu_operation": "aten::empty",
+      "group": "integer_convolution_and_epilogue",
+      "total_ms": 0.10500000000000001,
+      "launches": 1.9999999999999998
+    },
+    {
+      "name": "void at::native::elementwise_kernel<128, 4, at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#10}::operator()() const::{lambda(c10::Half)#1}>(at::TensorIteratorBase&, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#10}::operator()() const::{lambda(c10::Half)#1} const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#10}::operator()() const::{lambda(c10::Half)#1}>(at::TensorIteratorBase&, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#10}::operator()() const::{lambda(c10::Half)#1} const&)::{lambda(int)#1})",
+      "cpu_operation": "aten::pixel_shuffle > aten::clone > aten::copy_",
+      "group": "pixel_shuffle",
+      "total_ms": 0.09366666666666666,
+      "launches": 3.0
+    },
+    {
+      "name": "void at::native::elementwise_kernel<128, 4, at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#10}::operator()() const::{lambda(c10::Half)#1}>(at::TensorIteratorBase&, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#10}::operator()() const::{lambda(c10::Half)#1} const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#10}::operator()() const::{lambda(c10::Half)#1}>(at::TensorIteratorBase&, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#10}::operator()() const::{lambda(c10::Half)#1} const&)::{lambda(int)#1})",
+      "cpu_operation": "aten::conv2d > aten::convolution > aten::_convolution > aten::contiguous > aten::clone > aten::copy_",
+      "group": "fp16_convolution",
+      "total_ms": 0.08966666666666666,
+      "launches": 1.0
+    },
+    {
+      "name": "_ZN7cutlass6KernelINS_4conv6kernel40ImplicitGemmConvolutionWithFusedEpilogueINS1_11threadblock22ImplicitGemmMultistageINS_4gemm9GemmShapeILi128ELi32ELi128EEENS4_48Conv2dFpropActivationTileAccessIteratorOptimizedINS_11MatrixShapeILi128ELi128EEENS_15integer_subbyteILi4ELb1EEENS_6layout10TensorNHWCENS_9transform29PitchLinearWarpRakedThreadMapINS_16PitchLinearShapeILi128ELi128EEELi128ENSI_ILi4ELi8EEELi32EEENS_12AlignedArrayISD_Li32ELi16EEEEENSG_11threadblock25RegularTileAccessIteratorISB_SD_NSE_37RowMajorTensorOpMultiplicandCrosswiseILi4ELi128EEELi0ESL_Li16EEELNS_4arch14CacheOperation4KindE0ENS4_44Conv2dFpropFilterTileAccessIteratorOptimizedINSA_ILi128ELi32EEESD_SF_NSH_INSI_ILi128ELi32EEELi128ESK_Li32EEESN_Lb0EEENSQ_ISY_SD_NSE_40ColumnMajorTensorOpMultiplicandCrosswiseILi4ELi128EEELi1ES10_Li16EEELSW_1ENS6_11threadblock9MmaPolicyINS6_4warp11MmaTensorOpINS7_ILi32ELi32ELi128EEESD_SS_SD_S13_iNSE_8RowMajorENS17_17MmaTensorOpPolicyINSU_3MmaINS7_ILi16ELi8ELi64EEELi32ESD_S1A_SD_NSE_11ColumnMajorEiS1A_NSU_21OpMultiplyAddSaturateEEENSA_ILi1ELi1EEEEELi1ELb0EbEENSA_ILi0ELi0EEES1K_Li1EEELi3EbEENS_8epilogue11threadblock21EpilogueWithBroadcastIS8_S1J_Li1ENS1O_22PredicatedTileIteratorINS1O_26OutputTileOptimalThreadMapINS1O_15OutputTileShapeILi32ELi8ELi4ELi1ELi1EEENS1S_ILi1ELi4ELi1ELi1ELi4EEELi128ELi4ELi16EEENS_6half_tELb0ENSE_9NoPermuteELb0EEES1Y_fNS1N_4warp24FragmentIteratorTensorOpIS19_S1D_iNS_5ArrayIiLi4ELb1EEES1A_EENS1Z_20TileIteratorTensorOpIS19_S1D_iS1A_EENS1O_18SharedLoadIteratorINS1V_18CompactedThreadMapEiLi16EEEN40_GLOBAL__N__ce22c8c9_8_fused_cu_737534c711FusedOutputILi4ELb0EEENSA_ILi0ELi8EEELi1ELi1ELb1EEENS15_30GemmIdentityThreadblockSwizzleILi1EEELNS1_8OperatorE0ENS1_17Conv2dProblemSizeEEEEEvNT_6ParamsE",
+      "cpu_operation": "unscoped_extension",
+      "group": "integer_convolution_and_epilogue",
+      "total_ms": 0.08166666666666667,
+      "launches": 1.9999999999999998
+    },
+    {
+      "name": "void prepare_pair_kernel<4, true, 32, false>(Segments, float const*, float const*, unsigned char*, signed char*, int, int, int, int, int, int const*, int, int)",
+      "cpu_operation": "unscoped_extension",
+      "group": "quantize_smooth_pack",
+      "total_ms": 0.049,
+      "launches": 15.000000000000009
+    },
+    {
+      "name": "void at::native::vectorized_elementwise_kernel<4, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#8}::operator()() const::{lambda(c10::Half)#1}, at::detail::Array<char*, 2> >(int, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#8}::operator()() const::{lambda(c10::Half)#1}, at::detail::Array<char*, 2>)",
+      "cpu_operation": "aten::relu > aten::clamp_min",
+      "group": "pointwise",
+      "total_ms": 0.011999999999999995,
+      "launches": 12.000000000000004
+    },
+    {
+      "name": "void at::native::(anonymous namespace)::CatArrayBatchedCopy<c10::Half, unsigned int, 4, 128, 1>(c10::Half*, at::native::(anonymous namespace)::CatArrInputTensorMetadata<c10::Half, unsigned int, 128, 1>, at::native::(anonymous namespace)::TensorSizeStride<unsigned int, 4u>, int, unsigned int)",
+      "cpu_operation": "aten::cat",
+      "group": "concatenation",
+      "total_ms": 0.009,
+      "launches": 5.999999999999998
+    },
+    {
+      "name": "void prepare_pair_kernel<4, true, 32, false>(Segments, float const*, float const*, unsigned char*, signed char*, int, int, int, int, int, int const*, int, int)",
+      "cpu_operation": "aten::empty",
+      "group": "quantize_smooth_pack",
+      "total_ms": 0.008666666666666666,
+      "launches": 3.0
+    },
+    {
+      "name": "void at::native::vectorized_elementwise_kernel<4, at::native::sigmoid_kernel_cuda(at::TensorIteratorBase&)::{lambda()#2}::operator()() const::{lambda()#3}::operator()() const::{lambda(c10::Half)#1}, at::detail::Array<char*, 2> >(int, at::native::sigmoid_kernel_cuda(at::TensorIteratorBase&)::{lambda()#2}::operator()() const::{lambda()#3}::operator()() const::{lambda(c10::Half)#1}, at::detail::Array<char*, 2>)",
+      "cpu_operation": "aten::sigmoid",
+      "group": "pointwise",
+      "total_ms": 0.005999999999999999,
+      "launches": 5.999999999999998
+    }
+  ],
+  "trace": "results/profile_next_quant_1_4.trace.json",
+  "note": "CUDA kernel durations are profiled; use unprofiled_timing for latency. No claim of measured DRAM bandwidth or occupancy."
+}

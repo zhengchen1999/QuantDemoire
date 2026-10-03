@@ -1,0 +1,93 @@
+{
+  "config": {
+    "environment": {
+      "QUANTDEMOIRE_PREPARE_IMPL": "quad_swizzle",
+      "QUANTDEMOIRE_COMPACT_SPARSE": "1",
+      "QUANTDEMOIRE_MAIN_HALF": "1",
+      "QUANTDEMOIRE_SPARSE_IMPL": "csr",
+      "QUANTDEMOIRE_FUSE_NEXT_QUANT": "1",
+      "QUANTDEMOIRE_FUSE_ATTENTION": "1",
+      "QUANTDEMOIRE_FUSE_RESIDUAL": "1",
+      "QUANTDEMOIRE_CSR_KERNEL": "linear",
+      "QUANTDEMOIRE_JOINT_WARPS": "0",
+      "QUANTDEMOIRE_JOINT_PLAN": "",
+      "QUANTDEMOIRE_JOINT_VARIANT": "0",
+      "QUANTDEMOIRE_SHARED_SKIP_PLANAR": "0",
+      "QUANTDEMOIRE_SHARED_SKIP_PREFIX_PLANAR": "0"
+    },
+    "variants": [
+      {
+        "name": "w4_prefix_old_plan",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w4a4",
+        "environment": {
+          "QUANTDEMOIRE_JOINT_VARIANT": "9",
+          "QUANTDEMOIRE_JOINT_WARPS": "0",
+          "QUANTDEMOIRE_JOINT_PLAN": "config/kernel_plans/uhdm_w4_chain.json",
+          "QUANTDEMOIRE_SHARED_SKIP_PLANAR": "1",
+          "QUANTDEMOIRE_SHARED_SKIP_PREFIX_PLANAR": "1"
+        }
+      },
+      {
+        "name": "w4_prefix_retuned",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w4a4",
+        "environment": {
+          "QUANTDEMOIRE_JOINT_VARIANT": "9",
+          "QUANTDEMOIRE_JOINT_WARPS": "0",
+          "QUANTDEMOIRE_JOINT_PLAN": "config/kernel_plans/uhdm_w4_shared.json",
+          "QUANTDEMOIRE_SHARED_SKIP_PLANAR": "1",
+          "QUANTDEMOIRE_SHARED_SKIP_PREFIX_PLANAR": "1"
+        }
+      }
+    ]
+  },
+  "rounds": 2,
+  "repeats": 30,
+  "graph": false,
+  "rows": [
+    {
+      "round": 0,
+      "variant": "w4_prefix_old_plan",
+      "backend": "cuda",
+      "median_ms": 84.18713760375977,
+      "peak_allocated_bytes": 2593781760,
+      "raw": "results/shared_retuned_e2e_w4_prefix_old_plan_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "w4_prefix_retuned",
+      "backend": "cuda",
+      "median_ms": 83.89990615844727,
+      "peak_allocated_bytes": 2593781760,
+      "raw": "results/shared_retuned_e2e_w4_prefix_retuned_r0.json"
+    },
+    {
+      "round": 1,
+      "variant": "w4_prefix_retuned",
+      "backend": "cuda",
+      "median_ms": 84.00077056884766,
+      "peak_allocated_bytes": 2593781760,
+      "raw": "results/shared_retuned_e2e_w4_prefix_retuned_r1.json"
+    },
+    {
+      "round": 1,
+      "variant": "w4_prefix_old_plan",
+      "backend": "cuda",
+      "median_ms": 84.58035278320312,
+      "peak_allocated_bytes": 2593781760,
+      "raw": "results/shared_retuned_e2e_w4_prefix_old_plan_r1.json"
+    }
+  ],
+  "complete": true,
+  "summary": {
+    "w4_prefix_old_plan": {
+      "median_ms": 84.38374519348145,
+      "peak_allocated_bytes": 2593781760
+    },
+    "w4_prefix_retuned": {
+      "median_ms": 83.95033836364746,
+      "peak_allocated_bytes": 2593781760
+    }
+  }
+}

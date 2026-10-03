@@ -1,0 +1,247 @@
+{
+  "config": {
+    "environment": {
+      "QUANTDEMOIRE_PREPARE_IMPL": "pair",
+      "QUANTDEMOIRE_COMPACT_SPARSE": "1",
+      "QUANTDEMOIRE_MAIN_HALF": "1",
+      "QUANTDEMOIRE_SPARSE_IMPL": "csr",
+      "QUANTDEMOIRE_FUSE_NEXT_QUANT": "1",
+      "QUANTDEMOIRE_FUSE_ATTENTION": "1",
+      "QUANTDEMOIRE_FUSE_RESIDUAL": "1"
+    },
+    "variants": [
+      {
+        "name": "w4_legacy",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w4a4",
+        "environment": {
+          "QUANTDEMOIRE_CSR_KERNEL": "legacy"
+        }
+      },
+      {
+        "name": "w4_linear",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w4a4",
+        "environment": {
+          "QUANTDEMOIRE_CSR_KERNEL": "linear"
+        }
+      },
+      {
+        "name": "w4_lut",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w4a4",
+        "environment": {
+          "QUANTDEMOIRE_CSR_KERNEL": "lut"
+        }
+      },
+      {
+        "name": "w4_wide",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w4a4",
+        "environment": {
+          "QUANTDEMOIRE_CSR_KERNEL": "wide"
+        }
+      },
+      {
+        "name": "w8_legacy",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w8a8",
+        "environment": {
+          "QUANTDEMOIRE_CSR_KERNEL": "legacy"
+        }
+      },
+      {
+        "name": "w8_linear",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w8a8",
+        "environment": {
+          "QUANTDEMOIRE_CSR_KERNEL": "linear"
+        }
+      },
+      {
+        "name": "w8_lut",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w8a8",
+        "environment": {
+          "QUANTDEMOIRE_CSR_KERNEL": "lut"
+        }
+      },
+      {
+        "name": "w8_wide",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w8a8",
+        "environment": {
+          "QUANTDEMOIRE_CSR_KERNEL": "wide"
+        }
+      }
+    ]
+  },
+  "rounds": 2,
+  "repeats": 30,
+  "graph": false,
+  "rows": [
+    {
+      "round": 0,
+      "variant": "w4_legacy",
+      "backend": "cuda",
+      "median_ms": 103.00833511352539,
+      "peak_allocated_bytes": 2924605952,
+      "raw": "results/csr_e2e_w4_legacy_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "w4_linear",
+      "backend": "cuda",
+      "median_ms": 93.38470458984375,
+      "peak_allocated_bytes": 2924885504,
+      "raw": "results/csr_e2e_w4_linear_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "w4_lut",
+      "backend": "cuda",
+      "median_ms": 93.52235412597656,
+      "peak_allocated_bytes": 2924885504,
+      "raw": "results/csr_e2e_w4_lut_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "w4_wide",
+      "backend": "cuda",
+      "median_ms": 97.15302276611328,
+      "peak_allocated_bytes": 2924885504,
+      "raw": "results/csr_e2e_w4_wide_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "w8_legacy",
+      "backend": "cuda",
+      "median_ms": 116.49577713012695,
+      "peak_allocated_bytes": 3158567424,
+      "raw": "results/csr_e2e_w8_legacy_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "w8_linear",
+      "backend": "cuda",
+      "median_ms": 107.29121780395508,
+      "peak_allocated_bytes": 3158846976,
+      "raw": "results/csr_e2e_w8_linear_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "w8_lut",
+      "backend": "cuda",
+      "median_ms": 107.51897430419922,
+      "peak_allocated_bytes": 3158846976,
+      "raw": "results/csr_e2e_w8_lut_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "w8_wide",
+      "backend": "cuda",
+      "median_ms": 111.0562858581543,
+      "peak_allocated_bytes": 3158846976,
+      "raw": "results/csr_e2e_w8_wide_r0.json"
+    },
+    {
+      "round": 1,
+      "variant": "w8_wide",
+      "backend": "cuda",
+      "median_ms": 111.03999710083008,
+      "peak_allocated_bytes": 3158846976,
+      "raw": "results/csr_e2e_w8_wide_r1.json"
+    },
+    {
+      "round": 1,
+      "variant": "w8_lut",
+      "backend": "cuda",
+      "median_ms": 107.3038215637207,
+      "peak_allocated_bytes": 3158846976,
+      "raw": "results/csr_e2e_w8_lut_r1.json"
+    },
+    {
+      "round": 1,
+      "variant": "w8_linear",
+      "backend": "cuda",
+      "median_ms": 107.28396987915039,
+      "peak_allocated_bytes": 3158846976,
+      "raw": "results/csr_e2e_w8_linear_r1.json"
+    },
+    {
+      "round": 1,
+      "variant": "w8_legacy",
+      "backend": "cuda",
+      "median_ms": 116.43750381469727,
+      "peak_allocated_bytes": 3158567424,
+      "raw": "results/csr_e2e_w8_legacy_r1.json"
+    },
+    {
+      "round": 1,
+      "variant": "w4_wide",
+      "backend": "cuda",
+      "median_ms": 97.22415924072266,
+      "peak_allocated_bytes": 2924885504,
+      "raw": "results/csr_e2e_w4_wide_r1.json"
+    },
+    {
+      "round": 1,
+      "variant": "w4_lut",
+      "backend": "cuda",
+      "median_ms": 93.70037078857422,
+      "peak_allocated_bytes": 2924885504,
+      "raw": "results/csr_e2e_w4_lut_r1.json"
+    },
+    {
+      "round": 1,
+      "variant": "w4_linear",
+      "backend": "cuda",
+      "median_ms": 93.49132919311523,
+      "peak_allocated_bytes": 2924885504,
+      "raw": "results/csr_e2e_w4_linear_r1.json"
+    },
+    {
+      "round": 1,
+      "variant": "w4_legacy",
+      "backend": "cuda",
+      "median_ms": 103.22264099121094,
+      "peak_allocated_bytes": 2924605952,
+      "raw": "results/csr_e2e_w4_legacy_r1.json"
+    }
+  ],
+  "complete": true,
+  "summary": {
+    "w4_legacy": {
+      "median_ms": 103.11548805236816,
+      "peak_allocated_bytes": 2924605952
+    },
+    "w4_linear": {
+      "median_ms": 93.43801689147949,
+      "peak_allocated_bytes": 2924885504
+    },
+    "w4_lut": {
+      "median_ms": 93.61136245727539,
+      "peak_allocated_bytes": 2924885504
+    },
+    "w4_wide": {
+      "median_ms": 97.18859100341797,
+      "peak_allocated_bytes": 2924885504
+    },
+    "w8_legacy": {
+      "median_ms": 116.46664047241211,
+      "peak_allocated_bytes": 3158567424
+    },
+    "w8_linear": {
+      "median_ms": 107.28759384155273,
+      "peak_allocated_bytes": 3158846976
+    },
+    "w8_lut": {
+      "median_ms": 107.41139793395996,
+      "peak_allocated_bytes": 3158846976
+    },
+    "w8_wide": {
+      "median_ms": 111.04814147949219,
+      "peak_allocated_bytes": 3158846976
+    }
+  }
+}

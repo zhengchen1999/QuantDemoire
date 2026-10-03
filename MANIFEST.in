@@ -1,0 +1,7 @@
+include .python-version uv.lock calibrate.py models.json
+recursive-include script *.py *.sh
+recursive-include config *.yaml *.json *.md
+recursive-include docs *.md *.txt
+recursive-include tests *.py
+recursive-include research *.py *.md
+include kernel/README.md

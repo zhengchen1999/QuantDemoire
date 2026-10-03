@@ -1,0 +1,69 @@
+{
+  "environment": {},
+  "variants": [
+    {
+      "name": "fp16",
+      "backend": "fp16",
+      "model": "checkpoints/uhdm_checkpoint.pth",
+      "environment": {
+        "QUANTDEMOIRE_FUSE_ATTENTION": "1",
+        "QUANTDEMOIRE_FUSE_RESIDUAL": "1",
+        "QUANTDEMOIRE_RELEASE_FEATURES": "1"
+      }
+    },
+    {
+      "name": "w4a4",
+      "backend": "cuda",
+      "model": "checkpoints/hf/esdnet-uhdm-w4a4-ptq-20261003",
+      "environment": {
+        "QUANTDEMOIRE_PREPARE_IMPL": "quad_swizzle",
+        "QUANTDEMOIRE_COMPACT_SPARSE": "1",
+        "QUANTDEMOIRE_SPARSE_IMPL": "csr",
+        "QUANTDEMOIRE_FUSE_NEXT_QUANT": "1",
+        "QUANTDEMOIRE_FUSE_ATTENTION": "1",
+        "QUANTDEMOIRE_FUSE_RESIDUAL": "1",
+        "QUANTDEMOIRE_CSR_KERNEL": "divmod",
+        "QUANTDEMOIRE_JOINT_WARPS": "0",
+        "QUANTDEMOIRE_JOINT_VARIANT": "9",
+        "QUANTDEMOIRE_SHARED_SKIP_PLANAR": "1",
+        "QUANTDEMOIRE_SHARED_SKIP_PREFIX_PLANAR": "1",
+        "QUANTDEMOIRE_JOINT_NEXT_QUANT": "2",
+        "QUANTDEMOIRE_BALANCE_CSR": "1",
+        "QUANTDEMOIRE_SHARED_RETAIN_STAGES": "0",
+        "QUANTDEMOIRE_FEW_CHANNELS": "1",
+        "QUANTDEMOIRE_PACKED_CSR_META": "1",
+        "QUANTDEMOIRE_FUSE_SECOND_QUANT": "1",
+        "QUANTDEMOIRE_OMIT_CACHED_FEATURES": "1",
+        "QUANTDEMOIRE_RELEASE_FEATURES": "1",
+        "QUANTDEMOIRE_JOINT_PLAN": "checkpoints/hf/esdnet-uhdm-w4a4-ptq-20261003/joint_plan.json"
+      }
+    },
+    {
+      "name": "w8a8",
+      "backend": "cuda",
+      "model": "checkpoints/hf/esdnet-uhdm-w8a8-ptq-20261003",
+      "environment": {
+        "QUANTDEMOIRE_PREPARE_IMPL": "quad_swizzle",
+        "QUANTDEMOIRE_COMPACT_SPARSE": "1",
+        "QUANTDEMOIRE_SPARSE_IMPL": "csr",
+        "QUANTDEMOIRE_FUSE_NEXT_QUANT": "1",
+        "QUANTDEMOIRE_FUSE_ATTENTION": "1",
+        "QUANTDEMOIRE_FUSE_RESIDUAL": "1",
+        "QUANTDEMOIRE_CSR_KERNEL": "divmod",
+        "QUANTDEMOIRE_JOINT_WARPS": "0",
+        "QUANTDEMOIRE_JOINT_VARIANT": "9",
+        "QUANTDEMOIRE_SHARED_SKIP_PLANAR": "1",
+        "QUANTDEMOIRE_SHARED_SKIP_PREFIX_PLANAR": "1",
+        "QUANTDEMOIRE_JOINT_NEXT_QUANT": "2",
+        "QUANTDEMOIRE_BALANCE_CSR": "1",
+        "QUANTDEMOIRE_SHARED_RETAIN_STAGES": "1",
+        "QUANTDEMOIRE_FEW_CHANNELS": "0",
+        "QUANTDEMOIRE_PACKED_CSR_META": "1",
+        "QUANTDEMOIRE_FUSE_SECOND_QUANT": "1",
+        "QUANTDEMOIRE_OMIT_CACHED_FEATURES": "2",
+        "QUANTDEMOIRE_RELEASE_FEATURES": "1",
+        "QUANTDEMOIRE_JOINT_PLAN": "checkpoints/hf/esdnet-uhdm-w8a8-ptq-20261003/joint_plan.json"
+      }
+    }
+  ]
+}

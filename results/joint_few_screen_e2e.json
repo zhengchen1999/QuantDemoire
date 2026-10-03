@@ -1,0 +1,87 @@
+{
+  "rows": [
+    {
+      "round": 0,
+      "bits": 4,
+      "mode": 0,
+      "median_ms": 82.36304092407227,
+      "peak_allocated_bytes": 2594161152,
+      "raw": "results/joint_few_screen_4_0_r0.json"
+    },
+    {
+      "round": 0,
+      "bits": 4,
+      "mode": 2,
+      "median_ms": 82.015869140625,
+      "peak_allocated_bytes": 2594161152,
+      "raw": "results/joint_few_screen_4_2_r0.json"
+    },
+    {
+      "round": 0,
+      "bits": 8,
+      "mode": 0,
+      "median_ms": 96.09366607666016,
+      "peak_allocated_bytes": 2827205632,
+      "raw": "results/joint_few_screen_8_0_r0.json"
+    },
+    {
+      "round": 0,
+      "bits": 8,
+      "mode": 2,
+      "median_ms": 96.21043395996094,
+      "peak_allocated_bytes": 2827205632,
+      "raw": "results/joint_few_screen_8_2_r0.json"
+    },
+    {
+      "round": 1,
+      "bits": 8,
+      "mode": 2,
+      "median_ms": 96.39987182617188,
+      "peak_allocated_bytes": 2827205632,
+      "raw": "results/joint_few_screen_8_2_r1.json"
+    },
+    {
+      "round": 1,
+      "bits": 8,
+      "mode": 0,
+      "median_ms": 95.91619110107422,
+      "peak_allocated_bytes": 2827205632,
+      "raw": "results/joint_few_screen_8_0_r1.json"
+    },
+    {
+      "round": 1,
+      "bits": 4,
+      "mode": 2,
+      "median_ms": 82.09780883789062,
+      "peak_allocated_bytes": 2594161152,
+      "raw": "results/joint_few_screen_4_2_r1.json"
+    },
+    {
+      "round": 1,
+      "bits": 4,
+      "mode": 0,
+      "median_ms": 82.40998458862305,
+      "peak_allocated_bytes": 2594161152,
+      "raw": "results/joint_few_screen_4_0_r1.json"
+    }
+  ],
+  "summary": {
+    "w4_mode0": {
+      "median_ms": 82.38651275634766,
+      "peak_allocated_bytes": 2594161152
+    },
+    "w4_mode2": {
+      "median_ms": 82.05683898925781,
+      "peak_allocated_bytes": 2594161152
+    },
+    "w8_mode0": {
+      "median_ms": 96.00492858886719,
+      "peak_allocated_bytes": 2827205632
+    },
+    "w8_mode2": {
+      "median_ms": 96.3051528930664,
+      "peak_allocated_bytes": 2827205632
+    }
+  },
+  "complete": true
+}

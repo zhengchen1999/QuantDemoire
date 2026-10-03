@@ -1,0 +1,65 @@
+{
+  "scope": "20 actual-weight hotspot layers, synthetic inputs; excludes consumer outputs; corrected metadata cache",
+  "rows": [
+    {
+      "candidate": "spatial_packed",
+      "sums_ms": {
+        "baseline": 29.773519982894264,
+        "candidate": 56.36057076851526
+      },
+      "speedup": 0.5282686029774323,
+      "selected": false,
+      "accumulation": "FP32"
+    },
+    {
+      "candidate": "sparse_prefetch",
+      "sums_ms": {
+        "baseline": 29.645330796639122,
+        "candidate": 31.18465335170428
+      },
+      "speedup": 0.9506384586769494,
+      "selected": false,
+      "accumulation": "FP32"
+    },
+    {
+      "candidate": "sparse_products",
+      "sums_ms": {
+        "baseline": 29.76972266038259,
+        "candidate": 33.145887921253845
+      },
+      "speedup": 0.8981422591878618,
+      "selected": false,
+      "accumulation": "FP32"
+    },
+    {
+      "candidate": "sparse_half2",
+      "sums_ms": {
+        "baseline": 29.622077465057373,
+        "candidate": 30.810397267341614
+      },
+      "speedup": 0.9614312080440509,
+      "selected": false,
+      "accumulation": "FP16"
+    },
+    {
+      "candidate": "planar_int4",
+      "sums_ms": {
+        "baseline": 29.375538696845368,
+        "candidate": 29.62016250689824
+      },
+      "speedup": 0.9917413076313845,
+      "selected": false,
+      "accumulation": "FP32"
+    },
+    {
+      "candidate": "sparse_subwarp",
+      "sums_ms": {
+        "baseline": 29.620704223712284,
+        "candidate": 30.976456046104435
+      },
+      "speedup": 0.9562328298507005,
+      "selected": false,
+      "accumulation": "FP32"
+    }
+  ]
+}

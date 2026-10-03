@@ -1,0 +1,103 @@
+{
+  "environment": {
+    "QUANTDEMOIRE_PREPARE_IMPL": "quad_swizzle",
+    "QUANTDEMOIRE_COMPACT_SPARSE": "1",
+    "QUANTDEMOIRE_MAIN_HALF": "1",
+    "QUANTDEMOIRE_SPARSE_IMPL": "csr",
+    "QUANTDEMOIRE_FUSE_NEXT_QUANT": "1",
+    "QUANTDEMOIRE_FUSE_ATTENTION": "1",
+    "QUANTDEMOIRE_FUSE_RESIDUAL": "1",
+    "QUANTDEMOIRE_CSR_KERNEL": "linear",
+    "QUANTDEMOIRE_JOINT_WARPS": "0",
+    "QUANTDEMOIRE_JOINT_PLAN": "",
+    "QUANTDEMOIRE_JOINT_VARIANT": "0"
+  },
+  "variants": [
+    {
+      "name": "w4_base_mixed",
+      "backend": "cuda",
+      "model": "checkpoints/hf/esdnet-uhdm-w4a4",
+      "environment": {
+        "QUANTDEMOIRE_JOINT_VARIANT": "0",
+        "QUANTDEMOIRE_JOINT_WARPS": "0",
+        "QUANTDEMOIRE_JOINT_PLAN": "config/kernel_plans/uhdm_w4_mixed.json"
+      }
+    },
+    {
+      "name": "w4_async_mixed",
+      "backend": "cuda",
+      "model": "checkpoints/hf/esdnet-uhdm-w4a4",
+      "environment": {
+        "QUANTDEMOIRE_JOINT_VARIANT": "1",
+        "QUANTDEMOIRE_JOINT_WARPS": "0",
+        "QUANTDEMOIRE_JOINT_PLAN": "config/kernel_plans/uhdm_w4_mixed.json"
+      }
+    },
+    {
+      "name": "w4_reuse_mixed",
+      "backend": "cuda",
+      "model": "checkpoints/hf/esdnet-uhdm-w4a4",
+      "environment": {
+        "QUANTDEMOIRE_JOINT_VARIANT": "2",
+        "QUANTDEMOIRE_JOINT_WARPS": "0",
+        "QUANTDEMOIRE_JOINT_PLAN": "config/kernel_plans/uhdm_w4_mixed.json"
+      }
+    },
+    {
+      "name": "w4_reuse_all",
+      "backend": "cuda",
+      "model": "checkpoints/hf/esdnet-uhdm-w4a4",
+      "environment": {
+        "QUANTDEMOIRE_JOINT_VARIANT": "2",
+        "QUANTDEMOIRE_JOINT_WARPS": "8",
+        "QUANTDEMOIRE_JOINT_PLAN": ""
+      }
+    },
+    {
+      "name": "w8_base_mixed",
+      "backend": "cuda",
+      "model": "checkpoints/hf/esdnet-uhdm-w8a8",
+      "environment": {
+        "QUANTDEMOIRE_JOINT_VARIANT": "0",
+        "QUANTDEMOIRE_JOINT_WARPS": "0",
+        "QUANTDEMOIRE_JOINT_PLAN": "config/kernel_plans/uhdm_w8_mixed.json"
+      }
+    },
+    {
+      "name": "w8_async_mixed",
+      "backend": "cuda",
+      "model": "checkpoints/hf/esdnet-uhdm-w8a8",
+      "environment": {
+        "QUANTDEMOIRE_JOINT_VARIANT": "1",
+        "QUANTDEMOIRE_JOINT_WARPS": "0",
+        "QUANTDEMOIRE_JOINT_PLAN": "config/kernel_plans/uhdm_w8_mixed.json"
+      }
+    },
+    {
+      "name": "w8_reuse_mixed",
+      "backend": "cuda",
+      "model": "checkpoints/hf/esdnet-uhdm-w8a8",
+      "environment": {
+        "QUANTDEMOIRE_JOINT_VARIANT": "2",
+        "QUANTDEMOIRE_JOINT_WARPS": "0",
+        "QUANTDEMOIRE_JOINT_PLAN": "config/kernel_plans/uhdm_w8_mixed.json"
+      }
+    },
+    {
+      "name": "w8_reuse_all",
+      "backend": "cuda",
+      "model": "checkpoints/hf/esdnet-uhdm-w8a8",
+      "environment": {
+        "QUANTDEMOIRE_JOINT_VARIANT": "2",
+        "QUANTDEMOIRE_JOINT_WARPS": "8",
+        "QUANTDEMOIRE_JOINT_PLAN": ""
+      }
+    },
+    {
+      "name": "fp16_attention",
+      "backend": "fp16",
+      "model": "checkpoints/uhdm_checkpoint.pth",
+      "environment": {}
+    }
+  ]
+}

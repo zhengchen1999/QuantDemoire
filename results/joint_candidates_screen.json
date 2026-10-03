@@ -1,0 +1,225 @@
+{
+  "config": {
+    "environment": {
+      "QUANTDEMOIRE_PREPARE_IMPL": "quad_swizzle",
+      "QUANTDEMOIRE_COMPACT_SPARSE": "1",
+      "QUANTDEMOIRE_MAIN_HALF": "1",
+      "QUANTDEMOIRE_SPARSE_IMPL": "csr",
+      "QUANTDEMOIRE_FUSE_NEXT_QUANT": "1",
+      "QUANTDEMOIRE_FUSE_ATTENTION": "1",
+      "QUANTDEMOIRE_FUSE_RESIDUAL": "1",
+      "QUANTDEMOIRE_CSR_KERNEL": "linear",
+      "QUANTDEMOIRE_JOINT_WARPS": "0",
+      "QUANTDEMOIRE_JOINT_PLAN": "",
+      "QUANTDEMOIRE_JOINT_VARIANT": "0"
+    },
+    "variants": [
+      {
+        "name": "w4_base",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w4a4",
+        "environment": {
+          "QUANTDEMOIRE_JOINT_VARIANT": "4",
+          "QUANTDEMOIRE_JOINT_WARPS": "0",
+          "QUANTDEMOIRE_JOINT_PLAN": "config/kernel_plans/uhdm_w4_chain.json"
+        }
+      },
+      {
+        "name": "w4_shuffle",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w4a4",
+        "environment": {
+          "QUANTDEMOIRE_JOINT_VARIANT": "5",
+          "QUANTDEMOIRE_JOINT_WARPS": "0",
+          "QUANTDEMOIRE_JOINT_PLAN": "config/kernel_plans/uhdm_w4_chain.json"
+        }
+      },
+      {
+        "name": "w4_wider",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w4a4",
+        "environment": {
+          "QUANTDEMOIRE_JOINT_VARIANT": "6",
+          "QUANTDEMOIRE_JOINT_WARPS": "0",
+          "QUANTDEMOIRE_JOINT_PLAN": "config/kernel_plans/uhdm_w4_chain.json"
+        }
+      },
+      {
+        "name": "w4_index",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w4a4",
+        "environment": {
+          "QUANTDEMOIRE_JOINT_VARIANT": "7",
+          "QUANTDEMOIRE_JOINT_WARPS": "0",
+          "QUANTDEMOIRE_JOINT_PLAN": "config/kernel_plans/uhdm_w4_chain.json"
+        }
+      },
+      {
+        "name": "w4_divmod",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w4a4",
+        "environment": {
+          "QUANTDEMOIRE_JOINT_VARIANT": "8",
+          "QUANTDEMOIRE_JOINT_WARPS": "0",
+          "QUANTDEMOIRE_JOINT_PLAN": "config/kernel_plans/uhdm_w4_chain.json"
+        }
+      },
+      {
+        "name": "w8_base",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w8a8",
+        "environment": {
+          "QUANTDEMOIRE_JOINT_VARIANT": "4",
+          "QUANTDEMOIRE_JOINT_WARPS": "0",
+          "QUANTDEMOIRE_JOINT_PLAN": "config/kernel_plans/uhdm_w8_chain.json"
+        }
+      },
+      {
+        "name": "w8_wider",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w8a8",
+        "environment": {
+          "QUANTDEMOIRE_JOINT_VARIANT": "6",
+          "QUANTDEMOIRE_JOINT_WARPS": "0",
+          "QUANTDEMOIRE_JOINT_PLAN": "config/kernel_plans/uhdm_w8_chain.json"
+        }
+      },
+      {
+        "name": "w8_index",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w8a8",
+        "environment": {
+          "QUANTDEMOIRE_JOINT_VARIANT": "7",
+          "QUANTDEMOIRE_JOINT_WARPS": "0",
+          "QUANTDEMOIRE_JOINT_PLAN": "config/kernel_plans/uhdm_w8_chain.json"
+        }
+      },
+      {
+        "name": "w8_divmod",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w8a8",
+        "environment": {
+          "QUANTDEMOIRE_JOINT_VARIANT": "8",
+          "QUANTDEMOIRE_JOINT_WARPS": "0",
+          "QUANTDEMOIRE_JOINT_PLAN": "config/kernel_plans/uhdm_w8_chain.json"
+        }
+      }
+    ]
+  },
+  "rounds": 1,
+  "repeats": 20,
+  "graph": false,
+  "rows": [
+    {
+      "round": 0,
+      "variant": "w4_base",
+      "backend": "cuda",
+      "median_ms": 87.53294372558594,
+      "peak_allocated_bytes": 2702411264,
+      "raw": "results/joint_candidates_screen_w4_base_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "w4_shuffle",
+      "backend": "cuda",
+      "median_ms": 90.78422546386719,
+      "peak_allocated_bytes": 2702411264,
+      "raw": "results/joint_candidates_screen_w4_shuffle_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "w4_wider",
+      "backend": "cuda",
+      "median_ms": 89.05522918701172,
+      "peak_allocated_bytes": 2702411264,
+      "raw": "results/joint_candidates_screen_w4_wider_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "w4_index",
+      "backend": "cuda",
+      "median_ms": 87.029296875,
+      "peak_allocated_bytes": 2702411264,
+      "raw": "results/joint_candidates_screen_w4_index_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "w4_divmod",
+      "backend": "cuda",
+      "median_ms": 86.95846557617188,
+      "peak_allocated_bytes": 2702411264,
+      "raw": "results/joint_candidates_screen_w4_divmod_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "w8_base",
+      "backend": "cuda",
+      "median_ms": 101.17119979858398,
+      "peak_allocated_bytes": 2933497344,
+      "raw": "results/joint_candidates_screen_w8_base_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "w8_wider",
+      "backend": "cuda",
+      "median_ms": 103.99488067626953,
+      "peak_allocated_bytes": 2933497344,
+      "raw": "results/joint_candidates_screen_w8_wider_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "w8_index",
+      "backend": "cuda",
+      "median_ms": 100.54246520996094,
+      "peak_allocated_bytes": 2933497344,
+      "raw": "results/joint_candidates_screen_w8_index_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "w8_divmod",
+      "backend": "cuda",
+      "median_ms": 100.40422439575195,
+      "peak_allocated_bytes": 2933497344,
+      "raw": "results/joint_candidates_screen_w8_divmod_r0.json"
+    }
+  ],
+  "complete": true,
+  "summary": {
+    "w4_base": {
+      "median_ms": 87.53294372558594,
+      "peak_allocated_bytes": 2702411264
+    },
+    "w4_shuffle": {
+      "median_ms": 90.78422546386719,
+      "peak_allocated_bytes": 2702411264
+    },
+    "w4_wider": {
+      "median_ms": 89.05522918701172,
+      "peak_allocated_bytes": 2702411264
+    },
+    "w4_index": {
+      "median_ms": 87.029296875,
+      "peak_allocated_bytes": 2702411264
+    },
+    "w4_divmod": {
+      "median_ms": 86.95846557617188,
+      "peak_allocated_bytes": 2702411264
+    },
+    "w8_base": {
+      "median_ms": 101.17119979858398,
+      "peak_allocated_bytes": 2933497344
+    },
+    "w8_wider": {
+      "median_ms": 103.99488067626953,
+      "peak_allocated_bytes": 2933497344
+    },
+    "w8_index": {
+      "median_ms": 100.54246520996094,
+      "peak_allocated_bytes": 2933497344
+    },
+    "w8_divmod": {
+      "median_ms": 100.40422439575195,
+      "peak_allocated_bytes": 2933497344
+    }
+  }
+}

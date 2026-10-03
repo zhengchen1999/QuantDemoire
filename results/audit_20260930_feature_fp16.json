@@ -1,0 +1,64 @@
+{
+  "complete": true,
+  "note": "Verify outer feature and six level-input references are released with unchanged outputs.",
+  "backend": "fp16",
+  "model": "checkpoints/uhdm_checkpoint.pth",
+  "rows": [
+    {
+      "image": "0000_moire.jpg",
+      "input_sha256": "93f64bf80f4b413ebde917e745619687d053ee8b6456cd2f1bbbb3e140bf3a1c",
+      "bitwise_equal": [
+        true,
+        true,
+        true
+      ],
+      "graph_bitwise_equal": [
+        true,
+        true,
+        true
+      ],
+      "encoder_features_released": true,
+      "all_six_level_inputs_released": true
+    }
+  ],
+  "source_sha256": "8b71d5816224c818c151b1cfcf548ffbe7dade978a2e52ce5a7ea01e5dfdc651",
+  "expected_count": 1,
+  "model_sha256": "254235cd25f90a3f1785885385dc6cb3f2178e053291ab53d1943bd7c2f7de65",
+  "config_sha256": null,
+  "count": 1,
+  "environment": {
+    "torch": "2.2.2+cu121",
+    "cuda": "12.1",
+    "cudnn": 8902,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "fp16_convolution_accumulator": "float32",
+    "cudnn_api": "v7",
+    "tf32": false,
+    "fp16_reduced_precision_reduction": false,
+    "sparse_implementation": "csr",
+    "csr_kernel": "legacy",
+    "joint_warps": 0,
+    "joint_variant": 0,
+    "joint_next_quant": 0,
+    "balance_csr": false,
+    "shared_retain_stages": false,
+    "few_channels": false,
+    "packed_csr_meta": false,
+    "omit_cached_features": 0,
+    "shared_skip_planar": false,
+    "shared_skip_prefix_planar": false,
+    "joint_plan_sha256": null,
+    "main_half_override": null,
+    "compact_sparse": true,
+    "prepare_implementation": "pair",
+    "fuse_next_quant": false,
+    "fuse_second_quant": false,
+    "fuse_attention": false,
+    "fuse_residual": false,
+    "deployment_source_sha256": "cb1198b1bb21677d365c379dadd1b398237fd8decb42d075f30c79e46a37a7e1",
+    "release_features": true,
+    "kernel_source_sha256": null
+  },
+  "direct_decoder_api": true,
+  "queue_reuse_guard": true
+}

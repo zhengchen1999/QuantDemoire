@@ -1,0 +1,168 @@
+{
+  "complete": true,
+  "note": "Compare integrated omission with preserved pre-omission code/binary in fresh processes.",
+  "rows": [
+    {
+      "round": 0,
+      "bits": 4,
+      "integrated": false,
+      "median_ms": 80.65791702270508,
+      "peak_allocated_bytes": 2594161152,
+      "raw": "results/feature_omission_production_pair_4_0_r0.json"
+    },
+    {
+      "round": 0,
+      "bits": 4,
+      "integrated": true,
+      "median_ms": 80.02532958984375,
+      "peak_allocated_bytes": 2493105152,
+      "raw": "results/feature_omission_production_pair_4_1_r0.json"
+    },
+    {
+      "round": 0,
+      "bits": 8,
+      "integrated": false,
+      "median_ms": 95.44857406616211,
+      "peak_allocated_bytes": 2825370624,
+      "raw": "results/feature_omission_production_pair_8_0_r0.json"
+    },
+    {
+      "round": 0,
+      "bits": 8,
+      "integrated": true,
+      "median_ms": 94.8310546875,
+      "peak_allocated_bytes": 2692464128,
+      "raw": "results/feature_omission_production_pair_8_1_r0.json"
+    },
+    {
+      "round": 1,
+      "bits": 8,
+      "integrated": true,
+      "median_ms": 94.89599990844727,
+      "peak_allocated_bytes": 2692464128,
+      "raw": "results/feature_omission_production_pair_8_1_r1.json"
+    },
+    {
+      "round": 1,
+      "bits": 8,
+      "integrated": false,
+      "median_ms": 95.46524810791016,
+      "peak_allocated_bytes": 2825370624,
+      "raw": "results/feature_omission_production_pair_8_0_r1.json"
+    },
+    {
+      "round": 1,
+      "bits": 4,
+      "integrated": true,
+      "median_ms": 79.95283126831055,
+      "peak_allocated_bytes": 2493105152,
+      "raw": "results/feature_omission_production_pair_4_1_r1.json"
+    },
+    {
+      "round": 1,
+      "bits": 4,
+      "integrated": false,
+      "median_ms": 80.77062225341797,
+      "peak_allocated_bytes": 2594161152,
+      "raw": "results/feature_omission_production_pair_4_0_r1.json"
+    },
+    {
+      "round": 2,
+      "bits": 4,
+      "integrated": false,
+      "median_ms": 80.74649429321289,
+      "peak_allocated_bytes": 2594161152,
+      "raw": "results/feature_omission_production_pair_4_0_r2.json"
+    },
+    {
+      "round": 2,
+      "bits": 4,
+      "integrated": true,
+      "median_ms": 79.98771286010742,
+      "peak_allocated_bytes": 2493105152,
+      "raw": "results/feature_omission_production_pair_4_1_r2.json"
+    },
+    {
+      "round": 2,
+      "bits": 8,
+      "integrated": false,
+      "median_ms": 95.46752166748047,
+      "peak_allocated_bytes": 2825370624,
+      "raw": "results/feature_omission_production_pair_8_0_r2.json"
+    },
+    {
+      "round": 2,
+      "bits": 8,
+      "integrated": true,
+      "median_ms": 94.8674545288086,
+      "peak_allocated_bytes": 2692464128,
+      "raw": "results/feature_omission_production_pair_8_1_r2.json"
+    },
+    {
+      "round": 3,
+      "bits": 8,
+      "integrated": true,
+      "median_ms": 94.82035446166992,
+      "peak_allocated_bytes": 2692464128,
+      "raw": "results/feature_omission_production_pair_8_1_r3.json"
+    },
+    {
+      "round": 3,
+      "bits": 8,
+      "integrated": false,
+      "median_ms": 95.50643157958984,
+      "peak_allocated_bytes": 2825370624,
+      "raw": "results/feature_omission_production_pair_8_0_r3.json"
+    },
+    {
+      "round": 3,
+      "bits": 4,
+      "integrated": true,
+      "median_ms": 80.02214431762695,
+      "peak_allocated_bytes": 2493105152,
+      "raw": "results/feature_omission_production_pair_4_1_r3.json"
+    },
+    {
+      "round": 3,
+      "bits": 4,
+      "integrated": false,
+      "median_ms": 80.74900436401367,
+      "peak_allocated_bytes": 2594161152,
+      "raw": "results/feature_omission_production_pair_4_0_r3.json"
+    }
+  ],
+  "summary": {
+    "4": {
+      "previous": {
+        "median_ms": 80.74774932861328,
+        "peak_allocated_bytes": 2594161152
+      },
+      "integrated": {
+        "median_ms": 80.00492858886719,
+        "peak_allocated_bytes": 2493105152
+      },
+      "paired_savings_ms": [
+        0.6325874328613281,
+        0.8177909851074219,
+        0.7587814331054688,
+        0.7268600463867188
+      ]
+    },
+    "8": {
+      "previous": {
+        "median_ms": 95.46638488769531,
+        "peak_allocated_bytes": 2825370624
+      },
+      "integrated": {
+        "median_ms": 94.8492546081543,
+        "peak_allocated_bytes": 2692464128
+      },
+      "paired_savings_ms": [
+        0.6175193786621094,
+        0.5692481994628906,
+        0.600067138671875,
+        0.6860771179199219
+      ]
+    }
+  }
+}

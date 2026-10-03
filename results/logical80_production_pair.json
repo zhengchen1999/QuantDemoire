@@ -1,0 +1,90 @@
+{
+  "rows": [
+    {
+      "round": 0,
+      "bits": 4,
+      "integrated": false,
+      "median_ms": 80.16223907470703,
+      "peak_allocated_bytes": 2594161152,
+      "raw": "results/logical80_production_pair_4_0_r0.json"
+    },
+    {
+      "round": 0,
+      "bits": 4,
+      "integrated": true,
+      "median_ms": 79.90056228637695,
+      "peak_allocated_bytes": 2594208256,
+      "raw": "results/logical80_production_pair_4_1_r0.json"
+    },
+    {
+      "round": 1,
+      "bits": 4,
+      "integrated": true,
+      "median_ms": 80.28825759887695,
+      "peak_allocated_bytes": 2594208256,
+      "raw": "results/logical80_production_pair_4_1_r1.json"
+    },
+    {
+      "round": 1,
+      "bits": 4,
+      "integrated": false,
+      "median_ms": 80.09523010253906,
+      "peak_allocated_bytes": 2594161152,
+      "raw": "results/logical80_production_pair_4_0_r1.json"
+    },
+    {
+      "round": 2,
+      "bits": 4,
+      "integrated": false,
+      "median_ms": 80.31332778930664,
+      "peak_allocated_bytes": 2594161152,
+      "raw": "results/logical80_production_pair_4_0_r2.json"
+    },
+    {
+      "round": 2,
+      "bits": 4,
+      "integrated": true,
+      "median_ms": 80.27801513671875,
+      "peak_allocated_bytes": 2594208256,
+      "raw": "results/logical80_production_pair_4_1_r2.json"
+    },
+    {
+      "round": 3,
+      "bits": 4,
+      "integrated": true,
+      "median_ms": 80.2906723022461,
+      "peak_allocated_bytes": 2594208256,
+      "raw": "results/logical80_production_pair_4_1_r3.json"
+    },
+    {
+      "round": 3,
+      "bits": 4,
+      "integrated": false,
+      "median_ms": 80.3608627319336,
+      "peak_allocated_bytes": 2594161152,
+      "raw": "results/logical80_production_pair_4_0_r3.json"
+    }
+  ],
+  "summary": {
+    "4": {
+      "previous": {
+        "median_ms": 80.23778343200684,
+        "peak_allocated_bytes": 2594161152
+      },
+      "integrated": {
+        "median_ms": 80.28313636779785,
+        "peak_allocated_bytes": 2594208256
+      }
+    }
+  },
+  "complete": true,
+  "note": "Fresh processes, alternating order. Preserved verified previous native library and original forward methods versus integrated logical-C80 specialization; immutable weights and previous plans retained.",
+  "paired_savings_ms": [
+    0.2616767883300781,
+    -0.19302749633789062,
+    0.035312652587890625,
+    0.0701904296875
+  ],
+  "paired_mean_saving_ms": 0.04353809356689453,
+  "paired_median_saving_ms": 0.05275154113769531
+}

@@ -1,0 +1,390 @@
+{
+  "model": "checkpoints/hf/esdnet-uhdm-w4a4",
+  "model_sha256": "4f6c50aac8d73b4823ff9d7df7948b0e9c522320920b5767ebfada1c5aaf4469",
+  "config_sha256": "cb48b687858881ee584e2f078941e9d1f691e441b17fb8c5669067b040834720",
+  "reference": "scalar",
+  "candidate": "quad_swizzle",
+  "next_quant": true,
+  "graph": true,
+  "rows": [
+    {
+      "image": "0000_moire.jpg",
+      "input_sha256": "93f64bf80f4b413ebde917e745619687d053ee8b6456cd2f1bbbb3e140bf3a1c",
+      "bitwise_equal": [
+        true,
+        true,
+        true
+      ],
+      "graph_bitwise_equal": [
+        true,
+        true,
+        true
+      ]
+    }
+  ],
+  "prefix_checks": [
+    {
+      "consumer": "encoder.encoder_1.rdb.conv_post.conv",
+      "input": [
+        1,
+        144,
+        1088,
+        1920
+      ],
+      "prefix_channels": 32,
+      "packed_bitwise_equal": true,
+      "planar_bitwise_equal": null,
+      "planar_checked": false,
+      "planar_storage_bytes": 1
+    },
+    {
+      "consumer": "encoder.encoder_1.sam_blocks.0.basic_block.conv_layers.1.conv.0",
+      "input": [
+        1,
+        80,
+        1088,
+        1920
+      ],
+      "prefix_channels": 32,
+      "packed_bitwise_equal": true,
+      "planar_bitwise_equal": true,
+      "planar_checked": true,
+      "planar_storage_bytes": 58490880
+    },
+    {
+      "consumer": "encoder.encoder_1.sam_blocks.0.basic_block.conv_layers.3.conv.0",
+      "input": [
+        1,
+        144,
+        1088,
+        1920
+      ],
+      "prefix_channels": 32,
+      "packed_bitwise_equal": true,
+      "planar_bitwise_equal": true,
+      "planar_checked": true,
+      "planar_storage_bytes": 116981760
+    },
+    {
+      "consumer": "encoder.encoder_1.sam_blocks.0.basic_block.conv_post.conv",
+      "input": [
+        1,
+        208,
+        1088,
+        1920
+      ],
+      "prefix_channels": 32,
+      "packed_bitwise_equal": true,
+      "planar_bitwise_equal": null,
+      "planar_checked": false,
+      "planar_storage_bytes": 1
+    },
+    {
+      "consumer": "encoder.encoder_1.sam_blocks.0.basic_block_2.conv_layers.3.conv.0",
+      "input": [
+        1,
+        144,
+        544,
+        960
+      ],
+      "prefix_channels": 32,
+      "packed_bitwise_equal": true,
+      "planar_bitwise_equal": true,
+      "planar_checked": true,
+      "planar_storage_bytes": 27678720
+    },
+    {
+      "consumer": "encoder.encoder_1.sam_blocks.0.basic_block_2.conv_post.conv",
+      "input": [
+        1,
+        208,
+        544,
+        960
+      ],
+      "prefix_channels": 32,
+      "packed_bitwise_equal": true,
+      "planar_bitwise_equal": null,
+      "planar_checked": false,
+      "planar_storage_bytes": 1
+    },
+    {
+      "consumer": "encoder.encoder_2.rdb.conv_layers.2.conv.0",
+      "input": [
+        1,
+        160,
+        544,
+        960
+      ],
+      "prefix_channels": 32,
+      "packed_bitwise_equal": true,
+      "planar_bitwise_equal": true,
+      "planar_checked": true,
+      "planar_storage_bytes": 36556800
+    },
+    {
+      "consumer": "encoder.encoder_2.sam_blocks.0.basic_block.conv_layers.2.conv.0",
+      "input": [
+        1,
+        160,
+        544,
+        960
+      ],
+      "prefix_channels": 32,
+      "packed_bitwise_equal": true,
+      "planar_bitwise_equal": true,
+      "planar_checked": true,
+      "planar_storage_bytes": 29767680
+    },
+    {
+      "consumer": "encoder.encoder_2.sam_blocks.0.basic_block_2.conv_layers.2.conv.0",
+      "input": [
+        1,
+        160,
+        272,
+        480
+      ],
+      "prefix_channels": 32,
+      "packed_bitwise_equal": true,
+      "planar_bitwise_equal": true,
+      "planar_checked": true,
+      "planar_storage_bytes": 7572480
+    },
+    {
+      "consumer": "encoder.encoder_3.sam_blocks.0.basic_block.conv_layers.1.conv.0",
+      "input": [
+        1,
+        224,
+        272,
+        480
+      ],
+      "prefix_channels": 32,
+      "packed_bitwise_equal": true,
+      "planar_bitwise_equal": true,
+      "planar_checked": true,
+      "planar_storage_bytes": 5744640
+    },
+    {
+      "consumer": "encoder.encoder_3.sam_blocks.0.basic_block.conv_layers.3.conv.0",
+      "input": [
+        1,
+        288,
+        272,
+        480
+      ],
+      "prefix_channels": 32,
+      "packed_bitwise_equal": true,
+      "planar_bitwise_equal": true,
+      "planar_checked": true,
+      "planar_storage_bytes": 13186560
+    },
+    {
+      "consumer": "encoder.encoder_3.sam_blocks.0.basic_block.conv_post.conv",
+      "input": [
+        1,
+        352,
+        272,
+        480
+      ],
+      "prefix_channels": 32,
+      "packed_bitwise_equal": true,
+      "planar_bitwise_equal": true,
+      "planar_checked": true,
+      "planar_storage_bytes": 5222400
+    },
+    {
+      "consumer": "encoder.encoder_3.sam_blocks.0.basic_block_2.conv_post.conv",
+      "input": [
+        1,
+        352,
+        136,
+        240
+      ],
+      "prefix_channels": 32,
+      "packed_bitwise_equal": true,
+      "planar_bitwise_equal": true,
+      "planar_checked": true,
+      "planar_storage_bytes": 652800
+    },
+    {
+      "consumer": "decoder.decoder_2.rdb.conv_post.conv",
+      "input": [
+        1,
+        160,
+        544,
+        960
+      ],
+      "prefix_channels": 32,
+      "packed_bitwise_equal": true,
+      "planar_bitwise_equal": null,
+      "planar_checked": false,
+      "planar_storage_bytes": 1
+    },
+    {
+      "consumer": "decoder.decoder_2.sam_blocks.0.basic_block_2.conv_post.conv",
+      "input": [
+        1,
+        224,
+        272,
+        480
+      ],
+      "prefix_channels": 32,
+      "packed_bitwise_equal": true,
+      "planar_bitwise_equal": null,
+      "planar_checked": false,
+      "planar_storage_bytes": 1
+    },
+    {
+      "consumer": "decoder.decoder_1.rdb.conv_layers.1.conv.0",
+      "input": [
+        1,
+        96,
+        1088,
+        1920
+      ],
+      "prefix_channels": 32,
+      "packed_bitwise_equal": true,
+      "planar_bitwise_equal": true,
+      "planar_checked": true,
+      "planar_storage_bytes": 85647360
+    },
+    {
+      "consumer": "decoder.decoder_1.rdb.conv_layers.2.conv.0",
+      "input": [
+        1,
+        128,
+        1088,
+        1920
+      ],
+      "prefix_channels": 32,
+      "packed_bitwise_equal": true,
+      "planar_bitwise_equal": true,
+      "planar_checked": true,
+      "planar_storage_bytes": 94003200
+    },
+    {
+      "consumer": "decoder.decoder_1.rdb.conv_post.conv",
+      "input": [
+        1,
+        160,
+        1088,
+        1920
+      ],
+      "prefix_channels": 32,
+      "packed_bitwise_equal": true,
+      "planar_bitwise_equal": null,
+      "planar_checked": false,
+      "planar_storage_bytes": 1
+    },
+    {
+      "consumer": "decoder.decoder_1.sam_blocks.0.basic_block.conv_layers.1.conv.0",
+      "input": [
+        1,
+        96,
+        1088,
+        1920
+      ],
+      "prefix_channels": 32,
+      "packed_bitwise_equal": true,
+      "planar_bitwise_equal": true,
+      "planar_checked": true,
+      "planar_storage_bytes": 60579840
+    },
+    {
+      "consumer": "decoder.decoder_1.sam_blocks.0.basic_block.conv_layers.2.conv.0",
+      "input": [
+        1,
+        128,
+        1088,
+        1920
+      ],
+      "prefix_channels": 32,
+      "packed_bitwise_equal": true,
+      "planar_bitwise_equal": true,
+      "planar_checked": true,
+      "planar_storage_bytes": 106536960
+    },
+    {
+      "consumer": "decoder.decoder_1.sam_blocks.0.basic_block.conv_layers.3.conv.0",
+      "input": [
+        1,
+        160,
+        1088,
+        1920
+      ],
+      "prefix_channels": 32,
+      "packed_bitwise_equal": true,
+      "planar_bitwise_equal": true,
+      "planar_checked": true,
+      "planar_storage_bytes": 131604480
+    },
+    {
+      "consumer": "decoder.decoder_1.sam_blocks.0.basic_block.conv_layers.4.conv.0",
+      "input": [
+        1,
+        192,
+        1088,
+        1920
+      ],
+      "prefix_channels": 32,
+      "packed_bitwise_equal": true,
+      "planar_bitwise_equal": true,
+      "planar_checked": true,
+      "planar_storage_bytes": 177561600
+    },
+    {
+      "consumer": "decoder.decoder_1.sam_blocks.0.basic_block.conv_post.conv",
+      "input": [
+        1,
+        224,
+        1088,
+        1920
+      ],
+      "prefix_channels": 32,
+      "packed_bitwise_equal": true,
+      "planar_bitwise_equal": null,
+      "planar_checked": false,
+      "planar_storage_bytes": 1
+    },
+    {
+      "consumer": "decoder.decoder_1.sam_blocks.0.basic_block_2.conv_layers.3.conv.0",
+      "input": [
+        1,
+        160,
+        544,
+        960
+      ],
+      "prefix_channels": 32,
+      "packed_bitwise_equal": true,
+      "planar_bitwise_equal": true,
+      "planar_checked": true,
+      "planar_storage_bytes": 30812160
+    }
+  ],
+  "count": 1,
+  "complete": true,
+  "environment": {
+    "torch": "2.2.2+cu121",
+    "cuda": "12.1",
+    "cudnn": 8902,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "fp16_convolution_accumulator": "float32",
+    "cudnn_api": "v7",
+    "tf32": false,
+    "fp16_reduced_precision_reduction": false,
+    "sparse_implementation": "csr",
+    "csr_kernel": "linear",
+    "joint_warps": 0,
+    "joint_variant": 9,
+    "shared_skip_planar": true,
+    "shared_skip_prefix_planar": true,
+    "joint_plan_sha256": "68d55b3bbf047c999dda69c68a941b44ce98abc5e8bc133c1fa9e4fdd398747e",
+    "main_half_override": "1",
+    "compact_sparse": true,
+    "prepare_implementation": "quad_swizzle",
+    "fuse_next_quant": true,
+    "fuse_attention": true,
+    "fuse_residual": true,
+    "deployment_source_sha256": "43236ca210c1ed7c359382aad9c966abf5ff6ff5a17918642bdd02bdab98e48f",
+    "kernel_source_sha256": "335fac875103081473fd9277eb3cb0d3c43200b9bd9ddfb280eaab3f81df0109"
+  }
+}

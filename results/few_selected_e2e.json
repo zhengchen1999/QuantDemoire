@@ -1,0 +1,131 @@
+{
+  "config": {
+    "environment": {
+      "QUANTDEMOIRE_PREPARE_IMPL": "quad_swizzle",
+      "QUANTDEMOIRE_COMPACT_SPARSE": "1",
+      "QUANTDEMOIRE_MAIN_HALF": "1",
+      "QUANTDEMOIRE_SPARSE_IMPL": "csr",
+      "QUANTDEMOIRE_FUSE_NEXT_QUANT": "1",
+      "QUANTDEMOIRE_FUSE_ATTENTION": "1",
+      "QUANTDEMOIRE_FUSE_RESIDUAL": "1",
+      "QUANTDEMOIRE_CSR_KERNEL": "linear",
+      "QUANTDEMOIRE_JOINT_WARPS": "0",
+      "QUANTDEMOIRE_JOINT_PLAN": "",
+      "QUANTDEMOIRE_JOINT_VARIANT": "0",
+      "QUANTDEMOIRE_SHARED_SKIP_PLANAR": "0",
+      "QUANTDEMOIRE_SHARED_SKIP_PREFIX_PLANAR": "0",
+      "QUANTDEMOIRE_JOINT_NEXT_QUANT": "0",
+      "QUANTDEMOIRE_BALANCE_CSR": "0",
+      "QUANTDEMOIRE_SHARED_RETAIN_STAGES": "0",
+      "QUANTDEMOIRE_FEW_CHANNELS": "0"
+    },
+    "variants": [
+      {
+        "name": "w4_few",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w4a4",
+        "environment": {
+          "QUANTDEMOIRE_JOINT_VARIANT": "9",
+          "QUANTDEMOIRE_JOINT_WARPS": "0",
+          "QUANTDEMOIRE_JOINT_PLAN": "config/kernel_plans/uhdm_w4_joint_next_memory.json",
+          "QUANTDEMOIRE_SHARED_SKIP_PLANAR": "1",
+          "QUANTDEMOIRE_SHARED_SKIP_PREFIX_PLANAR": "1",
+          "QUANTDEMOIRE_CSR_KERNEL": "divmod",
+          "QUANTDEMOIRE_JOINT_NEXT_QUANT": "2",
+          "QUANTDEMOIRE_BALANCE_CSR": "1",
+          "QUANTDEMOIRE_FEW_CHANNELS": "1"
+        }
+      },
+      {
+        "name": "w8_retained",
+        "backend": "cuda",
+        "model": "checkpoints/hf/esdnet-uhdm-w8a8",
+        "environment": {
+          "QUANTDEMOIRE_JOINT_VARIANT": "9",
+          "QUANTDEMOIRE_JOINT_WARPS": "0",
+          "QUANTDEMOIRE_JOINT_PLAN": "config/kernel_plans/uhdm_w8_joint_next_memory.json",
+          "QUANTDEMOIRE_CSR_KERNEL": "divmod",
+          "QUANTDEMOIRE_JOINT_NEXT_QUANT": "2",
+          "QUANTDEMOIRE_BALANCE_CSR": "1",
+          "QUANTDEMOIRE_SHARED_SKIP_PLANAR": "1",
+          "QUANTDEMOIRE_SHARED_SKIP_PREFIX_PLANAR": "1",
+          "QUANTDEMOIRE_SHARED_RETAIN_STAGES": "1"
+        }
+      },
+      {
+        "name": "fp16_attention",
+        "backend": "fp16",
+        "model": "checkpoints/uhdm_checkpoint.pth",
+        "environment": {}
+      }
+    ]
+  },
+  "rounds": 2,
+  "repeats": 30,
+  "graph": false,
+  "rows": [
+    {
+      "round": 0,
+      "variant": "w4_few",
+      "backend": "cuda",
+      "median_ms": 82.3740005493164,
+      "peak_allocated_bytes": 2594161152,
+      "raw": "results/few_selected_e2e_w4_few_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "w8_retained",
+      "backend": "cuda",
+      "median_ms": 96.19644927978516,
+      "peak_allocated_bytes": 2827205632,
+      "raw": "results/few_selected_e2e_w8_retained_r0.json"
+    },
+    {
+      "round": 0,
+      "variant": "fp16_attention",
+      "backend": "fp16",
+      "median_ms": 129.57396697998047,
+      "peak_allocated_bytes": 3253154304,
+      "raw": "results/few_selected_e2e_fp16_attention_r0.json"
+    },
+    {
+      "round": 1,
+      "variant": "fp16_attention",
+      "backend": "fp16",
+      "median_ms": 129.55661010742188,
+      "peak_allocated_bytes": 3253154304,
+      "raw": "results/few_selected_e2e_fp16_attention_r1.json"
+    },
+    {
+      "round": 1,
+      "variant": "w8_retained",
+      "backend": "cuda",
+      "median_ms": 96.3321762084961,
+      "peak_allocated_bytes": 2827205632,
+      "raw": "results/few_selected_e2e_w8_retained_r1.json"
+    },
+    {
+      "round": 1,
+      "variant": "w4_few",
+      "backend": "cuda",
+      "median_ms": 82.35214233398438,
+      "peak_allocated_bytes": 2594161152,
+      "raw": "results/few_selected_e2e_w4_few_r1.json"
+    }
+  ],
+  "complete": true,
+  "summary": {
+    "w4_few": {
+      "median_ms": 82.36307144165039,
+      "peak_allocated_bytes": 2594161152
+    },
+    "w8_retained": {
+      "median_ms": 96.26431274414062,
+      "peak_allocated_bytes": 2827205632
+    },
+    "fp16_attention": {
+      "median_ms": 129.56528854370117,
+      "peak_allocated_bytes": 3253154304
+    }
+  }
+}

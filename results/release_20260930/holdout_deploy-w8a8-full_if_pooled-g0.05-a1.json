@@ -1,0 +1,442 @@
+{
+  "backend": "cuda",
+  "model": "/home/featurize/work/QuantDemoire-release/checkpoints/reproduced-ptq/deploy-w8a8-full_if_pooled-g0.05-a1",
+  "environment": {
+    "torch": "2.2.2+cu121",
+    "cuda": "12.1",
+    "cudnn": 8902,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "fp16_convolution_accumulator": "float32",
+    "cudnn_api": "v7",
+    "tf32": false,
+    "fp16_reduced_precision_reduction": false,
+    "sparse_implementation": "csr",
+    "csr_kernel": "legacy",
+    "joint_warps": 0,
+    "joint_variant": 0,
+    "joint_next_quant": 0,
+    "balance_csr": false,
+    "shared_retain_stages": false,
+    "few_channels": false,
+    "packed_csr_meta": false,
+    "omit_cached_features": 0,
+    "shared_skip_planar": false,
+    "shared_skip_prefix_planar": false,
+    "joint_plan_sha256": null,
+    "main_half_override": null,
+    "compact_sparse": true,
+    "prepare_implementation": "pair",
+    "fuse_next_quant": false,
+    "fuse_second_quant": false,
+    "fuse_attention": false,
+    "fuse_residual": false,
+    "deployment_source_sha256": "daa788b827356a2b4665de0f1d3c2740dfc0185797a1b9325de854b68c771e48",
+    "release_features": true,
+    "kernel_source_sha256": "9d3dfc3a839405b96d15c57f7d7bc202279aef9941d6614d7e4a609efb531cd2"
+  },
+  "model_sha256": "1cb678d33e6951100e28802a01b1a6da35d5c8067706a1696636257db7201883",
+  "dataset_scope": "available local UHDM split; image hashes below define exact subset",
+  "config_sha256": "ae8c1cdd35aafd76666f565d7e9596ae1328ead2a77fe294aabd56476426dec3",
+  "selection_manifest_sha256": "3743bcc7c2b02870721aeb8edbaf3fcf2eeae2033301d641c39f171ce1911c80",
+  "selection_subset": "heldout_training",
+  "runtime_profile_sha256": null,
+  "cudnn_autotune": false,
+  "memory_format": "channels_last",
+  "split_root": "/home/featurize/work/UHDM/800_pairs/train",
+  "crop": 512,
+  "requested_count": 24,
+  "protocol": "RGB [0,1], clamped prediction, valid-window SSIM, AlexNet LPIPS",
+  "rows": [
+    {
+      "image": "pair_15/0031_gt.jpg",
+      "shape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "gt_sha256": "dfaad55c116a3b7fbadf3110a158314ad1402e40a9f57292751d5ee38f56048e",
+      "input_sha256": "5c39e398204f26cd4df97cee9b4602a4614d61fb901eee2de8d6252f794d886a",
+      "psnr": 23.902301788330078,
+      "ssim": 0.811799943447113,
+      "lpips": 0.14488747715950012,
+      "model_seconds": 0.16138346499974432,
+      "metric_seconds": 0.13817505599945434
+    },
+    {
+      "image": "pair_02/0063_gt.jpg",
+      "shape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "gt_sha256": "16048409fa17d2fcd21533e9cb11f2ed20331bcc383b0392d5991de04d455bcf",
+      "input_sha256": "491b63cc9d3e5c9b28b5976e989ac5537eaf2a137b42d85505097f5924b59ebd",
+      "psnr": 15.985822677612305,
+      "ssim": 0.6135273575782776,
+      "lpips": 0.2694074511528015,
+      "model_seconds": 0.011541805999513599,
+      "metric_seconds": 0.00378669100064144
+    },
+    {
+      "image": "pair_02/0178_gt.jpg",
+      "shape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "gt_sha256": "9bffa6434c773c09199d6a35a51f1f11f3930e7d0630408d627f39a31d1600af",
+      "input_sha256": "ed44d9b87ee30bd34e32b6be83a292887843e973d521d483dad3b8d610c55725",
+      "psnr": 19.187047958374023,
+      "ssim": 0.9702122211456299,
+      "lpips": 0.14203855395317078,
+      "model_seconds": 0.011042217000067467,
+      "metric_seconds": 0.003764839000723441
+    },
+    {
+      "image": "pair_15/0082_gt.jpg",
+      "shape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "gt_sha256": "214d1a1f1a59e96aaa94dc68f48a8db7f65923387d1ce9d2bedecfc7c69c2ce6",
+      "input_sha256": "757bb4f4c48b100697815fb4284d55e7af64097b00c2293c29f01554082d8eea",
+      "psnr": 24.944429397583008,
+      "ssim": 0.7676388025283813,
+      "lpips": 0.28308868408203125,
+      "model_seconds": 0.011088697001468972,
+      "metric_seconds": 0.003741092999916873
+    },
+    {
+      "image": "pair_00/0172_gt.jpg",
+      "shape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "gt_sha256": "84fb2d816ab46f61f41d42ca212a3b64f5097e371c7ea346424f79e8fb9fc156",
+      "input_sha256": "35bb5967cbc681eef826d7d4e45e9baae3f61805973b79669f3a3365b7de4713",
+      "psnr": 19.66609764099121,
+      "ssim": 0.8680769801139832,
+      "lpips": 0.3998658359050751,
+      "model_seconds": 0.01108161499905691,
+      "metric_seconds": 0.003742765000424697
+    },
+    {
+      "image": "pair_02/0023_gt.jpg",
+      "shape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "gt_sha256": "7e5172242a02a5918808b44d33cf64b9d5764716e1e6ea190333fdd4ae7708cc",
+      "input_sha256": "50bbea1cc990d4a79e8ccf1c095674f158055e5824319e3d263c023f331c689a",
+      "psnr": 20.551651000976562,
+      "ssim": 0.7213504314422607,
+      "lpips": 0.4032742381095886,
+      "model_seconds": 0.01104912699884153,
+      "metric_seconds": 0.003784648000873858
+    },
+    {
+      "image": "pair_00/0067_gt.jpg",
+      "shape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "gt_sha256": "c7775874e1f62cb77e946afa9b51e4a49c407966ef1a5eab33e559ea4fd5f2b4",
+      "input_sha256": "97d1c0b20ca5816d50a38c116f7d0eea637a941c00d147cf2f01821f34835248",
+      "psnr": 17.480396270751953,
+      "ssim": 0.7276944518089294,
+      "lpips": 0.18263912200927734,
+      "model_seconds": 0.011087515000326675,
+      "metric_seconds": 0.0037439869993249886
+    },
+    {
+      "image": "pair_03/0159_gt.jpg",
+      "shape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "gt_sha256": "8b36d1cbba1871873d2989deabe9b80cdebb56c4a87b74a4b37ba8d7f29f373a",
+      "input_sha256": "7654bf9a8f08bf6aac37ac6a37a4122bebfbb38bbbe13f8ebf04ce38698397e8",
+      "psnr": 22.20999526977539,
+      "ssim": 0.7732962369918823,
+      "lpips": 0.16576743125915527,
+      "model_seconds": 0.011207685000044876,
+      "metric_seconds": 0.0037261500001477543
+    },
+    {
+      "image": "pair_03/0027_gt.jpg",
+      "shape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "gt_sha256": "0bffda588a68e1c7b29e3cae471d94b822ce2af310727948f481ac1399628122",
+      "input_sha256": "1f467b909e854294a19068cec13bcb01d9bd076245b7ee85ba538e67facd182b",
+      "psnr": 26.133546829223633,
+      "ssim": 0.8994777202606201,
+      "lpips": 0.14256763458251953,
+      "model_seconds": 0.011122506999527104,
+      "metric_seconds": 0.0037419740001496393
+    },
+    {
+      "image": "pair_00/0157_gt.jpg",
+      "shape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "gt_sha256": "3845c5f72fe4dc8ea1bfeac0f9942745b2b89860f489214a6f754649180721f4",
+      "input_sha256": "571cb2258a448554d10e41e742efa6e20d508fa788c0fe27be4b3a9157f6f0a2",
+      "psnr": 13.324271202087402,
+      "ssim": 0.8559603095054626,
+      "lpips": 0.265218049287796,
+      "model_seconds": 0.011074374999225256,
+      "metric_seconds": 0.003776085000936291
+    },
+    {
+      "image": "pair_01/0045_gt.jpg",
+      "shape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "gt_sha256": "0f4ad3720435e4156eeb2fa9cf9073dc06cc2a17b331a34a6d982ee866765dd3",
+      "input_sha256": "90098d45eca9d7e25a43625590cde2e3bbd3c8759746dd8b73924844f1b8df08",
+      "psnr": 21.730777740478516,
+      "ssim": 0.9103533029556274,
+      "lpips": 0.24039119482040405,
+      "model_seconds": 0.011052842999561108,
+      "metric_seconds": 0.0037261510005919263
+    },
+    {
+      "image": "pair_04/0103_gt.jpg",
+      "shape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "gt_sha256": "d5bc38a79753ee8fcaccdaa82bb4545b27f00c5ba278fef2c7cde8c1f2b5ddd5",
+      "input_sha256": "b4e63a04aa24855d5d5ba67a384bd3b288037cee067dcb164d32bfb6f464582c",
+      "psnr": 24.412221908569336,
+      "ssim": 0.8999688625335693,
+      "lpips": 0.25020211935043335,
+      "model_seconds": 0.011046091998650809,
+      "metric_seconds": 0.003761865000342368
+    },
+    {
+      "image": "pair_00/0122_gt.jpg",
+      "shape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "gt_sha256": "e527171c93a700905baa56b94e3382fc0f227d86455b05f9256680a764da67cc",
+      "input_sha256": "4bef655c5ae6d8dbdfd81c83ca7a68d953753c01e5141fd7ac053c408924d145",
+      "psnr": 20.80246925354004,
+      "ssim": 0.9383382797241211,
+      "lpips": 0.04625994339585304,
+      "model_seconds": 0.011019253000995377,
+      "metric_seconds": 0.0037544520000665216
+    },
+    {
+      "image": "pair_01/0095_gt.jpg",
+      "shape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "gt_sha256": "9fd1aa4a3b7124d46781402451399e601d23d9ccd6a9a84f9558329dc92516e1",
+      "input_sha256": "98cbe5b2a50a8c7775b0af3f999a7342c5c49fd77df873e69fc67a83c0f57493",
+      "psnr": 17.470888137817383,
+      "ssim": 0.4484016001224518,
+      "lpips": 0.24832934141159058,
+      "model_seconds": 0.011025862000678899,
+      "metric_seconds": 0.0037311779997253325
+    },
+    {
+      "image": "pair_03/0051_gt.jpg",
+      "shape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "gt_sha256": "011fd69f31067fe12339ca225a79a394bb0e3bba4670e7d4ade90e58f70d25bf",
+      "input_sha256": "330e29878a47d4bd25caeac5f48f2716a765b85aea2d8b96deaba13e519475d0",
+      "psnr": 25.903966903686523,
+      "ssim": 0.8785035014152527,
+      "lpips": 0.16989579796791077,
+      "model_seconds": 0.011001656001099036,
+      "metric_seconds": 0.0039114379997045035
+    },
+    {
+      "image": "pair_03/0079_gt.jpg",
+      "shape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "gt_sha256": "45685528ce1b7d35000d9101d2fc00c4bda3391c120121396a72399d9a0cca10",
+      "input_sha256": "c962e61fe360cf1b69749d3c6121ff5c1f1e0836b92165c242af1a48051d5fde",
+      "psnr": 12.836665153503418,
+      "ssim": 0.1903655230998993,
+      "lpips": 0.39787018299102783,
+      "model_seconds": 0.011048346999814385,
+      "metric_seconds": 0.003765919000215945
+    },
+    {
+      "image": "pair_02/0083_gt.jpg",
+      "shape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "gt_sha256": "6ae0f05b9a8adec7f2a9267527ec79c87ce25407a94dc5124dfd529c1c090105",
+      "input_sha256": "69b7fe0533ac2d6fa1fb4a3cea4b2cf3a6f21dfc957ade41386f5cfa82d21c82",
+      "psnr": 23.36219596862793,
+      "ssim": 0.6871239542961121,
+      "lpips": 0.5978918671607971,
+      "model_seconds": 0.011087254000813118,
+      "metric_seconds": 0.004265309999027522
+    },
+    {
+      "image": "pair_04/0089_gt.jpg",
+      "shape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "gt_sha256": "66c62037ccc018a78a9d898e0ba38a46a792cd419fb703422ca5112eb938e016",
+      "input_sha256": "cc4d541d37fb6a9dbf0bcc76e2aa8bceedae41c11d95527aa606e1e64eb929e9",
+      "psnr": 19.52323341369629,
+      "ssim": 0.8158689737319946,
+      "lpips": 0.20498338341712952,
+      "model_seconds": 0.011071070000980399,
+      "metric_seconds": 0.0038532309990841895
+    },
+    {
+      "image": "pair_00/0007_gt.jpg",
+      "shape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "gt_sha256": "dbed5ed5ec292ba982093feaebb399225ea125c371990817ed7b703b6f047aee",
+      "input_sha256": "8ef14020cb1bacf27894c747e3b8c62a31ea4967c23c4e2bd1e97955fb536da1",
+      "psnr": 21.769533157348633,
+      "ssim": 0.7788115739822388,
+      "lpips": 0.3224475085735321,
+      "model_seconds": 0.011512070999742718,
+      "metric_seconds": 0.0037437569990288466
+    },
+    {
+      "image": "pair_04/0108_gt.jpg",
+      "shape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "gt_sha256": "62975968b69e90ecb76954a68f59595bac669ac3a7b2b5157836089162b91716",
+      "input_sha256": "a95abef2b9a314f184a96cd190d4f74607f04846b194cc9f7f5ae8d7ef5e682a",
+      "psnr": 22.982505798339844,
+      "ssim": 0.7131398320198059,
+      "lpips": 0.19943805038928986,
+      "model_seconds": 0.011485781000374118,
+      "metric_seconds": 0.0037444480003614444
+    },
+    {
+      "image": "pair_01/0122_gt.jpg",
+      "shape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "gt_sha256": "fdbe45a6e2f1ad8712f8be6354c80f3337c7683c0bee79d0f590f1cc5c7bb5c6",
+      "input_sha256": "0c6cf57d2a998b48d294361beb2ff779c7f5d184b64cd10ba156e45c70665c00",
+      "psnr": 17.948341369628906,
+      "ssim": 0.8721054792404175,
+      "lpips": 0.07515254616737366,
+      "model_seconds": 0.011214225000003353,
+      "metric_seconds": 0.0037520289988606237
+    },
+    {
+      "image": "pair_02/0035_gt.jpg",
+      "shape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "gt_sha256": "11b593ffa7b6743beac4a1e149bff594b447c5342d07a144137bb5806859eea2",
+      "input_sha256": "7d6e84d12eee6f2491c99989b67949d214671d85a4ae085ae60b65263e9fea3c",
+      "psnr": 20.193632125854492,
+      "ssim": 0.9045611023902893,
+      "lpips": 0.32002389430999756,
+      "model_seconds": 0.011046471998270135,
+      "metric_seconds": 0.0037462410000443924
+    },
+    {
+      "image": "pair_00/0047_gt.jpg",
+      "shape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "gt_sha256": "080c3aaea67e28c9129fee4433a394589b59c829d7741405894cc2fe63136abc",
+      "input_sha256": "ea64e7b312cda57233dbd2fb5a94bd8d82e200c5f733d13c9b47bca2dc875c46",
+      "psnr": 26.206512451171875,
+      "ssim": 0.8682092428207397,
+      "lpips": 0.16522227227687836,
+      "model_seconds": 0.011290329000985366,
+      "metric_seconds": 0.003731577999133151
+    },
+    {
+      "image": "pair_00/0021_gt.jpg",
+      "shape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "gt_sha256": "1fea44409397fd4238dbe124854ad2e635114ee19a133d9ca64f0382dd180f25",
+      "input_sha256": "f02d9a1c1d31d24ca1419032249363606cc89cba0b87c4481f91217f1b499ed4",
+      "psnr": 20.692251205444336,
+      "ssim": 0.73429936170578,
+      "lpips": 0.26043158769607544,
+      "model_seconds": 0.011091651000242564,
+      "metric_seconds": 0.0037119690005056327
+    }
+  ],
+  "count": 24,
+  "complete": true,
+  "mean": {
+    "psnr": 20.800864775975544,
+    "ssim": 0.777045210202535,
+    "lpips": 0.24572059030955037
+  }
+}

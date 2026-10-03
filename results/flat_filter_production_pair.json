@@ -1,0 +1,44 @@
+{
+  "rows": [
+    {
+      "round": 0,
+      "integrated": false,
+      "median_ms": 81.49646377563477,
+      "peak_allocated_bytes": 2594161152,
+      "raw": "results/flat_filter_production_pair_0_r0.json"
+    },
+    {
+      "round": 0,
+      "integrated": true,
+      "median_ms": 80.85190200805664,
+      "peak_allocated_bytes": 2594161152,
+      "raw": "results/flat_filter_production_pair_1_r0.json"
+    },
+    {
+      "round": 1,
+      "integrated": true,
+      "median_ms": 80.93755340576172,
+      "peak_allocated_bytes": 2594161152,
+      "raw": "results/flat_filter_production_pair_1_r1.json"
+    },
+    {
+      "round": 1,
+      "integrated": false,
+      "median_ms": 81.46710205078125,
+      "peak_allocated_bytes": 2594161152,
+      "raw": "results/flat_filter_production_pair_0_r1.json"
+    }
+  ],
+  "summary": {
+    "previous": {
+      "median_ms": 81.48178291320801,
+      "peak_allocated_bytes": 2594161152
+    },
+    "integrated": {
+      "median_ms": 80.89472770690918,
+      "peak_allocated_bytes": 2594161152
+    }
+  },
+  "complete": true,
+  "note": "Both run the full sparse model. Previous is the preserved metadata library with generic FewChannels addressing, isolated dense-prefix diagnostic disabled. Integrated uses the production JIT with packed KRSC addressing. Runtime flags, plans, weights and output semantics are unchanged."
+}

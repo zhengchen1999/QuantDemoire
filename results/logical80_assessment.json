@@ -1,0 +1,50 @@
+{
+  "complete": true,
+  "adopted": false,
+  "decision": "No default adoption: gain too small/inconsistent across independent aggregate medians and controlled blocks. Restored previous verified production implementation and binary; candidate source/binary preserved.",
+  "candidate_archive": "outputs/snapshots/logical80_candidate/sources.tar.gz",
+  "candidate_manifest": {
+    "quantdemoire_integer_v1.so": "19a15f6942130e5abb13cddbd931fd6bb5ed4ecdb87d9e09a771c591675d290f",
+    "sources.tar.gz": "13a9764610ae60a56df6537dcaccbc3682365fb009a3e9865390299f04eaeecf",
+    "verified_build.json": "40452185182473fea0c24c27b591df30a541b648fc91eca8f8f05b3039a8240f"
+  },
+  "unit_tests": 1044,
+  "native_cases": 76,
+  "quantized_shapes_per_bit": 157,
+  "images_per_bit": 100,
+  "graph_equal": true,
+  "fresh_process": {
+    "4": {
+      "previous": {
+        "median_ms": 80.23778343200684,
+        "peak_allocated_bytes": 2594161152
+      },
+      "integrated": {
+        "median_ms": 80.28313636779785,
+        "peak_allocated_bytes": 2594208256
+      }
+    }
+  },
+  "paired_savings_ms": [
+    0.2616767883300781,
+    -0.19302749633789062,
+    0.035312652587890625,
+    0.0701904296875
+  ],
+  "paired_mean_saving_ms": 0.04353809356689453,
+  "interleaved_median_ms": {
+    "False": 80.54279708862305,
+    "True": 80.57753372192383
+  },
+  "interleaved_block_savings_ms": [
+    0.05625152587890625,
+    0.07561492919921875,
+    -0.057842254638671875,
+    0.040607452392578125,
+    0.029201507568359375,
+    0.029697418212890625
+  ],
+  "interleaved_mean_saving_ms": 0.028921763102213543,
+  "extra_peak_bytes": 47104,
+  "restored_previous_manifest": "outputs/snapshots/two_before_logical80/snapshot.json"
+}

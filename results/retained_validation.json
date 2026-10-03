@@ -1,0 +1,101 @@
+{
+  "unit_tests": 1018,
+  "reports": {
+    "4": {
+      "images": 100,
+      "quantized_shapes": 157,
+      "fused_prefix_edges": 71,
+      "joint_producer_edges": 63,
+      "one_byte_prefixes": 14,
+      "environment": {
+        "torch": "2.2.2+cu121",
+        "cuda": "12.1",
+        "cudnn": 8902,
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "fp16_convolution_accumulator": "float32",
+        "cudnn_api": "v7",
+        "tf32": false,
+        "fp16_reduced_precision_reduction": false,
+        "sparse_implementation": "csr",
+        "csr_kernel": "divmod",
+        "joint_warps": 0,
+        "joint_variant": 9,
+        "joint_next_quant": 2,
+        "balance_csr": true,
+        "shared_retain_stages": false,
+        "shared_skip_planar": true,
+        "shared_skip_prefix_planar": true,
+        "joint_plan_sha256": "b64ef00a7e103abddb692f7e37423930c72022ac9bd87816968c9dbb88754ae5",
+        "main_half_override": "1",
+        "compact_sparse": true,
+        "prepare_implementation": "quad_swizzle",
+        "fuse_next_quant": true,
+        "fuse_attention": true,
+        "fuse_residual": true,
+        "deployment_source_sha256": "9dc82f71ee815b81f1e6b37a80e8a29dd8abf2487eaac8096d8fa2f569f148f9",
+        "kernel_source_sha256": "3d32ed7f49ab304119f4ed6cb84d32fe8aaf668f9dd67a040016e127a157c927"
+      },
+      "mixed_compute_diagnostic": {
+        "main_sum_ms": 24.96089921109379,
+        "with_sparse_sum_ms": 36.51950051821769,
+        "increment_ratio": 0.4630683057278129
+      },
+      "all_joint_increment_ratio": 0.40446838818759234,
+      "performance": {
+        "median_ms": 82.75276565551758,
+        "peak_allocated_bytes": 2594161152,
+        "speedup": 1.5657848257197977,
+        "peak_memory_saving": 0.20257051784777558
+      }
+    },
+    "8": {
+      "images": 100,
+      "quantized_shapes": 157,
+      "fused_prefix_edges": 70,
+      "joint_producer_edges": 50,
+      "one_byte_prefixes": 16,
+      "environment": {
+        "torch": "2.2.2+cu121",
+        "cuda": "12.1",
+        "cudnn": 8902,
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "fp16_convolution_accumulator": "float32",
+        "cudnn_api": "v7",
+        "tf32": false,
+        "fp16_reduced_precision_reduction": false,
+        "sparse_implementation": "csr",
+        "csr_kernel": "divmod",
+        "joint_warps": 0,
+        "joint_variant": 9,
+        "joint_next_quant": 2,
+        "balance_csr": true,
+        "shared_retain_stages": true,
+        "shared_skip_planar": true,
+        "shared_skip_prefix_planar": true,
+        "joint_plan_sha256": "5ea8c894920495b25d3d812dbcdf1a303bea00c0eefa1db28f5ccaee93913434",
+        "main_half_override": "1",
+        "compact_sparse": true,
+        "prepare_implementation": "quad_swizzle",
+        "fuse_next_quant": true,
+        "fuse_attention": true,
+        "fuse_residual": true,
+        "deployment_source_sha256": "9dc82f71ee815b81f1e6b37a80e8a29dd8abf2487eaac8096d8fa2f569f148f9",
+        "kernel_source_sha256": "3d32ed7f49ab304119f4ed6cb84d32fe8aaf668f9dd67a040016e127a157c927"
+      },
+      "mixed_compute_diagnostic": {
+        "main_sum_ms": 36.39062417708336,
+        "with_sparse_sum_ms": 46.9386204082519,
+        "increment_ratio": 0.28985477632480494
+      },
+      "all_joint_increment_ratio": 0.23737620807352777,
+      "performance": {
+        "median_ms": 96.26284790039062,
+        "peak_allocated_bytes": 2827205632,
+        "speedup": 1.3460335692938716,
+        "peak_memory_saving": 0.13093405113807965
+      }
+    }
+  },
+  "complete": true,
+  "note": "Compute diagnostics exclude preparation and producer-prefix work; the separate increment includes merge and activation. A compute ratio <=30% alone does not certify the complete branch budget. Weights, CSR structure and all full-network outputs match previous quality measurements."
+}

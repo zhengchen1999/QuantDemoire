@@ -1,0 +1,70 @@
+{
+  "unit_test_log": "/tmp/quantdemoire-prefix-planar-tests.log",
+  "unit_tests": 572,
+  "dispatch_cpu_tests": 2,
+  "dispatch_oracle": "results/dispatch_consumer_dp_validation.json",
+  "reports": {
+    "4": {
+      "validation": "results/shared_prefix_equivalence_4.json",
+      "images": 100,
+      "environment": {
+        "torch": "2.2.2+cu121",
+        "cuda": "12.1",
+        "cudnn": 8902,
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "fp16_convolution_accumulator": "float32",
+        "cudnn_api": "v7",
+        "tf32": false,
+        "fp16_reduced_precision_reduction": false,
+        "sparse_implementation": "csr",
+        "csr_kernel": "linear",
+        "joint_warps": 0,
+        "joint_variant": 9,
+        "shared_skip_planar": true,
+        "shared_skip_prefix_planar": true,
+        "joint_plan_sha256": "68d55b3bbf047c999dda69c68a941b44ce98abc5e8bc133c1fa9e4fdd398747e",
+        "main_half_override": "1",
+        "compact_sparse": true,
+        "prepare_implementation": "quad_swizzle",
+        "fuse_next_quant": true,
+        "fuse_attention": true,
+        "fuse_residual": true,
+        "deployment_source_sha256": "43236ca210c1ed7c359382aad9c966abf5ff6ff5a17918642bdd02bdab98e48f",
+        "kernel_source_sha256": "335fac875103081473fd9277eb3cb0d3c43200b9bd9ddfb280eaab3f81df0109"
+      }
+    },
+    "8": {
+      "validation": "results/shared_prefix_equivalence_8.json",
+      "images": 100,
+      "environment": {
+        "torch": "2.2.2+cu121",
+        "cuda": "12.1",
+        "cudnn": 8902,
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "fp16_convolution_accumulator": "float32",
+        "cudnn_api": "v7",
+        "tf32": false,
+        "fp16_reduced_precision_reduction": false,
+        "sparse_implementation": "csr",
+        "csr_kernel": "linear",
+        "joint_warps": 0,
+        "joint_variant": 8,
+        "shared_skip_planar": false,
+        "shared_skip_prefix_planar": false,
+        "joint_plan_sha256": "fb57681bab20978e762252bd32edc27a5cb2c452c6f524b96737c115476734c2",
+        "main_half_override": "1",
+        "compact_sparse": true,
+        "prepare_implementation": "quad_swizzle",
+        "fuse_next_quant": true,
+        "fuse_attention": true,
+        "fuse_residual": true,
+        "deployment_source_sha256": "43236ca210c1ed7c359382aad9c966abf5ff6ff5a17918642bdd02bdab98e48f",
+        "kernel_source_sha256": "335fac875103081473fd9277eb3cb0d3c43200b9bd9ddfb280eaab3f81df0109"
+      }
+    }
+  },
+  "shapes": "results/joint_shared_chain_shapes_4.json",
+  "prefix_checks": "results/shared_prefix_retuned_buffers.json",
+  "fused_edges": 24,
+  "one_byte_edges": 7
+}

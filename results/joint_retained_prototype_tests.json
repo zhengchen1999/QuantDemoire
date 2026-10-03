@@ -1,0 +1,2517 @@
+{
+  "complete": true,
+  "rows": [
+    {
+      "bits": 4,
+      "channels": 48,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 48,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 48,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 48,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 48,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 48,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 48,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 48,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 240,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 240,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 240,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 240,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 240,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 240,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 240,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 240,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 256,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 256,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 256,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 256,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 256,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 256,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 256,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 256,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 272,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 272,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 272,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 272,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 272,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 272,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 272,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 272,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 352,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 352,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 352,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 352,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 352,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 352,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 352,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 352,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 496,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 496,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 496,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 496,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 496,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 496,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 496,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 496,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 512,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 512,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 512,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 512,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 512,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 512,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 512,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 512,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 528,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 528,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 528,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 528,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 528,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 528,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 528,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 528,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 576,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 576,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 576,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 576,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 576,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 576,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 576,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 576,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 48,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 48,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 48,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 48,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 48,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 48,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 48,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 48,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 112,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 112,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 112,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 112,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 112,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 112,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 112,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 112,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 128,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 128,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 128,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 128,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 128,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 128,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 128,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 128,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 144,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 144,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 144,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 144,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 144,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 144,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 144,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 144,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 224,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 224,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 224,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 224,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 224,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 224,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 224,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 224,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 240,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 240,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 240,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 240,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 240,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 240,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 240,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 240,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 256,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 256,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 256,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 256,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 256,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 256,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 256,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 256,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 272,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 272,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 272,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 272,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 272,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 272,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 272,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 272,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 288,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 288,
+      "k": 12,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 288,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 288,
+      "k": 12,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 288,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 288,
+      "k": 36,
+      "geometry": [
+        2,
+        17,
+        19
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 288,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 288,
+      "k": 36,
+      "geometry": [
+        1,
+        1,
+        1
+      ],
+      "balanced": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 144,
+      "next_bits": 4,
+      "strategy": 0,
+      "balanced": false,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 144,
+      "next_bits": 4,
+      "strategy": 0,
+      "balanced": false,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 144,
+      "next_bits": 4,
+      "strategy": 0,
+      "balanced": true,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 144,
+      "next_bits": 4,
+      "strategy": 0,
+      "balanced": true,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 144,
+      "next_bits": 4,
+      "strategy": 1,
+      "balanced": false,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 144,
+      "next_bits": 4,
+      "strategy": 1,
+      "balanced": false,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 144,
+      "next_bits": 4,
+      "strategy": 1,
+      "balanced": true,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 144,
+      "next_bits": 4,
+      "strategy": 1,
+      "balanced": true,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 144,
+      "next_bits": 8,
+      "strategy": 0,
+      "balanced": false,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 144,
+      "next_bits": 8,
+      "strategy": 0,
+      "balanced": false,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 144,
+      "next_bits": 8,
+      "strategy": 0,
+      "balanced": true,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 144,
+      "next_bits": 8,
+      "strategy": 0,
+      "balanced": true,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 144,
+      "next_bits": 8,
+      "strategy": 1,
+      "balanced": false,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 144,
+      "next_bits": 8,
+      "strategy": 1,
+      "balanced": false,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 144,
+      "next_bits": 8,
+      "strategy": 1,
+      "balanced": true,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 144,
+      "next_bits": 8,
+      "strategy": 1,
+      "balanced": true,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 240,
+      "next_bits": 4,
+      "strategy": 0,
+      "balanced": false,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 240,
+      "next_bits": 4,
+      "strategy": 0,
+      "balanced": false,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 240,
+      "next_bits": 4,
+      "strategy": 0,
+      "balanced": true,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 240,
+      "next_bits": 4,
+      "strategy": 0,
+      "balanced": true,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 240,
+      "next_bits": 4,
+      "strategy": 1,
+      "balanced": false,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 240,
+      "next_bits": 4,
+      "strategy": 1,
+      "balanced": false,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 240,
+      "next_bits": 4,
+      "strategy": 1,
+      "balanced": true,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 240,
+      "next_bits": 4,
+      "strategy": 1,
+      "balanced": true,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 240,
+      "next_bits": 8,
+      "strategy": 0,
+      "balanced": false,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 240,
+      "next_bits": 8,
+      "strategy": 0,
+      "balanced": false,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 240,
+      "next_bits": 8,
+      "strategy": 0,
+      "balanced": true,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 240,
+      "next_bits": 8,
+      "strategy": 0,
+      "balanced": true,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 240,
+      "next_bits": 8,
+      "strategy": 1,
+      "balanced": false,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 240,
+      "next_bits": 8,
+      "strategy": 1,
+      "balanced": false,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 240,
+      "next_bits": 8,
+      "strategy": 1,
+      "balanced": true,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 4,
+      "channels": 240,
+      "next_bits": 8,
+      "strategy": 1,
+      "balanced": true,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 144,
+      "next_bits": 4,
+      "strategy": 0,
+      "balanced": false,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 144,
+      "next_bits": 4,
+      "strategy": 0,
+      "balanced": false,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 144,
+      "next_bits": 4,
+      "strategy": 0,
+      "balanced": true,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 144,
+      "next_bits": 4,
+      "strategy": 0,
+      "balanced": true,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 144,
+      "next_bits": 4,
+      "strategy": 1,
+      "balanced": false,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 144,
+      "next_bits": 4,
+      "strategy": 1,
+      "balanced": false,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 144,
+      "next_bits": 4,
+      "strategy": 1,
+      "balanced": true,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 144,
+      "next_bits": 4,
+      "strategy": 1,
+      "balanced": true,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 144,
+      "next_bits": 8,
+      "strategy": 0,
+      "balanced": false,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 144,
+      "next_bits": 8,
+      "strategy": 0,
+      "balanced": false,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 144,
+      "next_bits": 8,
+      "strategy": 0,
+      "balanced": true,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 144,
+      "next_bits": 8,
+      "strategy": 0,
+      "balanced": true,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 144,
+      "next_bits": 8,
+      "strategy": 1,
+      "balanced": false,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 144,
+      "next_bits": 8,
+      "strategy": 1,
+      "balanced": false,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 144,
+      "next_bits": 8,
+      "strategy": 1,
+      "balanced": true,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 144,
+      "next_bits": 8,
+      "strategy": 1,
+      "balanced": true,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 240,
+      "next_bits": 4,
+      "strategy": 0,
+      "balanced": false,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 240,
+      "next_bits": 4,
+      "strategy": 0,
+      "balanced": false,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 240,
+      "next_bits": 4,
+      "strategy": 0,
+      "balanced": true,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 240,
+      "next_bits": 4,
+      "strategy": 0,
+      "balanced": true,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 240,
+      "next_bits": 4,
+      "strategy": 1,
+      "balanced": false,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 240,
+      "next_bits": 4,
+      "strategy": 1,
+      "balanced": false,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 240,
+      "next_bits": 4,
+      "strategy": 1,
+      "balanced": true,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 240,
+      "next_bits": 4,
+      "strategy": 1,
+      "balanced": true,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 240,
+      "next_bits": 8,
+      "strategy": 0,
+      "balanced": false,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 240,
+      "next_bits": 8,
+      "strategy": 0,
+      "balanced": false,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 240,
+      "next_bits": 8,
+      "strategy": 0,
+      "balanced": true,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 240,
+      "next_bits": 8,
+      "strategy": 0,
+      "balanced": true,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 240,
+      "next_bits": 8,
+      "strategy": 1,
+      "balanced": false,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 240,
+      "next_bits": 8,
+      "strategy": 1,
+      "balanced": false,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 240,
+      "next_bits": 8,
+      "strategy": 1,
+      "balanced": true,
+      "planar": false,
+      "equal": true,
+      "graph": true
+    },
+    {
+      "bits": 8,
+      "channels": 240,
+      "next_bits": 8,
+      "strategy": 1,
+      "balanced": true,
+      "planar": true,
+      "equal": true,
+      "graph": true
+    }
+  ]
+}

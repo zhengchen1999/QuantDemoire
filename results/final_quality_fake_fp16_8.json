@@ -1,0 +1,1634 @@
+{
+  "backend": "fake_fp16",
+  "model": "/home/featurize/work/QuantDemoire-release/checkpoints/final-w8a8",
+  "environment": {
+    "torch": "2.2.2+cu121",
+    "cuda": "12.1",
+    "cudnn": 8902,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "fp16_convolution_accumulator": "float32",
+    "cudnn_api": "v7",
+    "tf32": false,
+    "fp16_reduced_precision_reduction": false,
+    "sparse_implementation": "csr",
+    "main_half_override": null,
+    "kernel_source_sha256": null
+  },
+  "model_sha256": "57be96cc6f2ec6c4faba12f0787e222952059fb8194d5dafb0d23b91aa7df001",
+  "dataset_scope": "available local UHDM split; image hashes below define exact subset",
+  "config_sha256": "329b4b253d944020845d54d3988ab44fd941fec4480a04d53ad04c743d281120",
+  "cudnn_autotune": false,
+  "split_root": "/home/featurize/work/quantdemoire-new-standalone/data/UHDM/test",
+  "crop": null,
+  "requested_count": 100,
+  "protocol": "RGB [0,1], clamped prediction, valid-window SSIM, AlexNet LPIPS",
+  "rows": [
+    {
+      "image": "0000_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "a37e7942b9595a1b606489288285363443a24a116a2fa35c68f1a0872118d1e8",
+      "input_sha256": "93f64bf80f4b413ebde917e745619687d053ee8b6456cd2f1bbbb3e140bf3a1c",
+      "psnr": 22.984540939331055,
+      "ssim": 0.7435195446014404,
+      "lpips": 0.37076422572135925,
+      "model_seconds": 1.4196200970000064,
+      "metric_seconds": 0.16418756199982454
+    },
+    {
+      "image": "0001_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "6f51852faee4df431a2237ee5de8da423baf2b09c22f8d75a36cbacec51816f3",
+      "input_sha256": "b3185cdc7c1c59364b824ea1fc4aecad8b86d31c95a45bf6d1d37b59e7fd2a61",
+      "psnr": 21.350786209106445,
+      "ssim": 0.6785198450088501,
+      "lpips": 0.43140119314193726,
+      "model_seconds": 0.7263038290002441,
+      "metric_seconds": 0.05019071199967584
+    },
+    {
+      "image": "0002_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "4d2a37b0626ceb92d0998ea89830687d578bed4cb500038238d134a4e731838c",
+      "input_sha256": "f3a1c538c1ceb356b00737de694495bcae8ee140ad88033e177bd2a5e9271a11",
+      "psnr": 22.126758575439453,
+      "ssim": 0.8629704713821411,
+      "lpips": 0.22446487843990326,
+      "model_seconds": 0.7260987019999448,
+      "metric_seconds": 0.04970478199993522
+    },
+    {
+      "image": "0003_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "4b1c555eb4bb03ed92d17850158e73b0c3455e6ccc719c78a82af61ea3b3c11b",
+      "input_sha256": "a6d4745bc5981368aee12cf92222a1bcd525414dd573cd482c5d8327bd35226e",
+      "psnr": 19.757244110107422,
+      "ssim": 0.5944483876228333,
+      "lpips": 0.28659847378730774,
+      "model_seconds": 0.7263021470007516,
+      "metric_seconds": 0.04952322999997705
+    },
+    {
+      "image": "0004_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "b7fb67afed1be3db1401d7d38877971f1bcfa255d0ba759bce76eb259c3571de",
+      "input_sha256": "178cdbbe6fb61a4d5c5ef0086420b68bf051f927f81a2b8facb42a7ac6ac0651",
+      "psnr": 22.4197940826416,
+      "ssim": 0.7559691071510315,
+      "lpips": 0.2037561535835266,
+      "model_seconds": 0.7261703989997841,
+      "metric_seconds": 0.04955959400012944
+    },
+    {
+      "image": "0005_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "30f1c443afff8dac28da91c0ee2ddfe48fbda0155d078413ed12104caac2309e",
+      "input_sha256": "7716b9a3beeea0d700c5ab3560b8a2c3685b0112c676e4056b4c22acecf265cf",
+      "psnr": 21.673988342285156,
+      "ssim": 0.7512685656547546,
+      "lpips": 0.40781643986701965,
+      "model_seconds": 0.7262301390001085,
+      "metric_seconds": 0.04956409100032033
+    },
+    {
+      "image": "0006_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "bb03658f39964ac4cc698e5853eb3355507768ce994e79c70cf61e9f31d9aa2e",
+      "input_sha256": "b30e8e4c59f17997f610f61294525549fccea5852ddb91ca9e1ecb3fce0b710d",
+      "psnr": 18.934383392333984,
+      "ssim": 0.4135214686393738,
+      "lpips": 0.5801233649253845,
+      "model_seconds": 0.7263145460001397,
+      "metric_seconds": 0.04968036500031303
+    },
+    {
+      "image": "0007_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "e970de0d2b4865fda9db059d5f010afd72e2cc2098112e5da3b1afafff358f1b",
+      "input_sha256": "89c2e7eae70b773e0e8526d9052b4f5b6b2fa95d38dac15f6c156ca819f77b3d",
+      "psnr": 21.88840103149414,
+      "ssim": 0.6740204691886902,
+      "lpips": 0.3244616389274597,
+      "model_seconds": 0.7262358469997707,
+      "metric_seconds": 0.04953065200061246
+    },
+    {
+      "image": "0008_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "3c18c240193b73431f79475e3b5a463acf814d1133f719caf9d30f122118bd07",
+      "input_sha256": "7561166c181ef94a7d23bef46011a2dee2e4ac37a230f50530db96ad6fc5b518",
+      "psnr": 24.405786514282227,
+      "ssim": 0.6856878995895386,
+      "lpips": 0.3050783574581146,
+      "model_seconds": 0.7261827369993625,
+      "metric_seconds": 0.04954857800021273
+    },
+    {
+      "image": "0009_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "640c09bc73e445e02bf24224689e3a706657add82f96c4801f4449766d114a01",
+      "input_sha256": "e2a6f661088fe8865e6ae619348ddf9d7dc9933f086bccb8e4e4bce84fbbc83a",
+      "psnr": 25.58002471923828,
+      "ssim": 0.8187182545661926,
+      "lpips": 0.17088165879249573,
+      "model_seconds": 0.7261968379998507,
+      "metric_seconds": 0.04959045099985815
+    },
+    {
+      "image": "0010_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "7a697125b92b47e4c70f4509f55e496836a2f3f685e65adbfd58ccd63bab50d7",
+      "input_sha256": "d3b8bc40e9bc8e7d2e81f7fbeb49c4f3e9386025044f544a6429e5e9bdc20880",
+      "psnr": 22.29163932800293,
+      "ssim": 0.7649306654930115,
+      "lpips": 0.21851420402526855,
+      "model_seconds": 0.7262390320001941,
+      "metric_seconds": 0.04960157799996523
+    },
+    {
+      "image": "0011_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "4b63e4afdbb5117458d65254a2a2c9a71c3f708879a07484c8017f6f4d7cfb3f",
+      "input_sha256": "3483be5783ace48f6f260aafff04e9cacf44252bd99d02b803e83555ffba5e3b",
+      "psnr": 21.644283294677734,
+      "ssim": 0.6359499096870422,
+      "lpips": 0.21888293325901031,
+      "model_seconds": 0.7262904889994388,
+      "metric_seconds": 0.049625003000073775
+    },
+    {
+      "image": "0012_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "0923eddd2f462b88b727bf8f85bb17e2b1c57807038d5bb0786c92429715cd09",
+      "input_sha256": "0040d8afa8d33426ba54d7a9e25422c08ec43792cfd5d7b062f4277dbb670ab0",
+      "psnr": 19.282236099243164,
+      "ssim": 0.6158730387687683,
+      "lpips": 0.19706779718399048,
+      "model_seconds": 0.7262573400003021,
+      "metric_seconds": 0.04954089599959843
+    },
+    {
+      "image": "0013_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "0f08a06c085c8a9aca30bda3a84e06cb1aeaff8130da1d229294aad8a0a33c88",
+      "input_sha256": "1a45ddd77815a61e9fc3897347e1f32d0a7edd4c71cde3ff2a011a6e5597751c",
+      "psnr": 22.548416137695312,
+      "ssim": 0.8354958891868591,
+      "lpips": 0.14095750451087952,
+      "model_seconds": 0.726189658000294,
+      "metric_seconds": 0.04953351499989367
+    },
+    {
+      "image": "0014_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "4797016f1b4cc29a9abfec5e99fb20dd30e29a529659d54633ee5c059db8e2b6",
+      "input_sha256": "065f8ae79a17dfd90d37e1f17694253db87adf39ac9d6fa38ba1a32fa29276fa",
+      "psnr": 19.320758819580078,
+      "ssim": 0.5821102857589722,
+      "lpips": 0.2501363754272461,
+      "model_seconds": 0.7262711699995634,
+      "metric_seconds": 0.050205343000016
+    },
+    {
+      "image": "0015_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "8aa9a2eb5879fdd166aafee925b49322eab53c96fa87d471eaf4e79eeb55b1f9",
+      "input_sha256": "c36a9ca03cb4d1e7582cf97cc5ab601a79b8635c24feeaa66b9b0d6934c0443b",
+      "psnr": 22.838726043701172,
+      "ssim": 0.7523578405380249,
+      "lpips": 0.2634667754173279,
+      "model_seconds": 0.7261627079997197,
+      "metric_seconds": 0.049565092000193545
+    },
+    {
+      "image": "0016_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "5e685c939f99c279f8af820622d041088e20c270cd837f338099e533170e3b47",
+      "input_sha256": "a5993d771c76bf4cab22932eda71563bd8318a0c68bddb0e0264403bd7a3f043",
+      "psnr": 20.387065887451172,
+      "ssim": 0.6424968838691711,
+      "lpips": 0.2893957495689392,
+      "model_seconds": 0.726254816000619,
+      "metric_seconds": 0.049589618999561935
+    },
+    {
+      "image": "0017_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "e676edbd32ac57cb09693224580cd90014dcf7e43042799cdb9baae4811708ad",
+      "input_sha256": "ae93dbcf0aff63956f49cba122c7d5ca90071f211b637b53172314d2f17276f9",
+      "psnr": 21.618026733398438,
+      "ssim": 0.8022356033325195,
+      "lpips": 0.3998229205608368,
+      "model_seconds": 0.7260654820001946,
+      "metric_seconds": 0.049552954000319005
+    },
+    {
+      "image": "0018_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "eef7fe7c1123d9c6e8f51b889d66b9e9324eb1cca19ae85787beb9287d4f00ff",
+      "input_sha256": "d62aec66761ce1c935ca1c565f51a4874ac9e37b2382bebd1a4f4a1de953f99e",
+      "psnr": 23.00510025024414,
+      "ssim": 0.825086772441864,
+      "lpips": 0.1771368533372879,
+      "model_seconds": 0.7263065730003291,
+      "metric_seconds": 0.04957763199945475
+    },
+    {
+      "image": "0019_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "2b53d6b45dba5dbf0a45bce87507442b3f510c6021d1ca359923e96bfa811604",
+      "input_sha256": "4a0464e80f8f9d4988268321c18bbc0b1a347f7f519c9e828335b6af0a322e76",
+      "psnr": 25.187063217163086,
+      "ssim": 0.8612393736839294,
+      "lpips": 0.23002469539642334,
+      "model_seconds": 0.7262180010002339,
+      "metric_seconds": 0.04975687099977222
+    },
+    {
+      "image": "0020_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "34d6394d48afce08196e697b32b80d06bd157dc488cb4bb71981af628e5338d3",
+      "input_sha256": "981220e752b58bdd214068941091201b61eb5fbe321ab8b9713844ccc94b08ed",
+      "psnr": 27.21282958984375,
+      "ssim": 0.8526800870895386,
+      "lpips": 0.4176327586174011,
+      "model_seconds": 0.7262020159996609,
+      "metric_seconds": 0.04959429700011242
+    },
+    {
+      "image": "0021_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "982ec7bfec701da92e2b2afdd257a2d202a0ffc9aaefc5470a4e6100d75874ac",
+      "input_sha256": "eaa8cfbce50d200883b149c08a623480df1efe9326a6c351924b3277eea48722",
+      "psnr": 23.381135940551758,
+      "ssim": 0.6766409277915955,
+      "lpips": 0.2542048394680023,
+      "model_seconds": 0.7261760969995521,
+      "metric_seconds": 0.049541779000719544
+    },
+    {
+      "image": "0022_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "48bea722138b0c4feb27e26d11f690595cc6b5578fe82146fbab3b3de8e16c74",
+      "input_sha256": "1f5d539a5d15f7b8046724634d0ac63f93b48407e1b7fd2eb58f8f569c4c3dfc",
+      "psnr": 20.207881927490234,
+      "ssim": 0.8374168276786804,
+      "lpips": 0.3368699550628662,
+      "model_seconds": 0.7262724530000924,
+      "metric_seconds": 0.049663961000078416
+    },
+    {
+      "image": "0023_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "08a7a3501302446fbed1e8cbd905fd0f7da2c5d6a606dfff664689a35e4219e8",
+      "input_sha256": "b2fe5172b38d807291b9b4ade7fab0789c901579c5fe8e697efabe3d30a9de8b",
+      "psnr": 22.669750213623047,
+      "ssim": 0.8888015747070312,
+      "lpips": 0.21973015367984772,
+      "model_seconds": 0.7261759680004616,
+      "metric_seconds": 0.0495806659992013
+    },
+    {
+      "image": "0024_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "29dc08f01ac50ee0b1845352f3e3a1a5770bb76301f79b860cb701b7b91e1a7d",
+      "input_sha256": "b14a7703829c17150b5522450bccbebf59b6478b56a947ed8aa98c67d80c65f3",
+      "psnr": 23.61670684814453,
+      "ssim": 0.6835328340530396,
+      "lpips": 0.48685237765312195,
+      "model_seconds": 0.7261697390003974,
+      "metric_seconds": 0.04955730100027722
+    },
+    {
+      "image": "0025_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "018ec164f449abb7aaad19f10fb03f19b4652e2273d73b607631eb3156e75f23",
+      "input_sha256": "2e8364e5e2cabdda242d35be0d247176e14d18c2caf46957944df5565eb4cf07",
+      "psnr": 20.187469482421875,
+      "ssim": 0.8662717938423157,
+      "lpips": 0.1640210598707199,
+      "model_seconds": 0.7262028570003167,
+      "metric_seconds": 0.049476059999506106
+    },
+    {
+      "image": "0026_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "43de2ff51b00d298fb32a4431d4e0a24b34a2b785711ad94331548efe6e36320",
+      "input_sha256": "e03bb18a89fc2bf7bf30c6299f94d8e1369855ba60c992150049b63e87973b4a",
+      "psnr": 22.824552536010742,
+      "ssim": 0.7349590063095093,
+      "lpips": 0.32896628975868225,
+      "model_seconds": 0.7264061329997276,
+      "metric_seconds": 0.04963204300020152
+    },
+    {
+      "image": "0027_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "8a4f1d6187f54caff1eeb2d650a4892eac5d4df22d02e0a2797da23d43f9393a",
+      "input_sha256": "1144d7c579b917a7ad92ab8ba47d9d13643509ea7dfc25a1a05034179ac6736b",
+      "psnr": 23.80135726928711,
+      "ssim": 0.6943920850753784,
+      "lpips": 0.4067334830760956,
+      "model_seconds": 0.7263161769997168,
+      "metric_seconds": 0.04969508800058975
+    },
+    {
+      "image": "0028_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "3be72a2bad9afbbac6f7aefdea9a926328dd704a90172e92be9e4cfe2f266075",
+      "input_sha256": "597f589c4ae8d3362c80a075110f584b8d7cb4824d383b4323079b0ae818f72e",
+      "psnr": 23.33679962158203,
+      "ssim": 0.7759138345718384,
+      "lpips": 0.202109694480896,
+      "model_seconds": 0.7264807850006036,
+      "metric_seconds": 0.049777080999774626
+    },
+    {
+      "image": "0029_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "67b12079c30bf78637f834b78ab8bc25249f6a6023f99f49bd481536cf64d465",
+      "input_sha256": "a9ad3e90df23ba1389b169c4b1b4b2a7654d4cace173f6d22e7837c1c1314a54",
+      "psnr": 24.007755279541016,
+      "ssim": 0.8476392030715942,
+      "lpips": 0.18864227831363678,
+      "model_seconds": 0.7263648910002303,
+      "metric_seconds": 0.049613215000135824
+    },
+    {
+      "image": "0030_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "25d6137ef8930b341bf69eb105098f81be4f55d6b2d3b8fc9dc52ea4e6a12604",
+      "input_sha256": "623db63a7474f77ead5460218fb96186dd6153dde3413a8c802b2d7b4358a94b",
+      "psnr": 19.835079193115234,
+      "ssim": 0.8830621838569641,
+      "lpips": 0.2645688056945801,
+      "model_seconds": 0.7262495180002588,
+      "metric_seconds": 0.04959453700030281
+    },
+    {
+      "image": "0031_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "e197870b2ca344a5fe4136ee52a7ae122c60a3d92cf3369f0c632d87ef563245",
+      "input_sha256": "03969f1fee13e784a7d06402401eeb78615ce51a82ea82a61ac9f1d19bbe43a2",
+      "psnr": 22.588518142700195,
+      "ssim": 0.9087819457054138,
+      "lpips": 0.21205538511276245,
+      "model_seconds": 0.7264856609999697,
+      "metric_seconds": 0.050007146000098146
+    },
+    {
+      "image": "0032_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "836f2512b3cc993dd0b4c96a197efd684c4cc850da3e48be1d7ab04d97639031",
+      "input_sha256": "dd4b3a6bac83dd83a75ea91d1b5264e3927c2ccd1ea5122435fd8838dd4fdfaf",
+      "psnr": 22.609861373901367,
+      "ssim": 0.8235104084014893,
+      "lpips": 0.20962882041931152,
+      "model_seconds": 0.7264990519997809,
+      "metric_seconds": 0.04975298399949679
+    },
+    {
+      "image": "0033_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "61eecc2e817de60ce45309cefd367a3b235fa1b892d3000d84de432d25f3118b",
+      "input_sha256": "b3cf7038905e35fef56c807b921e38b4afcfa1966fa9a539982e866c418dd583",
+      "psnr": 15.780710220336914,
+      "ssim": 0.7945959568023682,
+      "lpips": 0.3886258006095886,
+      "model_seconds": 0.7264508990001559,
+      "metric_seconds": 0.04980620500009536
+    },
+    {
+      "image": "0034_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "60b08d5f91d16e6a52c614c97addd57d818d8277ef05b34d2d8cdb5710953d5f",
+      "input_sha256": "b0345bc0c6fbe5146744116d6fcbb8720f4d65a58714df3e8f5aad8b803f13b7",
+      "psnr": 27.541000366210938,
+      "ssim": 0.9027910828590393,
+      "lpips": 0.18386736512184143,
+      "model_seconds": 0.7265483260007386,
+      "metric_seconds": 0.050239023999893107
+    },
+    {
+      "image": "0035_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "387736065341c9ab91e110a05c20426a6393eb59141d2d217b5605d0498c64ab",
+      "input_sha256": "820c97da379fa8600e42fc235ffa3474fa1dc9cd025a79b8ce3a2f5cc33ddf10",
+      "psnr": 23.818084716796875,
+      "ssim": 0.7438985109329224,
+      "lpips": 0.2106473296880722,
+      "model_seconds": 0.7265744650003398,
+      "metric_seconds": 0.04974967999987712
+    },
+    {
+      "image": "0036_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "c4b9d5de05ab63dd00c63616a09d20bb561af5fa86faf0ad64b9e582b3f59826",
+      "input_sha256": "cd72109e244b254dd1b36ceb44f587cb8cd0692657e3b04fc65c949fbba9d5a2",
+      "psnr": 22.25908660888672,
+      "ssim": 0.7696343660354614,
+      "lpips": 0.1420166939496994,
+      "model_seconds": 0.7264479149998806,
+      "metric_seconds": 0.049713905999851704
+    },
+    {
+      "image": "0037_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "e02ac6619dc3f63eb0ae15ddd54999a5b57e0055685d9141ae6f5763cd155e41",
+      "input_sha256": "0111a33253eca7c0498d05ef7d97a449c4d2e4afb8d40e1360186e48056496c9",
+      "psnr": 23.276371002197266,
+      "ssim": 0.9483108520507812,
+      "lpips": 0.09384261816740036,
+      "model_seconds": 0.7265151860001424,
+      "metric_seconds": 0.04972997000004398
+    },
+    {
+      "image": "0038_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "3590bb010e265bf86f06d419d4638a2d892c06dea6cabc4fd3b2729886949495",
+      "input_sha256": "acdc3ea99697d5cb6c76fd1eec797a4db5e60fc19cc214640dbca42d8e6dd163",
+      "psnr": 23.601987838745117,
+      "ssim": 0.8311785459518433,
+      "lpips": 0.47148996591567993,
+      "model_seconds": 0.726449386999775,
+      "metric_seconds": 0.04981021099956706
+    },
+    {
+      "image": "0039_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "992cc26f5b492e413869ecd35e1934a86048cbbe8e95c0d3ab65fbb34e977762",
+      "input_sha256": "1a73786acd35e0e9f3dbb6ece097e0ade8dca4112a103feb92fc61bf85bd0b95",
+      "psnr": 22.003890991210938,
+      "ssim": 0.8453117609024048,
+      "lpips": 0.39391791820526123,
+      "model_seconds": 0.7267100889994254,
+      "metric_seconds": 0.04980025500026386
+    },
+    {
+      "image": "0040_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "3814ff624a71029dda81596a82cf59a8a2494785bc7971b3d35b88d646819a31",
+      "input_sha256": "4011c4cdb1f8d6660b9370c2a09a8df9b733bfddfb9a6ccacbe3f173ef0b9fe4",
+      "psnr": 25.371490478515625,
+      "ssim": 0.8516572713851929,
+      "lpips": 0.32775014638900757,
+      "model_seconds": 0.7264584810000088,
+      "metric_seconds": 0.04977585899996484
+    },
+    {
+      "image": "0041_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "05eac0a812bc47813787f7a97331236f2d020f74500a431e3713f09a499d309f",
+      "input_sha256": "c45721997035d4aa5e3fca08084fcd3ce6369751ab8768bab68f54d31ec36782",
+      "psnr": 21.8966121673584,
+      "ssim": 0.8667379021644592,
+      "lpips": 0.16064979135990143,
+      "model_seconds": 0.7265408550001666,
+      "metric_seconds": 0.049685584000144445
+    },
+    {
+      "image": "0042_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "6059b739b5c7a8da397f1afe16e6202280cb6bd42863fa3e61a2f882d64ee938",
+      "input_sha256": "826c5f495a3d518fa5e00b64cc44ec0b2c1108d7cd5c4075cb949687d3859476",
+      "psnr": 24.642261505126953,
+      "ssim": 0.8868486285209656,
+      "lpips": 0.3099938631057739,
+      "model_seconds": 0.7264040399995793,
+      "metric_seconds": 0.05043210399981035
+    },
+    {
+      "image": "0043_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "ba535a30f7d986a2dd9576088f837a6aed71c6852a139f67438e9e4f37065a87",
+      "input_sha256": "692dd8f90a8d320e2e3135816f6f341c322394a7f90b2d8ffe8b3665a7b3ead6",
+      "psnr": 21.380218505859375,
+      "ssim": 0.8459746837615967,
+      "lpips": 0.29081884026527405,
+      "model_seconds": 0.7264054709994525,
+      "metric_seconds": 0.049838945000374224
+    },
+    {
+      "image": "0044_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "b32ebe9d3ba214be1014145091f9673def31e445e0eade13c98ba45762a95fa0",
+      "input_sha256": "601de3ab4aa0eee504c596fbcda77215c01a0e93142c628571ecb449bbf6285a",
+      "psnr": 27.240779876708984,
+      "ssim": 0.923851728439331,
+      "lpips": 0.08297254890203476,
+      "model_seconds": 0.7264926329999071,
+      "metric_seconds": 0.050276770999516884
+    },
+    {
+      "image": "0045_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "a7d3a1e64eaa60e7469c4d433a85191a3ee2ab3e07785ac69d96f5334e526544",
+      "input_sha256": "0b1fc2239bb95bd9575562db6fa2840ef1d4686d8afe64596b698de3a9062c0d",
+      "psnr": 24.70951271057129,
+      "ssim": 0.8561537861824036,
+      "lpips": 0.2062678337097168,
+      "model_seconds": 0.7266385719995014,
+      "metric_seconds": 0.050051832999997714
+    },
+    {
+      "image": "0046_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "aa75a7ff23ce6ba46e1d6c46e2706a1baf28accff3d984932fc004a6fab4ce24",
+      "input_sha256": "f0a904fb1d63000c0ad65d13a9025f04e0e9842291c137b1e83cb4848dbe90c5",
+      "psnr": 28.02585220336914,
+      "ssim": 0.8703690767288208,
+      "lpips": 0.3330255150794983,
+      "model_seconds": 0.7264483360004306,
+      "metric_seconds": 0.049776238999584166
+    },
+    {
+      "image": "0047_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "600342ada5816601295767ba29f05b2776920aa71ba07ab397e2c57db794dd0e",
+      "input_sha256": "4ee35959bac06d95cac885df5609a04b1d711b65b1b3835b38cd6feb669b288e",
+      "psnr": 16.648475646972656,
+      "ssim": 0.7219644784927368,
+      "lpips": 0.14527173340320587,
+      "model_seconds": 0.7264808949994404,
+      "metric_seconds": 0.0496783830003551
+    },
+    {
+      "image": "0048_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "028e789a6c4eb09057568892038ba68eddea55021e558b67baada71f78393536",
+      "input_sha256": "c30613d4a58d5f66501ff8703da4507fa2e7cbf977da766c4a041241708a2c54",
+      "psnr": 20.5843505859375,
+      "ssim": 0.721175491809845,
+      "lpips": 0.3275369703769684,
+      "model_seconds": 0.7264937439995265,
+      "metric_seconds": 0.04971426700012671
+    },
+    {
+      "image": "0049_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "ccadd3b696e41c4c659900094a49030085cfdce3763d9216555464cfa71b3a74",
+      "input_sha256": "f04826ece72c2d3ffad64cafc3e0d031de25196541a90d7ceba39f0ece3ff158",
+      "psnr": 20.46271324157715,
+      "ssim": 0.6811643242835999,
+      "lpips": 0.4493516683578491,
+      "model_seconds": 0.7265945049994116,
+      "metric_seconds": 0.049910040000213485
+    },
+    {
+      "image": "0050_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "9e23b005f96a938ad2ca7555c944d094a6fbc6649d2b08220860f5a546504f36",
+      "input_sha256": "82c3cc86fcc66686b3305633fce647bacf46bdab1faca145031e7333544513a1",
+      "psnr": 23.76004981994629,
+      "ssim": 0.9678820967674255,
+      "lpips": 0.030290909111499786,
+      "model_seconds": 0.7261925920001886,
+      "metric_seconds": 0.04966689499997301
+    },
+    {
+      "image": "0051_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "22080e77166b156b82761cea4e5dddb0191a3eb8b0101949c069e2eadca40222",
+      "input_sha256": "2857c65d11432ebbd1f3db2b60694ce5adc7b8998dee832e18a244cb8034cc4a",
+      "psnr": 15.09800910949707,
+      "ssim": 0.8554978370666504,
+      "lpips": 0.4008266031742096,
+      "model_seconds": 0.726240193999729,
+      "metric_seconds": 0.049777551000261155
+    },
+    {
+      "image": "0052_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "7b517f023fda32dc286d460bc5a2e02230ba8f0f2a971e06a7454da7910f8249",
+      "input_sha256": "7879ef433b5ca6c361460b550624a75a5a59ce2968cdc8858fc01cc47c4c8b5b",
+      "psnr": 25.38408088684082,
+      "ssim": 0.8933206796646118,
+      "lpips": 0.18997256457805634,
+      "model_seconds": 0.7263169289999496,
+      "metric_seconds": 0.04983690100016247
+    },
+    {
+      "image": "0053_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "302b4b789545e7858b99c4632b3196b12d77eda1502ad0b2b171da7f4621ebb1",
+      "input_sha256": "62a38d80cdf74fbaa4081bcb3f02e7967eb0ebe4b466b8ef581dd14c962c94c3",
+      "psnr": 24.52639389038086,
+      "ssim": 0.7835996150970459,
+      "lpips": 0.4140223264694214,
+      "model_seconds": 0.7266290669995215,
+      "metric_seconds": 0.04977970500021911
+    },
+    {
+      "image": "0054_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "581ba664cb0730dde7933b6d912265aac8c580d7e8bf16941831d052d3b76178",
+      "input_sha256": "245b823e23168988bc7341d80fc76bb44655e304ffb64a0c2f49c738712ba3e3",
+      "psnr": 18.323711395263672,
+      "ssim": 0.5469650030136108,
+      "lpips": 0.6401805877685547,
+      "model_seconds": 0.7269273040001281,
+      "metric_seconds": 0.04981256400060374
+    },
+    {
+      "image": "0055_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "256148302bcdd2d67258280ce607061aee0b3346d8786c6483e59b0714870438",
+      "input_sha256": "71872377b4886a20763b40335a429f46c47d709d94cfb2f50fd3efb4e5156e7d",
+      "psnr": 20.999927520751953,
+      "ssim": 0.8191614747047424,
+      "lpips": 0.20057407021522522,
+      "model_seconds": 0.7264659430002212,
+      "metric_seconds": 0.049779874999330787
+    },
+    {
+      "image": "0056_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "490b7dcb7a1645594e8096885066a3b527d69a279a1045b81af82ef53510882a",
+      "input_sha256": "7a39f404e3308955c69ec87abc9dd82a5a3d26ab37d8236acc5a0f1759356b64",
+      "psnr": 20.082082748413086,
+      "ssim": 0.2990345060825348,
+      "lpips": 0.905933141708374,
+      "model_seconds": 0.7266829370000778,
+      "metric_seconds": 0.05045562899977085
+    },
+    {
+      "image": "0057_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "1563d1dc88e4f2ac5a4bf0c0c3972657040542eaa3e9d312327c250868cca20e",
+      "input_sha256": "6fbf2cd055117b14cebd1902270417e80daffc427a58ff9fdbfcadbee5a74994",
+      "psnr": 21.043041229248047,
+      "ssim": 0.7221195101737976,
+      "lpips": 0.49513155221939087,
+      "model_seconds": 0.726700303999678,
+      "metric_seconds": 0.049755379000089306
+    },
+    {
+      "image": "0058_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "47318a99bea21a07062f97f0f6de3840c52fee0362ef4936436e243dc0e48ad2",
+      "input_sha256": "e371201d45762bda5c2924660b0d0359a0668fb4ae59ef00456e08a0e9e87334",
+      "psnr": 28.623817443847656,
+      "ssim": 0.6428148150444031,
+      "lpips": 0.6436100006103516,
+      "model_seconds": 0.7263563480000812,
+      "metric_seconds": 0.049860976999298146
+    },
+    {
+      "image": "0059_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "a8a93b9816e5d124230b3b07f16b3a6b47ee4a4d43bb3abe35dcc40074e30874",
+      "input_sha256": "782719e689a2691e2e709820c85ffaef05d376e0a1c9781b87e44772caf1a184",
+      "psnr": 19.6867733001709,
+      "ssim": 0.5486761331558228,
+      "lpips": 0.18377619981765747,
+      "model_seconds": 0.7265773500002979,
+      "metric_seconds": 0.0498216380001395
+    },
+    {
+      "image": "0060_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "074b28dea185f8f07d8a3d9a9f34063376372fc7d025ebd4b56e9e95738edcfa",
+      "input_sha256": "d6cf37291f3f6d42ccb2e888f6dd546486e5069f3c7d70e0951d24f4c31e47d2",
+      "psnr": 20.81240463256836,
+      "ssim": 0.8771538734436035,
+      "lpips": 0.1847209930419922,
+      "model_seconds": 0.726427173999582,
+      "metric_seconds": 0.049746595000215166
+    },
+    {
+      "image": "0061_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "d5e1e8167491046d565d9d075fdf74145a18c7ababfcd3905fe336869e30f3ee",
+      "input_sha256": "9eb97dc24119ab414d02f142fd238b4cb40b840f36179b2231ab17c83dd26120",
+      "psnr": 23.51959228515625,
+      "ssim": 0.7797139286994934,
+      "lpips": 0.49250200390815735,
+      "model_seconds": 0.7265852910004469,
+      "metric_seconds": 0.04974426199987647
+    },
+    {
+      "image": "0062_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "3f9a1da5cbe4f09ca4965e0cdf54443993627795dea50f66242a57b2e983de0b",
+      "input_sha256": "646d958c38a4986c9d19f1357bd94c2f4a6fd7a956d2e62861ece5ddfbc00bb3",
+      "psnr": 19.110448837280273,
+      "ssim": 0.9352536797523499,
+      "lpips": 0.24648040533065796,
+      "model_seconds": 0.7265419259992996,
+      "metric_seconds": 0.04987369600075908
+    },
+    {
+      "image": "0063_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "4c2effa2bb61dfd719576c67f3f2bd77da0b1deefe26be84dd269f17bbcf081a",
+      "input_sha256": "f9af3e19757d256041088f2856ad6309516fc227ea272e1395d1c0b2ef39f983",
+      "psnr": 21.751789093017578,
+      "ssim": 0.7876956462860107,
+      "lpips": 0.2801159620285034,
+      "model_seconds": 0.7265353059992776,
+      "metric_seconds": 0.04974179800046841
+    },
+    {
+      "image": "0064_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "f5cc95b75b6537b6e5a635e67af908d0592820b9e686bb1c286b674246aebd6e",
+      "input_sha256": "fb1a4fcdc4d621b4c580328b45a6cbabdadc7399edcb3a6d27d0bd058cc70a69",
+      "psnr": 26.747840881347656,
+      "ssim": 0.8630443215370178,
+      "lpips": 0.2892822027206421,
+      "model_seconds": 0.726530208999975,
+      "metric_seconds": 0.04983906400047999
+    },
+    {
+      "image": "0065_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "4720e989fab3ca88571f12eceb844a59fd8f386cfdf92d6a510c849e68ccb138",
+      "input_sha256": "6ded0b9156106460adfde3748550ff28a13849f1b70713a1394ce68c229a6b9b",
+      "psnr": 26.161331176757812,
+      "ssim": 0.929603636264801,
+      "lpips": 0.18045707046985626,
+      "model_seconds": 0.726504649999697,
+      "metric_seconds": 0.049771052000323834
+    },
+    {
+      "image": "0066_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "a0056a2f7d774c605801ca8420e3b4502cc33cbe615cb469c0cf6a425324220e",
+      "input_sha256": "fc89458e03caf1735a8ed80ce6785e51f65ff0cd22a62983a0da344e12bc5ceb",
+      "psnr": 20.03594398498535,
+      "ssim": 0.9600289463996887,
+      "lpips": 0.11843971908092499,
+      "model_seconds": 0.7266924719997405,
+      "metric_seconds": 0.04972137700042367
+    },
+    {
+      "image": "0067_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "897df769cea237fab6aabbf09ffc00b524f58dc41a0d232df6f63279cd39d292",
+      "input_sha256": "11a0dbe264c11c9e2c83639f12614acaaf67b4552f9c50944cd733379c91d569",
+      "psnr": 17.014493942260742,
+      "ssim": 0.9076520800590515,
+      "lpips": 0.056805483996868134,
+      "model_seconds": 0.7262178800001493,
+      "metric_seconds": 0.049520315999870945
+    },
+    {
+      "image": "0068_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "a50084f449b57547ae16d94f0c466cdd8dea1c551b06b306319f2becdba15c88",
+      "input_sha256": "c2ff1b4bb39861ba92f4009a50a655f1e6c89d237b3642d52b6fe7473c8be08f",
+      "psnr": 26.092121124267578,
+      "ssim": 0.8814787864685059,
+      "lpips": 0.3379319906234741,
+      "model_seconds": 0.7264977400000134,
+      "metric_seconds": 0.0496956790002514
+    },
+    {
+      "image": "0069_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "c7c6f84b9ad4d53ff4cba11077ccb9164713dff1aa2779967c0627b57bae7c67",
+      "input_sha256": "b37143b3308974f44a0940c82e962d99da30e6e86f1e0939be1e6f5eb9993463",
+      "psnr": 19.76025390625,
+      "ssim": 0.6261029839515686,
+      "lpips": 0.24607442319393158,
+      "model_seconds": 0.7266238089996477,
+      "metric_seconds": 0.049961658000029274
+    },
+    {
+      "image": "0070_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "8839d96bdd9c65a5c2c53928c73a04bd74ed9d1460d77c4dbc97e8685d133ab0",
+      "input_sha256": "db031ca671c21ab87bbf16fc87f77881912bb337dc2991526bcc292578edbd0a",
+      "psnr": 24.253585815429688,
+      "ssim": 0.56748366355896,
+      "lpips": 0.6351173520088196,
+      "model_seconds": 0.7265887659996224,
+      "metric_seconds": 0.05011050100074499
+    },
+    {
+      "image": "0071_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "52ae63f48980568cdb0be618b78cf367b6e8f1e9c3c3f748903156ba03294a6d",
+      "input_sha256": "75d26432229d3be4b6f3c721324965fd092b016fb0e707e6c30c62991910804c",
+      "psnr": 23.248355865478516,
+      "ssim": 0.791840136051178,
+      "lpips": 0.20678284764289856,
+      "model_seconds": 0.726736319000338,
+      "metric_seconds": 0.05008335000002262
+    },
+    {
+      "image": "0072_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "8684f5c5a8089ea0bc411a323851c9f0ca0c610774997092884122c9332fe4db",
+      "input_sha256": "8b050f9304312beec9af7530bb47cfa8c30d15f046a18cfbf98dfde67a571d82",
+      "psnr": 21.951904296875,
+      "ssim": 0.6347382664680481,
+      "lpips": 0.3283764123916626,
+      "model_seconds": 0.726720294000188,
+      "metric_seconds": 0.04976794800040807
+    },
+    {
+      "image": "0073_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "26c33ae7b86ec8c43148bec54bf9197b9b0c126daa105cfc63f4395e00a35829",
+      "input_sha256": "fa293c97b6e78d7932f1a264be5e23a5becc49c72dd40986db851b0360af5d9c",
+      "psnr": 23.278446197509766,
+      "ssim": 0.9207174181938171,
+      "lpips": 0.20754016935825348,
+      "model_seconds": 0.7265443799997229,
+      "metric_seconds": 0.04973670999970636
+    },
+    {
+      "image": "0074_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "6f3ac06cb5d03b88f68e38e28b9ccf12fa52d97d0f79b32b7640d1774bca234e",
+      "input_sha256": "750785732261f72f60796b1361991b3099dde0a20f87e8f1ff5de4c5a460caea",
+      "psnr": 22.7672119140625,
+      "ssim": 0.3857194483280182,
+      "lpips": 0.6091737747192383,
+      "model_seconds": 0.7268252209996717,
+      "metric_seconds": 0.04994163799983653
+    },
+    {
+      "image": "0075_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "dee4a113820afe0be4076b2acfcca5275f35e09c4acac115f47f522e49c854d7",
+      "input_sha256": "483ebb8e7967d2ea699d2690b34820721c7c07a7bc6e6ff2eb74e0fe63eaa347",
+      "psnr": 14.147196769714355,
+      "ssim": 0.804076075553894,
+      "lpips": 0.11170446872711182,
+      "model_seconds": 0.7264799340000536,
+      "metric_seconds": 0.049576909999814234
+    },
+    {
+      "image": "0076_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "c87553c18b65f67196aa56af4bd48e35d897f484385756dd2ff0d8276040e315",
+      "input_sha256": "867f534c807e44407a51423993dcfba1cdda9ce4819b40f99a061df40ec641f1",
+      "psnr": 21.729965209960938,
+      "ssim": 0.7554455399513245,
+      "lpips": 0.3382670283317566,
+      "model_seconds": 0.7266731229992729,
+      "metric_seconds": 0.04988312000023143
+    },
+    {
+      "image": "0077_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "2268a14ecda93cf01307a0a368a3ff5c6ab769520b5436da0ab75ca026e1cb4f",
+      "input_sha256": "cb9ec72ac6c1e524008e2fdd9bc55479ab7c4ff850c786760bb2c8c084b1df50",
+      "psnr": 21.92450523376465,
+      "ssim": 0.9487162232398987,
+      "lpips": 0.03380953148007393,
+      "model_seconds": 0.7263588219993835,
+      "metric_seconds": 0.04987786200035771
+    },
+    {
+      "image": "0078_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "3d69a70e3fb2910095e7037d454e84cc983d9657db2b757eeaef85b7a7a6bc3c",
+      "input_sha256": "1e74139be2cfbeeee4d6297e232447b7117fe503762078dc3223dd3345f29567",
+      "psnr": 24.828044891357422,
+      "ssim": 0.7918712496757507,
+      "lpips": 0.20753303170204163,
+      "model_seconds": 0.726586624000447,
+      "metric_seconds": 0.05008439199991699
+    },
+    {
+      "image": "0079_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "c19e4b2b53e2e73d875b6df37a0872dd11f1eba90c4aef7cade3df31d98a92d0",
+      "input_sha256": "609a75e95dea88932b619fc5443cd60c6f1d0172c987595c095982f5ea2de22e",
+      "psnr": 22.83001708984375,
+      "ssim": 0.5472583174705505,
+      "lpips": 0.5597591996192932,
+      "model_seconds": 0.7269025369996598,
+      "metric_seconds": 0.050604181999915454
+    },
+    {
+      "image": "0080_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "8bd56ad1c411e221395742c1bae8d9b6add3076cb4af244c5d126ae25f2ba096",
+      "input_sha256": "9162a0dceec7726c9686ba61fcfeec72735a61a0ae50805047b62744a51b24c6",
+      "psnr": 23.226215362548828,
+      "ssim": 0.9308128356933594,
+      "lpips": 0.16675244271755219,
+      "model_seconds": 0.7265209550005238,
+      "metric_seconds": 0.04993026000011014
+    },
+    {
+      "image": "0081_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "b8e830385e1ff160390d9b16f5f2aee40a584ecf839bcbe8be6d0bb3df4699ca",
+      "input_sha256": "0a02aeee7cd5eb4d4720b6e2ba2147e5408b3220a5841533769888c27577832c",
+      "psnr": 20.611408233642578,
+      "ssim": 0.9051054120063782,
+      "lpips": 0.14953403174877167,
+      "model_seconds": 0.7265099690002899,
+      "metric_seconds": 0.05006650500035903
+    },
+    {
+      "image": "0082_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "3278d2a11d837accf7d7bb642d1b5c90d9c68c9fe593b9d638bbe24dffcd3806",
+      "input_sha256": "4b95cb6dce77413e2ee39fa5f05e8ae00760af86e5923d2367a8f7aec3883de2",
+      "psnr": 21.917022705078125,
+      "ssim": 0.9338106513023376,
+      "lpips": 0.10441700369119644,
+      "model_seconds": 0.7263925930001278,
+      "metric_seconds": 0.049691010999595164
+    },
+    {
+      "image": "0083_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "33831f1aed9d7fc91d9212f02edae39973db422ab08c02a5b224780e0cb1e210",
+      "input_sha256": "436c13302ab93ac3da5e161099a0db6f5785b8b2627ab69f7673131221715e52",
+      "psnr": 26.90779685974121,
+      "ssim": 0.9044652581214905,
+      "lpips": 0.13118913769721985,
+      "model_seconds": 0.726897438999913,
+      "metric_seconds": 0.04994298000019626
+    },
+    {
+      "image": "0084_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "893f89084acee5ff79988eea89ff347dd23cd71c44338082d097115e9c614413",
+      "input_sha256": "341c5b7590223c9cbe78e9d8dcbd2263c2e03d3618266c8f5517d9a48a81f139",
+      "psnr": 23.68689727783203,
+      "ssim": 0.828952968120575,
+      "lpips": 0.3185402452945709,
+      "model_seconds": 0.7265579410004648,
+      "metric_seconds": 0.04969825199987099
+    },
+    {
+      "image": "0085_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "0c46e709201bf26fddda841b9918b7c31df1b862000c4a7be05448efffc3fc47",
+      "input_sha256": "061fa90c9a74927102475904fab8b26c5e6bcd6ad15a7e91a9535fd5c85bba0f",
+      "psnr": 20.885984420776367,
+      "ssim": 0.8586283326148987,
+      "lpips": 0.356413334608078,
+      "model_seconds": 0.7266196629998376,
+      "metric_seconds": 0.04989190300057089
+    },
+    {
+      "image": "0086_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "2a9c971c913ff04e979f6f34af91936df1571785d7fd769458eee31d35b41243",
+      "input_sha256": "543c6c1c58f769f6f30469da146de41a49897db852b903b26a9bfbcec90fed4a",
+      "psnr": 24.786922454833984,
+      "ssim": 0.8480379581451416,
+      "lpips": 0.10205172002315521,
+      "model_seconds": 0.7266130030002387,
+      "metric_seconds": 0.04992490299991914
+    },
+    {
+      "image": "0087_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "7aecf4f65ff622f0d230b02bdc54f0dfcc1bd674ddec8989d76d562a89878c9e",
+      "input_sha256": "d685eac85b0cd323ee20956c2a5ea807c7924b74c51912d89cac0d915a54a70a",
+      "psnr": 13.51881217956543,
+      "ssim": 0.8010955452919006,
+      "lpips": 0.10246948152780533,
+      "model_seconds": 0.7265477849996387,
+      "metric_seconds": 0.049653766000119504
+    },
+    {
+      "image": "0088_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "77857b6f91b3e8742bb863cc12fafe8dd62ce4f9c063179a8c0faf2857304eeb",
+      "input_sha256": "9d6ff12e4f56829c053c997ef203d3e3fa22ac354c12e578a4948334a550d077",
+      "psnr": 23.874406814575195,
+      "ssim": 0.8963481187820435,
+      "lpips": 0.1948871910572052,
+      "model_seconds": 0.7267118010004197,
+      "metric_seconds": 0.04981184299958841
+    },
+    {
+      "image": "0089_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "c82f359af8a4a75030378978fc71a32654849638b185c053b946f98c8e007913",
+      "input_sha256": "7ed923ce3f5a9fba6ccc1888f00edb6e0ca8f20beb0f3d7f002fd8bd9c60d741",
+      "psnr": 25.64376449584961,
+      "ssim": 0.7259102463722229,
+      "lpips": 0.2325354665517807,
+      "model_seconds": 0.7266851109998242,
+      "metric_seconds": 0.049751142000786786
+    },
+    {
+      "image": "0090_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "1d304230f73a3f1175f7d849a83fa69caf73839fc06fb8bcf3874a20b95cd723",
+      "input_sha256": "946d3faae6d50505e25d921a4105887b39bfea238e29a88b50cb8aad481b3539",
+      "psnr": 18.212812423706055,
+      "ssim": 0.7245610952377319,
+      "lpips": 0.3060414493083954,
+      "model_seconds": 0.7266442890004328,
+      "metric_seconds": 0.04981114200018055
+    },
+    {
+      "image": "0091_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "cb376aa5a0aefeffcb5170e565f7febf432e3dc78e3023f468cf362a0c394b0c",
+      "input_sha256": "93dbca7b03326bf5a1e3f6c15ba18520ef48322d6ecb8f3e791fc1e931af19d7",
+      "psnr": 24.054508209228516,
+      "ssim": 0.860456109046936,
+      "lpips": 0.3032948672771454,
+      "model_seconds": 0.7265509300004851,
+      "metric_seconds": 0.0498312720001195
+    },
+    {
+      "image": "0092_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "f16d07fe9486c0fef5a79b01240bfcf2d7f454927f6560d836169f24a88b9514",
+      "input_sha256": "34ee95d16607f8a71e24e0fa225076cee3cf937a6af30c084365671dc9affaf9",
+      "psnr": 24.62594985961914,
+      "ssim": 0.871273934841156,
+      "lpips": 0.08001375198364258,
+      "model_seconds": 0.7266751159995692,
+      "metric_seconds": 0.0497613880006611
+    },
+    {
+      "image": "0093_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "1778307dc05ce4833b18e1cc75ae38f62e2d023cae4c9d17d72a012aee36f867",
+      "input_sha256": "be0c9b545f9316ec110f662513afc31351b92582b4a4fb88f33af41c5bdbf2a8",
+      "psnr": 23.410232543945312,
+      "ssim": 0.8679226636886597,
+      "lpips": 0.19694876670837402,
+      "model_seconds": 0.7266525329996512,
+      "metric_seconds": 0.04992166800002451
+    },
+    {
+      "image": "0094_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "7d2f3524b67f419724899c820331ab8f6f77e89d8595da57413f4916177760d5",
+      "input_sha256": "f64759f7751904f9a50eafa191088f19d2d36a0438ec9be818960ebc13b878fc",
+      "psnr": 14.687643051147461,
+      "ssim": 0.9282732605934143,
+      "lpips": 0.09392715990543365,
+      "model_seconds": 0.7264103489997069,
+      "metric_seconds": 0.04967615000077785
+    },
+    {
+      "image": "0095_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "518d786cffcdd258fb4d7ebf9ae2f0a01b9bcf3bf1182df499fb08ed042886c9",
+      "input_sha256": "055eb1b1a74371ff00fd08fd383a487fba692b061e6f26db0a1675fd4f54562d",
+      "psnr": 25.286449432373047,
+      "ssim": 0.9272342920303345,
+      "lpips": 0.2202986180782318,
+      "model_seconds": 0.726596759000131,
+      "metric_seconds": 0.04965563799942174
+    },
+    {
+      "image": "0096_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "8649d5bd1dad7f00a1d0ea81707fb788180e291b7b84a1d104acfa3d96a5d58c",
+      "input_sha256": "7af9ef2cfbf34328fb143539da231ad1d84ed310d21152e12726623d29e554f7",
+      "psnr": 23.85805320739746,
+      "ssim": 0.9175870418548584,
+      "lpips": 0.13135862350463867,
+      "model_seconds": 0.7264623370001573,
+      "metric_seconds": 0.04972350000025472
+    },
+    {
+      "image": "0097_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "edab374e190a98ff1d152efaf7fc5c8a5aa1fb0377117603ed518585147304d7",
+      "input_sha256": "e0cdfc4dcdf243388e794306c217966d902bdf130051080f4fadd3074f0f6aa9",
+      "psnr": 25.05831527709961,
+      "ssim": 0.7734329104423523,
+      "lpips": 0.3271295726299286,
+      "model_seconds": 0.7265741150004033,
+      "metric_seconds": 0.04988458199932211
+    },
+    {
+      "image": "0098_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "266430af7d353be1e0a3295f2794fc27937e02b805073642196af5643470d7ec",
+      "input_sha256": "f64c112bfebedd43a18f92571dd11451f5ebb5b18738e3bfccb7459821487975",
+      "psnr": 13.98730182647705,
+      "ssim": 0.8277087211608887,
+      "lpips": 0.0875760018825531,
+      "model_seconds": 0.7265084959999513,
+      "metric_seconds": 0.049713045000316924
+    },
+    {
+      "image": "0099_gt.jpg",
+      "shape": [
+        1,
+        3,
+        2160,
+        3840
+      ],
+      "gt_sha256": "9b354dff258ac256174d9efb10d4b242826109bf2ed0822c4832f339b2a171c2",
+      "input_sha256": "e6d3c6dbb178b3ae6ddaad5433d3ed7c42d4c12749e6bbb19bee14d0e5c5c1f2",
+      "psnr": 25.215747833251953,
+      "ssim": 0.9448643922805786,
+      "lpips": 0.11376770585775375,
+      "model_seconds": 0.7264814549998846,
+      "metric_seconds": 0.04971179400035908
+    }
+  ],
+  "count": 100,
+  "complete": true,
+  "mean": {
+    "psnr": 22.27717704772949,
+    "ssim": 0.788827890753746,
+    "lpips": 0.2739515329524875
+  }
+}

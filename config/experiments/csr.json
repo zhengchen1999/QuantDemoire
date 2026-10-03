@@ -1,0 +1,77 @@
+{
+  "environment": {
+    "QUANTDEMOIRE_PREPARE_IMPL": "pair",
+    "QUANTDEMOIRE_COMPACT_SPARSE": "1",
+    "QUANTDEMOIRE_MAIN_HALF": "1",
+    "QUANTDEMOIRE_SPARSE_IMPL": "csr",
+    "QUANTDEMOIRE_FUSE_NEXT_QUANT": "1",
+    "QUANTDEMOIRE_FUSE_ATTENTION": "1",
+    "QUANTDEMOIRE_FUSE_RESIDUAL": "1"
+  },
+  "variants": [
+    {
+      "name": "w4_legacy",
+      "backend": "cuda",
+      "model": "checkpoints/hf/esdnet-uhdm-w4a4",
+      "environment": {
+        "QUANTDEMOIRE_CSR_KERNEL": "legacy"
+      }
+    },
+    {
+      "name": "w4_linear",
+      "backend": "cuda",
+      "model": "checkpoints/hf/esdnet-uhdm-w4a4",
+      "environment": {
+        "QUANTDEMOIRE_CSR_KERNEL": "linear"
+      }
+    },
+    {
+      "name": "w4_lut",
+      "backend": "cuda",
+      "model": "checkpoints/hf/esdnet-uhdm-w4a4",
+      "environment": {
+        "QUANTDEMOIRE_CSR_KERNEL": "lut"
+      }
+    },
+    {
+      "name": "w4_wide",
+      "backend": "cuda",
+      "model": "checkpoints/hf/esdnet-uhdm-w4a4",
+      "environment": {
+        "QUANTDEMOIRE_CSR_KERNEL": "wide"
+      }
+    },
+    {
+      "name": "w8_legacy",
+      "backend": "cuda",
+      "model": "checkpoints/hf/esdnet-uhdm-w8a8",
+      "environment": {
+        "QUANTDEMOIRE_CSR_KERNEL": "legacy"
+      }
+    },
+    {
+      "name": "w8_linear",
+      "backend": "cuda",
+      "model": "checkpoints/hf/esdnet-uhdm-w8a8",
+      "environment": {
+        "QUANTDEMOIRE_CSR_KERNEL": "linear"
+      }
+    },
+    {
+      "name": "w8_lut",
+      "backend": "cuda",
+      "model": "checkpoints/hf/esdnet-uhdm-w8a8",
+      "environment": {
+        "QUANTDEMOIRE_CSR_KERNEL": "lut"
+      }
+    },
+    {
+      "name": "w8_wide",
+      "backend": "cuda",
+      "model": "checkpoints/hf/esdnet-uhdm-w8a8",
+      "environment": {
+        "QUANTDEMOIRE_CSR_KERNEL": "wide"
+      }
+    }
+  ]
+}

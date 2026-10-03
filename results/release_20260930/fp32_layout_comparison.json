@@ -1,0 +1,32 @@
+[
+  {
+    "image": "0000_gt.jpg",
+    "old_seconds": 11.108309551000275,
+    "new_seconds": 0.5264097059998676,
+    "metric_delta": {
+      "psnr": 0.0,
+      "ssim": 0.0,
+      "lpips": 0.0
+    }
+  },
+  {
+    "image": "0001_gt.jpg",
+    "old_seconds": 10.853722062000088,
+    "new_seconds": 0.38197498000045016,
+    "metric_delta": {
+      "psnr": -1.9073486328125e-06,
+      "ssim": 1.1920928955078125e-07,
+      "lpips": 0.0
+    }
+  },
+  {
+    "image": "0002_gt.jpg",
+    "old_seconds": 10.868149707999692,
+    "new_seconds": 0.3828271889997268,
+    "metric_delta": {
+      "psnr": 0.0,
+      "ssim": 0.0,
+      "lpips": 0.0
+    }
+  }
+]

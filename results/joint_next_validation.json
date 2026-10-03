@@ -1,0 +1,88 @@
+{
+  "unit_tests": {
+    "full_suite": 702,
+    "additional_dispatch_test": 1
+  },
+  "reports": {
+    "4": {
+      "images": 100,
+      "quantized_shapes": 157,
+      "fused_prefix_edges": 71,
+      "joint_producer_edges": 63,
+      "one_byte_prefixes": 14,
+      "environment": {
+        "torch": "2.2.2+cu121",
+        "cuda": "12.1",
+        "cudnn": 8902,
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "fp16_convolution_accumulator": "float32",
+        "cudnn_api": "v7",
+        "tf32": false,
+        "fp16_reduced_precision_reduction": false,
+        "sparse_implementation": "csr",
+        "csr_kernel": "divmod",
+        "joint_warps": 0,
+        "joint_variant": 9,
+        "joint_next_quant": 2,
+        "shared_skip_planar": true,
+        "shared_skip_prefix_planar": true,
+        "joint_plan_sha256": "b64ef00a7e103abddb692f7e37423930c72022ac9bd87816968c9dbb88754ae5",
+        "main_half_override": "1",
+        "compact_sparse": true,
+        "prepare_implementation": "quad_swizzle",
+        "fuse_next_quant": true,
+        "fuse_attention": true,
+        "fuse_residual": true,
+        "deployment_source_sha256": "6fce85353f841f99cd1ef09064c92c62f8c721ac6e2fba7a691cc6b8d9f6e23a",
+        "kernel_source_sha256": "34c4705ad781c61a522ffd86fa78b5d97e580930e4b87184be1c79c3e548897b"
+      },
+      "performance": {
+        "median_ms": 83.3221378326416,
+        "peak_allocated_bytes": 2594047488,
+        "speedup": 1.5531470135937682,
+        "peak_memory_saving": 0.20260545747540415
+      }
+    },
+    "8": {
+      "images": 100,
+      "quantized_shapes": 157,
+      "fused_prefix_edges": 70,
+      "joint_producer_edges": 50,
+      "one_byte_prefixes": 0,
+      "environment": {
+        "torch": "2.2.2+cu121",
+        "cuda": "12.1",
+        "cudnn": 8902,
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "fp16_convolution_accumulator": "float32",
+        "cudnn_api": "v7",
+        "tf32": false,
+        "fp16_reduced_precision_reduction": false,
+        "sparse_implementation": "csr",
+        "csr_kernel": "divmod",
+        "joint_warps": 0,
+        "joint_variant": 8,
+        "joint_next_quant": 2,
+        "shared_skip_planar": false,
+        "shared_skip_prefix_planar": false,
+        "joint_plan_sha256": "5ea8c894920495b25d3d812dbcdf1a303bea00c0eefa1db28f5ccaee93913434",
+        "main_half_override": "1",
+        "compact_sparse": true,
+        "prepare_implementation": "quad_swizzle",
+        "fuse_next_quant": true,
+        "fuse_attention": true,
+        "fuse_residual": true,
+        "deployment_source_sha256": "6fce85353f841f99cd1ef09064c92c62f8c721ac6e2fba7a691cc6b8d9f6e23a",
+        "kernel_source_sha256": "34c4705ad781c61a522ffd86fa78b5d97e580930e4b87184be1c79c3e548897b"
+      },
+      "performance": {
+        "median_ms": 98.85769653320312,
+        "peak_allocated_bytes": 2934414848,
+        "speedup": 1.3090688340846628,
+        "peak_memory_saving": 0.0979785851559779
+      }
+    }
+  },
+  "complete": true,
+  "note": "Whole-network equality links unchanged weights and quantization parameters to previous quality results. Branch overhead was not redefined or certified by this experiment; the <=30% target remains open."
+}

@@ -1,0 +1,87 @@
+{
+  "rows": [
+    {
+      "round": 0,
+      "bits": 4,
+      "balanced": 0,
+      "median_ms": 82.82675170898438,
+      "peak_allocated_bytes": 2594047488,
+      "raw": "results/joint_balanced_screen_4_0_r0.json"
+    },
+    {
+      "round": 0,
+      "bits": 4,
+      "balanced": 1,
+      "median_ms": 82.2681770324707,
+      "peak_allocated_bytes": 2594161152,
+      "raw": "results/joint_balanced_screen_4_1_r0.json"
+    },
+    {
+      "round": 0,
+      "bits": 8,
+      "balanced": 0,
+      "median_ms": 98.37988662719727,
+      "peak_allocated_bytes": 2934414848,
+      "raw": "results/joint_balanced_screen_8_0_r0.json"
+    },
+    {
+      "round": 0,
+      "bits": 8,
+      "balanced": 1,
+      "median_ms": 98.09292602539062,
+      "peak_allocated_bytes": 2934528512,
+      "raw": "results/joint_balanced_screen_8_1_r0.json"
+    },
+    {
+      "round": 1,
+      "bits": 8,
+      "balanced": 1,
+      "median_ms": 98.15243148803711,
+      "peak_allocated_bytes": 2934528512,
+      "raw": "results/joint_balanced_screen_8_1_r1.json"
+    },
+    {
+      "round": 1,
+      "bits": 8,
+      "balanced": 0,
+      "median_ms": 98.50270462036133,
+      "peak_allocated_bytes": 2934414848,
+      "raw": "results/joint_balanced_screen_8_0_r1.json"
+    },
+    {
+      "round": 1,
+      "bits": 4,
+      "balanced": 1,
+      "median_ms": 82.4898567199707,
+      "peak_allocated_bytes": 2594161152,
+      "raw": "results/joint_balanced_screen_4_1_r1.json"
+    },
+    {
+      "round": 1,
+      "bits": 4,
+      "balanced": 0,
+      "median_ms": 83.32697677612305,
+      "peak_allocated_bytes": 2594047488,
+      "raw": "results/joint_balanced_screen_4_0_r1.json"
+    }
+  ],
+  "summary": {
+    "w4_balanced0": {
+      "median_ms": 83.07686424255371,
+      "peak_allocated_bytes": 2594047488
+    },
+    "w4_balanced1": {
+      "median_ms": 82.3790168762207,
+      "peak_allocated_bytes": 2594161152
+    },
+    "w8_balanced0": {
+      "median_ms": 98.4412956237793,
+      "peak_allocated_bytes": 2934414848
+    },
+    "w8_balanced1": {
+      "median_ms": 98.12267875671387,
+      "peak_allocated_bytes": 2934528512
+    }
+  },
+  "complete": true
+}

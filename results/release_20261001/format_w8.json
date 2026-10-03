@@ -1,0 +1,1894 @@
+{
+  "model": "checkpoints/release_20261001/w8a8",
+  "weights_sha256": "0c7b77d34fd29613f6b8664ce8c0053c28f60d6d7788c0fea0592e2c834fb739",
+  "layers": [
+    {
+      "name": "encoder.encoder_1.rdb.conv_layers.0.conv.0",
+      "shape": [
+        32,
+        48,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 70,
+      "tensor_bytes": 18336
+    },
+    {
+      "name": "encoder.encoder_1.rdb.conv_layers.1.conv.0",
+      "shape": [
+        32,
+        80,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 116,
+      "tensor_bytes": 28580
+    },
+    {
+      "name": "encoder.encoder_1.rdb.conv_layers.2.conv.0",
+      "shape": [
+        32,
+        112,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 162,
+      "tensor_bytes": 38824
+    },
+    {
+      "name": "encoder.encoder_1.rdb.conv_post.conv",
+      "shape": [
+        48,
+        144,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 36,
+      "tensor_bytes": 10500
+    },
+    {
+      "name": "encoder.encoder_1.sam_blocks.0.basic_block.conv_layers.0.conv.0",
+      "shape": [
+        32,
+        48,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 70,
+      "tensor_bytes": 18336
+    },
+    {
+      "name": "encoder.encoder_1.sam_blocks.0.basic_block.conv_layers.1.conv.0",
+      "shape": [
+        32,
+        80,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 116,
+      "tensor_bytes": 28580
+    },
+    {
+      "name": "encoder.encoder_1.sam_blocks.0.basic_block.conv_layers.2.conv.0",
+      "shape": [
+        32,
+        112,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 162,
+      "tensor_bytes": 38824
+    },
+    {
+      "name": "encoder.encoder_1.sam_blocks.0.basic_block.conv_layers.3.conv.0",
+      "shape": [
+        32,
+        144,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 208,
+      "tensor_bytes": 49068
+    },
+    {
+      "name": "encoder.encoder_1.sam_blocks.0.basic_block.conv_layers.4.conv.0",
+      "shape": [
+        32,
+        176,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 254,
+      "tensor_bytes": 59312
+    },
+    {
+      "name": "encoder.encoder_1.sam_blocks.0.basic_block.conv_post.conv",
+      "shape": [
+        48,
+        208,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 50,
+      "tensor_bytes": 14536
+    },
+    {
+      "name": "encoder.encoder_1.sam_blocks.0.basic_block_2.conv_layers.0.conv.0",
+      "shape": [
+        32,
+        48,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 70,
+      "tensor_bytes": 18336
+    },
+    {
+      "name": "encoder.encoder_1.sam_blocks.0.basic_block_2.conv_layers.1.conv.0",
+      "shape": [
+        32,
+        80,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 116,
+      "tensor_bytes": 28580
+    },
+    {
+      "name": "encoder.encoder_1.sam_blocks.0.basic_block_2.conv_layers.2.conv.0",
+      "shape": [
+        32,
+        112,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 162,
+      "tensor_bytes": 38824
+    },
+    {
+      "name": "encoder.encoder_1.sam_blocks.0.basic_block_2.conv_layers.3.conv.0",
+      "shape": [
+        32,
+        144,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 208,
+      "tensor_bytes": 49068
+    },
+    {
+      "name": "encoder.encoder_1.sam_blocks.0.basic_block_2.conv_layers.4.conv.0",
+      "shape": [
+        32,
+        176,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 254,
+      "tensor_bytes": 59312
+    },
+    {
+      "name": "encoder.encoder_1.sam_blocks.0.basic_block_2.conv_post.conv",
+      "shape": [
+        48,
+        208,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 50,
+      "tensor_bytes": 14536
+    },
+    {
+      "name": "encoder.encoder_1.sam_blocks.0.basic_block_4.conv_layers.0.conv.0",
+      "shape": [
+        32,
+        48,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 70,
+      "tensor_bytes": 18336
+    },
+    {
+      "name": "encoder.encoder_1.sam_blocks.0.basic_block_4.conv_layers.1.conv.0",
+      "shape": [
+        32,
+        80,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 116,
+      "tensor_bytes": 28580
+    },
+    {
+      "name": "encoder.encoder_1.sam_blocks.0.basic_block_4.conv_layers.2.conv.0",
+      "shape": [
+        32,
+        112,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 162,
+      "tensor_bytes": 38824
+    },
+    {
+      "name": "encoder.encoder_1.sam_blocks.0.basic_block_4.conv_layers.3.conv.0",
+      "shape": [
+        32,
+        144,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 208,
+      "tensor_bytes": 49068
+    },
+    {
+      "name": "encoder.encoder_1.sam_blocks.0.basic_block_4.conv_layers.4.conv.0",
+      "shape": [
+        32,
+        176,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 254,
+      "tensor_bytes": 59312
+    },
+    {
+      "name": "encoder.encoder_1.sam_blocks.0.basic_block_4.conv_post.conv",
+      "shape": [
+        48,
+        208,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 50,
+      "tensor_bytes": 14536
+    },
+    {
+      "name": "encoder.encoder_1.sam_blocks.0.fusion.compress1",
+      "shape": [
+        36,
+        144,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 26,
+      "tensor_bytes": 8296
+    },
+    {
+      "name": "encoder.encoder_1.sam_blocks.0.fusion.compress2",
+      "shape": [
+        36,
+        36,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 8,
+      "tensor_bytes": 3292
+    },
+    {
+      "name": "encoder.encoder_1.sam_blocks.0.fusion.excitation",
+      "shape": [
+        144,
+        36,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 26,
+      "tensor_bytes": 11752
+    },
+    {
+      "name": "encoder.encoder_1.down.0",
+      "shape": [
+        96,
+        48,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 208,
+      "tensor_bytes": 53804
+    },
+    {
+      "name": "encoder.encoder_2.rdb.conv_layers.0.conv.0",
+      "shape": [
+        32,
+        96,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 140,
+      "tensor_bytes": 33716
+    },
+    {
+      "name": "encoder.encoder_2.rdb.conv_layers.1.conv.0",
+      "shape": [
+        32,
+        128,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 186,
+      "tensor_bytes": 43960
+    },
+    {
+      "name": "encoder.encoder_2.rdb.conv_layers.2.conv.0",
+      "shape": [
+        32,
+        160,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 232,
+      "tensor_bytes": 54204
+    },
+    {
+      "name": "encoder.encoder_2.rdb.conv_post.conv",
+      "shape": [
+        96,
+        192,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 94,
+      "tensor_bytes": 24752
+    },
+    {
+      "name": "encoder.encoder_2.sam_blocks.0.basic_block.conv_layers.0.conv.0",
+      "shape": [
+        32,
+        96,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 140,
+      "tensor_bytes": 33716
+    },
+    {
+      "name": "encoder.encoder_2.sam_blocks.0.basic_block.conv_layers.1.conv.0",
+      "shape": [
+        32,
+        128,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 186,
+      "tensor_bytes": 43960
+    },
+    {
+      "name": "encoder.encoder_2.sam_blocks.0.basic_block.conv_layers.2.conv.0",
+      "shape": [
+        32,
+        160,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 232,
+      "tensor_bytes": 54204
+    },
+    {
+      "name": "encoder.encoder_2.sam_blocks.0.basic_block.conv_layers.3.conv.0",
+      "shape": [
+        32,
+        192,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 278,
+      "tensor_bytes": 64448
+    },
+    {
+      "name": "encoder.encoder_2.sam_blocks.0.basic_block.conv_layers.4.conv.0",
+      "shape": [
+        32,
+        224,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 324,
+      "tensor_bytes": 74692
+    },
+    {
+      "name": "encoder.encoder_2.sam_blocks.0.basic_block.conv_post.conv",
+      "shape": [
+        96,
+        256,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 124,
+      "tensor_bytes": 32084
+    },
+    {
+      "name": "encoder.encoder_2.sam_blocks.0.basic_block_2.conv_layers.0.conv.0",
+      "shape": [
+        32,
+        96,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 140,
+      "tensor_bytes": 33716
+    },
+    {
+      "name": "encoder.encoder_2.sam_blocks.0.basic_block_2.conv_layers.1.conv.0",
+      "shape": [
+        32,
+        128,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 186,
+      "tensor_bytes": 43960
+    },
+    {
+      "name": "encoder.encoder_2.sam_blocks.0.basic_block_2.conv_layers.2.conv.0",
+      "shape": [
+        32,
+        160,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 232,
+      "tensor_bytes": 54204
+    },
+    {
+      "name": "encoder.encoder_2.sam_blocks.0.basic_block_2.conv_layers.3.conv.0",
+      "shape": [
+        32,
+        192,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 278,
+      "tensor_bytes": 64448
+    },
+    {
+      "name": "encoder.encoder_2.sam_blocks.0.basic_block_2.conv_layers.4.conv.0",
+      "shape": [
+        32,
+        224,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 324,
+      "tensor_bytes": 74692
+    },
+    {
+      "name": "encoder.encoder_2.sam_blocks.0.basic_block_2.conv_post.conv",
+      "shape": [
+        96,
+        256,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 124,
+      "tensor_bytes": 32084
+    },
+    {
+      "name": "encoder.encoder_2.sam_blocks.0.basic_block_4.conv_layers.0.conv.0",
+      "shape": [
+        32,
+        96,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 140,
+      "tensor_bytes": 33716
+    },
+    {
+      "name": "encoder.encoder_2.sam_blocks.0.basic_block_4.conv_layers.1.conv.0",
+      "shape": [
+        32,
+        128,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 186,
+      "tensor_bytes": 43960
+    },
+    {
+      "name": "encoder.encoder_2.sam_blocks.0.basic_block_4.conv_layers.2.conv.0",
+      "shape": [
+        32,
+        160,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 232,
+      "tensor_bytes": 54204
+    },
+    {
+      "name": "encoder.encoder_2.sam_blocks.0.basic_block_4.conv_layers.3.conv.0",
+      "shape": [
+        32,
+        192,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 278,
+      "tensor_bytes": 64448
+    },
+    {
+      "name": "encoder.encoder_2.sam_blocks.0.basic_block_4.conv_layers.4.conv.0",
+      "shape": [
+        32,
+        224,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 324,
+      "tensor_bytes": 74692
+    },
+    {
+      "name": "encoder.encoder_2.sam_blocks.0.basic_block_4.conv_post.conv",
+      "shape": [
+        96,
+        256,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 124,
+      "tensor_bytes": 32084
+    },
+    {
+      "name": "encoder.encoder_2.sam_blocks.0.fusion.compress1",
+      "shape": [
+        72,
+        288,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 104,
+      "tensor_bytes": 27676
+    },
+    {
+      "name": "encoder.encoder_2.sam_blocks.0.fusion.compress2",
+      "shape": [
+        72,
+        72,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 26,
+      "tensor_bytes": 9016
+    },
+    {
+      "name": "encoder.encoder_2.sam_blocks.0.fusion.excitation",
+      "shape": [
+        288,
+        72,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 104,
+      "tensor_bytes": 33436
+    },
+    {
+      "name": "encoder.encoder_2.down.0",
+      "shape": [
+        192,
+        96,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 830,
+      "tensor_bytes": 196336
+    },
+    {
+      "name": "encoder.encoder_3.rdb.conv_layers.0.conv.0",
+      "shape": [
+        32,
+        192,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 278,
+      "tensor_bytes": 64448
+    },
+    {
+      "name": "encoder.encoder_3.rdb.conv_layers.1.conv.0",
+      "shape": [
+        32,
+        224,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 324,
+      "tensor_bytes": 74692
+    },
+    {
+      "name": "encoder.encoder_3.rdb.conv_layers.2.conv.0",
+      "shape": [
+        32,
+        256,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 370,
+      "tensor_bytes": 84936
+    },
+    {
+      "name": "encoder.encoder_3.rdb.conv_post.conv",
+      "shape": [
+        192,
+        288,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 278,
+      "tensor_bytes": 68032
+    },
+    {
+      "name": "encoder.encoder_3.sam_blocks.0.basic_block.conv_layers.0.conv.0",
+      "shape": [
+        32,
+        192,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 278,
+      "tensor_bytes": 64448
+    },
+    {
+      "name": "encoder.encoder_3.sam_blocks.0.basic_block.conv_layers.1.conv.0",
+      "shape": [
+        32,
+        224,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 324,
+      "tensor_bytes": 74692
+    },
+    {
+      "name": "encoder.encoder_3.sam_blocks.0.basic_block.conv_layers.2.conv.0",
+      "shape": [
+        32,
+        256,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 370,
+      "tensor_bytes": 84936
+    },
+    {
+      "name": "encoder.encoder_3.sam_blocks.0.basic_block.conv_layers.3.conv.0",
+      "shape": [
+        32,
+        288,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 416,
+      "tensor_bytes": 95180
+    },
+    {
+      "name": "encoder.encoder_3.sam_blocks.0.basic_block.conv_layers.4.conv.0",
+      "shape": [
+        32,
+        320,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 462,
+      "tensor_bytes": 105424
+    },
+    {
+      "name": "encoder.encoder_3.sam_blocks.0.basic_block.conv_post.conv",
+      "shape": [
+        192,
+        352,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 338,
+      "tensor_bytes": 81928
+    },
+    {
+      "name": "encoder.encoder_3.sam_blocks.0.basic_block_2.conv_layers.0.conv.0",
+      "shape": [
+        32,
+        192,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 278,
+      "tensor_bytes": 64448
+    },
+    {
+      "name": "encoder.encoder_3.sam_blocks.0.basic_block_2.conv_layers.1.conv.0",
+      "shape": [
+        32,
+        224,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 324,
+      "tensor_bytes": 74692
+    },
+    {
+      "name": "encoder.encoder_3.sam_blocks.0.basic_block_2.conv_layers.2.conv.0",
+      "shape": [
+        32,
+        256,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 370,
+      "tensor_bytes": 84936
+    },
+    {
+      "name": "encoder.encoder_3.sam_blocks.0.basic_block_2.conv_layers.3.conv.0",
+      "shape": [
+        32,
+        288,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 416,
+      "tensor_bytes": 95180
+    },
+    {
+      "name": "encoder.encoder_3.sam_blocks.0.basic_block_2.conv_layers.4.conv.0",
+      "shape": [
+        32,
+        320,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 462,
+      "tensor_bytes": 105424
+    },
+    {
+      "name": "encoder.encoder_3.sam_blocks.0.basic_block_2.conv_post.conv",
+      "shape": [
+        192,
+        352,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 338,
+      "tensor_bytes": 81928
+    },
+    {
+      "name": "encoder.encoder_3.sam_blocks.0.basic_block_4.conv_layers.0.conv.0",
+      "shape": [
+        32,
+        192,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 278,
+      "tensor_bytes": 64448
+    },
+    {
+      "name": "encoder.encoder_3.sam_blocks.0.basic_block_4.conv_layers.1.conv.0",
+      "shape": [
+        32,
+        224,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 324,
+      "tensor_bytes": 74692
+    },
+    {
+      "name": "encoder.encoder_3.sam_blocks.0.basic_block_4.conv_layers.2.conv.0",
+      "shape": [
+        32,
+        256,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 370,
+      "tensor_bytes": 84936
+    },
+    {
+      "name": "encoder.encoder_3.sam_blocks.0.basic_block_4.conv_layers.3.conv.0",
+      "shape": [
+        32,
+        288,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 416,
+      "tensor_bytes": 95180
+    },
+    {
+      "name": "encoder.encoder_3.sam_blocks.0.basic_block_4.conv_layers.4.conv.0",
+      "shape": [
+        32,
+        320,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 462,
+      "tensor_bytes": 105424
+    },
+    {
+      "name": "encoder.encoder_3.sam_blocks.0.basic_block_4.conv_post.conv",
+      "shape": [
+        192,
+        352,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 338,
+      "tensor_bytes": 81928
+    },
+    {
+      "name": "encoder.encoder_3.sam_blocks.0.fusion.compress1",
+      "shape": [
+        144,
+        576,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 416,
+      "tensor_bytes": 99724
+    },
+    {
+      "name": "encoder.encoder_3.sam_blocks.0.fusion.compress2",
+      "shape": [
+        144,
+        144,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 104,
+      "tensor_bytes": 27964
+    },
+    {
+      "name": "encoder.encoder_3.sam_blocks.0.fusion.excitation",
+      "shape": [
+        576,
+        144,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 416,
+      "tensor_bytes": 106636
+    },
+    {
+      "name": "decoder.preconv_3.conv.0",
+      "shape": [
+        64,
+        192,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 554,
+      "tensor_bytes": 126552
+    },
+    {
+      "name": "decoder.decoder_3.rdb.conv_layers.0.conv.0",
+      "shape": [
+        32,
+        64,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 94,
+      "tensor_bytes": 23472
+    },
+    {
+      "name": "decoder.decoder_3.rdb.conv_layers.1.conv.0",
+      "shape": [
+        32,
+        96,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 140,
+      "tensor_bytes": 33716
+    },
+    {
+      "name": "decoder.decoder_3.rdb.conv_layers.2.conv.0",
+      "shape": [
+        32,
+        128,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 186,
+      "tensor_bytes": 43960
+    },
+    {
+      "name": "decoder.decoder_3.rdb.conv_post.conv",
+      "shape": [
+        64,
+        160,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 52,
+      "tensor_bytes": 14692
+    },
+    {
+      "name": "decoder.decoder_3.sam_blocks.0.basic_block.conv_layers.0.conv.0",
+      "shape": [
+        32,
+        64,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 94,
+      "tensor_bytes": 23472
+    },
+    {
+      "name": "decoder.decoder_3.sam_blocks.0.basic_block.conv_layers.1.conv.0",
+      "shape": [
+        32,
+        96,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 140,
+      "tensor_bytes": 33716
+    },
+    {
+      "name": "decoder.decoder_3.sam_blocks.0.basic_block.conv_layers.2.conv.0",
+      "shape": [
+        32,
+        128,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 186,
+      "tensor_bytes": 43960
+    },
+    {
+      "name": "decoder.decoder_3.sam_blocks.0.basic_block.conv_layers.3.conv.0",
+      "shape": [
+        32,
+        160,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 232,
+      "tensor_bytes": 54204
+    },
+    {
+      "name": "decoder.decoder_3.sam_blocks.0.basic_block.conv_layers.4.conv.0",
+      "shape": [
+        32,
+        192,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 278,
+      "tensor_bytes": 64448
+    },
+    {
+      "name": "decoder.decoder_3.sam_blocks.0.basic_block.conv_post.conv",
+      "shape": [
+        64,
+        224,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 72,
+      "tensor_bytes": 19836
+    },
+    {
+      "name": "decoder.decoder_3.sam_blocks.0.basic_block_2.conv_layers.0.conv.0",
+      "shape": [
+        32,
+        64,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 94,
+      "tensor_bytes": 23472
+    },
+    {
+      "name": "decoder.decoder_3.sam_blocks.0.basic_block_2.conv_layers.1.conv.0",
+      "shape": [
+        32,
+        96,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 140,
+      "tensor_bytes": 33716
+    },
+    {
+      "name": "decoder.decoder_3.sam_blocks.0.basic_block_2.conv_layers.2.conv.0",
+      "shape": [
+        32,
+        128,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 186,
+      "tensor_bytes": 43960
+    },
+    {
+      "name": "decoder.decoder_3.sam_blocks.0.basic_block_2.conv_layers.3.conv.0",
+      "shape": [
+        32,
+        160,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 232,
+      "tensor_bytes": 54204
+    },
+    {
+      "name": "decoder.decoder_3.sam_blocks.0.basic_block_2.conv_layers.4.conv.0",
+      "shape": [
+        32,
+        192,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 278,
+      "tensor_bytes": 64448
+    },
+    {
+      "name": "decoder.decoder_3.sam_blocks.0.basic_block_2.conv_post.conv",
+      "shape": [
+        64,
+        224,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 72,
+      "tensor_bytes": 19836
+    },
+    {
+      "name": "decoder.decoder_3.sam_blocks.0.basic_block_4.conv_layers.0.conv.0",
+      "shape": [
+        32,
+        64,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 94,
+      "tensor_bytes": 23472
+    },
+    {
+      "name": "decoder.decoder_3.sam_blocks.0.basic_block_4.conv_layers.1.conv.0",
+      "shape": [
+        32,
+        96,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 140,
+      "tensor_bytes": 33716
+    },
+    {
+      "name": "decoder.decoder_3.sam_blocks.0.basic_block_4.conv_layers.2.conv.0",
+      "shape": [
+        32,
+        128,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 186,
+      "tensor_bytes": 43960
+    },
+    {
+      "name": "decoder.decoder_3.sam_blocks.0.basic_block_4.conv_layers.3.conv.0",
+      "shape": [
+        32,
+        160,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 232,
+      "tensor_bytes": 54204
+    },
+    {
+      "name": "decoder.decoder_3.sam_blocks.0.basic_block_4.conv_layers.4.conv.0",
+      "shape": [
+        32,
+        192,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 278,
+      "tensor_bytes": 64448
+    },
+    {
+      "name": "decoder.decoder_3.sam_blocks.0.basic_block_4.conv_post.conv",
+      "shape": [
+        64,
+        224,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 72,
+      "tensor_bytes": 19836
+    },
+    {
+      "name": "decoder.decoder_3.sam_blocks.0.fusion.compress1",
+      "shape": [
+        48,
+        192,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 48,
+      "tensor_bytes": 13548
+    },
+    {
+      "name": "decoder.decoder_3.sam_blocks.0.fusion.compress2",
+      "shape": [
+        48,
+        48,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 12,
+      "tensor_bytes": 4404
+    },
+    {
+      "name": "decoder.decoder_3.sam_blocks.0.fusion.excitation",
+      "shape": [
+        192,
+        48,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 48,
+      "tensor_bytes": 15852
+    },
+    {
+      "name": "decoder.decoder_3.conv.conv",
+      "shape": [
+        12,
+        64,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 36,
+      "tensor_bytes": 9300
+    },
+    {
+      "name": "decoder.preconv_2.conv.0",
+      "shape": [
+        64,
+        160,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 462,
+      "tensor_bytes": 106448
+    },
+    {
+      "name": "decoder.decoder_2.rdb.conv_layers.0.conv.0",
+      "shape": [
+        32,
+        64,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 94,
+      "tensor_bytes": 23472
+    },
+    {
+      "name": "decoder.decoder_2.rdb.conv_layers.1.conv.0",
+      "shape": [
+        32,
+        96,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 140,
+      "tensor_bytes": 33716
+    },
+    {
+      "name": "decoder.decoder_2.rdb.conv_layers.2.conv.0",
+      "shape": [
+        32,
+        128,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 186,
+      "tensor_bytes": 43960
+    },
+    {
+      "name": "decoder.decoder_2.rdb.conv_post.conv",
+      "shape": [
+        64,
+        160,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 52,
+      "tensor_bytes": 14692
+    },
+    {
+      "name": "decoder.decoder_2.sam_blocks.0.basic_block.conv_layers.0.conv.0",
+      "shape": [
+        32,
+        64,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 94,
+      "tensor_bytes": 23472
+    },
+    {
+      "name": "decoder.decoder_2.sam_blocks.0.basic_block.conv_layers.1.conv.0",
+      "shape": [
+        32,
+        96,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 140,
+      "tensor_bytes": 33716
+    },
+    {
+      "name": "decoder.decoder_2.sam_blocks.0.basic_block.conv_layers.2.conv.0",
+      "shape": [
+        32,
+        128,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 186,
+      "tensor_bytes": 43960
+    },
+    {
+      "name": "decoder.decoder_2.sam_blocks.0.basic_block.conv_layers.3.conv.0",
+      "shape": [
+        32,
+        160,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 232,
+      "tensor_bytes": 54204
+    },
+    {
+      "name": "decoder.decoder_2.sam_blocks.0.basic_block.conv_layers.4.conv.0",
+      "shape": [
+        32,
+        192,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 278,
+      "tensor_bytes": 64448
+    },
+    {
+      "name": "decoder.decoder_2.sam_blocks.0.basic_block.conv_post.conv",
+      "shape": [
+        64,
+        224,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 72,
+      "tensor_bytes": 19836
+    },
+    {
+      "name": "decoder.decoder_2.sam_blocks.0.basic_block_2.conv_layers.0.conv.0",
+      "shape": [
+        32,
+        64,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 94,
+      "tensor_bytes": 23472
+    },
+    {
+      "name": "decoder.decoder_2.sam_blocks.0.basic_block_2.conv_layers.1.conv.0",
+      "shape": [
+        32,
+        96,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 140,
+      "tensor_bytes": 33716
+    },
+    {
+      "name": "decoder.decoder_2.sam_blocks.0.basic_block_2.conv_layers.2.conv.0",
+      "shape": [
+        32,
+        128,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 186,
+      "tensor_bytes": 43960
+    },
+    {
+      "name": "decoder.decoder_2.sam_blocks.0.basic_block_2.conv_layers.3.conv.0",
+      "shape": [
+        32,
+        160,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 232,
+      "tensor_bytes": 54204
+    },
+    {
+      "name": "decoder.decoder_2.sam_blocks.0.basic_block_2.conv_layers.4.conv.0",
+      "shape": [
+        32,
+        192,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 278,
+      "tensor_bytes": 64448
+    },
+    {
+      "name": "decoder.decoder_2.sam_blocks.0.basic_block_2.conv_post.conv",
+      "shape": [
+        64,
+        224,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 72,
+      "tensor_bytes": 19836
+    },
+    {
+      "name": "decoder.decoder_2.sam_blocks.0.basic_block_4.conv_layers.0.conv.0",
+      "shape": [
+        32,
+        64,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 94,
+      "tensor_bytes": 23472
+    },
+    {
+      "name": "decoder.decoder_2.sam_blocks.0.basic_block_4.conv_layers.1.conv.0",
+      "shape": [
+        32,
+        96,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 140,
+      "tensor_bytes": 33716
+    },
+    {
+      "name": "decoder.decoder_2.sam_blocks.0.basic_block_4.conv_layers.2.conv.0",
+      "shape": [
+        32,
+        128,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 186,
+      "tensor_bytes": 43960
+    },
+    {
+      "name": "decoder.decoder_2.sam_blocks.0.basic_block_4.conv_layers.3.conv.0",
+      "shape": [
+        32,
+        160,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 232,
+      "tensor_bytes": 54204
+    },
+    {
+      "name": "decoder.decoder_2.sam_blocks.0.basic_block_4.conv_layers.4.conv.0",
+      "shape": [
+        32,
+        192,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 278,
+      "tensor_bytes": 64448
+    },
+    {
+      "name": "decoder.decoder_2.sam_blocks.0.basic_block_4.conv_post.conv",
+      "shape": [
+        64,
+        224,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 72,
+      "tensor_bytes": 19836
+    },
+    {
+      "name": "decoder.decoder_2.sam_blocks.0.fusion.compress1",
+      "shape": [
+        48,
+        192,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 48,
+      "tensor_bytes": 13548
+    },
+    {
+      "name": "decoder.decoder_2.sam_blocks.0.fusion.compress2",
+      "shape": [
+        48,
+        48,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 12,
+      "tensor_bytes": 4404
+    },
+    {
+      "name": "decoder.decoder_2.sam_blocks.0.fusion.excitation",
+      "shape": [
+        192,
+        48,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 48,
+      "tensor_bytes": 15852
+    },
+    {
+      "name": "decoder.decoder_2.conv.conv",
+      "shape": [
+        12,
+        64,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 36,
+      "tensor_bytes": 9300
+    },
+    {
+      "name": "decoder.preconv_1.conv.0",
+      "shape": [
+        64,
+        112,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 324,
+      "tensor_bytes": 76292
+    },
+    {
+      "name": "decoder.decoder_1.rdb.conv_layers.0.conv.0",
+      "shape": [
+        32,
+        64,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 94,
+      "tensor_bytes": 23472
+    },
+    {
+      "name": "decoder.decoder_1.rdb.conv_layers.1.conv.0",
+      "shape": [
+        32,
+        96,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 140,
+      "tensor_bytes": 33716
+    },
+    {
+      "name": "decoder.decoder_1.rdb.conv_layers.2.conv.0",
+      "shape": [
+        32,
+        128,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 186,
+      "tensor_bytes": 43960
+    },
+    {
+      "name": "decoder.decoder_1.rdb.conv_post.conv",
+      "shape": [
+        64,
+        160,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 52,
+      "tensor_bytes": 14692
+    },
+    {
+      "name": "decoder.decoder_1.sam_blocks.0.basic_block.conv_layers.0.conv.0",
+      "shape": [
+        32,
+        64,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 94,
+      "tensor_bytes": 23472
+    },
+    {
+      "name": "decoder.decoder_1.sam_blocks.0.basic_block.conv_layers.1.conv.0",
+      "shape": [
+        32,
+        96,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 140,
+      "tensor_bytes": 33716
+    },
+    {
+      "name": "decoder.decoder_1.sam_blocks.0.basic_block.conv_layers.2.conv.0",
+      "shape": [
+        32,
+        128,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 186,
+      "tensor_bytes": 43960
+    },
+    {
+      "name": "decoder.decoder_1.sam_blocks.0.basic_block.conv_layers.3.conv.0",
+      "shape": [
+        32,
+        160,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 232,
+      "tensor_bytes": 54204
+    },
+    {
+      "name": "decoder.decoder_1.sam_blocks.0.basic_block.conv_layers.4.conv.0",
+      "shape": [
+        32,
+        192,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 278,
+      "tensor_bytes": 64448
+    },
+    {
+      "name": "decoder.decoder_1.sam_blocks.0.basic_block.conv_post.conv",
+      "shape": [
+        64,
+        224,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 72,
+      "tensor_bytes": 19836
+    },
+    {
+      "name": "decoder.decoder_1.sam_blocks.0.basic_block_2.conv_layers.0.conv.0",
+      "shape": [
+        32,
+        64,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 94,
+      "tensor_bytes": 23472
+    },
+    {
+      "name": "decoder.decoder_1.sam_blocks.0.basic_block_2.conv_layers.1.conv.0",
+      "shape": [
+        32,
+        96,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 140,
+      "tensor_bytes": 33716
+    },
+    {
+      "name": "decoder.decoder_1.sam_blocks.0.basic_block_2.conv_layers.2.conv.0",
+      "shape": [
+        32,
+        128,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 186,
+      "tensor_bytes": 43960
+    },
+    {
+      "name": "decoder.decoder_1.sam_blocks.0.basic_block_2.conv_layers.3.conv.0",
+      "shape": [
+        32,
+        160,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 232,
+      "tensor_bytes": 54204
+    },
+    {
+      "name": "decoder.decoder_1.sam_blocks.0.basic_block_2.conv_layers.4.conv.0",
+      "shape": [
+        32,
+        192,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 278,
+      "tensor_bytes": 64448
+    },
+    {
+      "name": "decoder.decoder_1.sam_blocks.0.basic_block_2.conv_post.conv",
+      "shape": [
+        64,
+        224,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 72,
+      "tensor_bytes": 19836
+    },
+    {
+      "name": "decoder.decoder_1.sam_blocks.0.basic_block_4.conv_layers.0.conv.0",
+      "shape": [
+        32,
+        64,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 94,
+      "tensor_bytes": 23472
+    },
+    {
+      "name": "decoder.decoder_1.sam_blocks.0.basic_block_4.conv_layers.1.conv.0",
+      "shape": [
+        32,
+        96,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 140,
+      "tensor_bytes": 33716
+    },
+    {
+      "name": "decoder.decoder_1.sam_blocks.0.basic_block_4.conv_layers.2.conv.0",
+      "shape": [
+        32,
+        128,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 186,
+      "tensor_bytes": 43960
+    },
+    {
+      "name": "decoder.decoder_1.sam_blocks.0.basic_block_4.conv_layers.3.conv.0",
+      "shape": [
+        32,
+        160,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 232,
+      "tensor_bytes": 54204
+    },
+    {
+      "name": "decoder.decoder_1.sam_blocks.0.basic_block_4.conv_layers.4.conv.0",
+      "shape": [
+        32,
+        192,
+        3,
+        3
+      ],
+      "bits": 8,
+      "outliers": 278,
+      "tensor_bytes": 64448
+    },
+    {
+      "name": "decoder.decoder_1.sam_blocks.0.basic_block_4.conv_post.conv",
+      "shape": [
+        64,
+        224,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 72,
+      "tensor_bytes": 19836
+    },
+    {
+      "name": "decoder.decoder_1.sam_blocks.0.fusion.compress1",
+      "shape": [
+        48,
+        192,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 48,
+      "tensor_bytes": 13548
+    },
+    {
+      "name": "decoder.decoder_1.sam_blocks.0.fusion.compress2",
+      "shape": [
+        48,
+        48,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 12,
+      "tensor_bytes": 4404
+    },
+    {
+      "name": "decoder.decoder_1.sam_blocks.0.fusion.excitation",
+      "shape": [
+        192,
+        48,
+        1,
+        1
+      ],
+      "bits": 8,
+      "outliers": 48,
+      "tensor_bytes": 15852
+    }
+  ],
+  "verified": true,
+  "calibration_identity_verified": true,
+  "quant_state_sha256": "387bbd5bad8b45c36473789fa16dfd577ba2991e5e1aa0fdc97806250fffd632",
+  "tail_verification": "ranked source weights"
+}

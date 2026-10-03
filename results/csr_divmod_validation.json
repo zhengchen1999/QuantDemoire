@@ -1,0 +1,82 @@
+{
+  "unit_tests": 574,
+  "command": "CUDA_HOME=... CUTLASS_ROOT=... uv run pytest -q",
+  "reports": {
+    "4": {
+      "images": 100,
+      "quantized_shapes": 157,
+      "fused_prefix_edges": 24,
+      "one_byte_prefixes": 7,
+      "environment": {
+        "torch": "2.2.2+cu121",
+        "cuda": "12.1",
+        "cudnn": 8902,
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "fp16_convolution_accumulator": "float32",
+        "cudnn_api": "v7",
+        "tf32": false,
+        "fp16_reduced_precision_reduction": false,
+        "sparse_implementation": "csr",
+        "csr_kernel": "divmod",
+        "joint_warps": 0,
+        "joint_variant": 9,
+        "shared_skip_planar": true,
+        "shared_skip_prefix_planar": true,
+        "joint_plan_sha256": "68d55b3bbf047c999dda69c68a941b44ce98abc5e8bc133c1fa9e4fdd398747e",
+        "main_half_override": "1",
+        "compact_sparse": true,
+        "prepare_implementation": "quad_swizzle",
+        "fuse_next_quant": true,
+        "fuse_attention": true,
+        "fuse_residual": true,
+        "deployment_source_sha256": "081db461201ac805c4de4e736b9a4d2d2c9b74ca149436e20a307ec0e7d34d0c",
+        "kernel_source_sha256": "ff27e3733061a26dc57b409d8afc690043e087b6196790a6f5e9889e6a420ea8"
+      },
+      "mixed_compute_diagnostic": {
+        "main_sum_ms": 23.147433485463264,
+        "with_sparse_sum_ms": 37.55799359716475,
+        "increment_ratio": 0.6225554172453467
+      },
+      "all_joint_increment_ratio": 0.44783375502897527
+    },
+    "8": {
+      "images": 100,
+      "quantized_shapes": 157,
+      "fused_prefix_edges": 50,
+      "one_byte_prefixes": 0,
+      "environment": {
+        "torch": "2.2.2+cu121",
+        "cuda": "12.1",
+        "cudnn": 8902,
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "fp16_convolution_accumulator": "float32",
+        "cudnn_api": "v7",
+        "tf32": false,
+        "fp16_reduced_precision_reduction": false,
+        "sparse_implementation": "csr",
+        "csr_kernel": "divmod",
+        "joint_warps": 0,
+        "joint_variant": 8,
+        "shared_skip_planar": false,
+        "shared_skip_prefix_planar": false,
+        "joint_plan_sha256": "fb57681bab20978e762252bd32edc27a5cb2c452c6f524b96737c115476734c2",
+        "main_half_override": "1",
+        "compact_sparse": true,
+        "prepare_implementation": "quad_swizzle",
+        "fuse_next_quant": true,
+        "fuse_attention": true,
+        "fuse_residual": true,
+        "deployment_source_sha256": "081db461201ac805c4de4e736b9a4d2d2c9b74ca149436e20a307ec0e7d34d0c",
+        "kernel_source_sha256": "ff27e3733061a26dc57b409d8afc690043e087b6196790a6f5e9889e6a420ea8"
+      },
+      "mixed_compute_diagnostic": {
+        "main_sum_ms": 34.45802232064307,
+        "with_sparse_sum_ms": 48.900364698469616,
+        "increment_ratio": 0.4191285919846435
+      },
+      "all_joint_increment_ratio": 0.29125330820364015
+    }
+  },
+  "complete": true,
+  "note": "Compute diagnostics exclude input preparation and producer-prefix work. The separate-path increment includes output merge and activation. These sums are not end-to-end overhead and do not establish the 30% target."
+}
