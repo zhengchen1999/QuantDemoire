@@ -61,13 +61,3 @@ std::vector<torch::Tensor> joint_next_two_omitted(torch::Tensor x,torch::Tensor 
  #undef RUN
  C10_CUDA_KERNEL_LAUNCH_CHECK();return {out,packed,auxiliary,future};
 }
-
-
-
-
-// Explicit resource query for the spatial W4 lookup specialization.
-std::vector<int64_t> joint_omit_two_lut_resources(int64_t variant) {
- if(variant==38)return joint_resource_row<4,4,8,true,38,true>();
- if(variant==40)return joint_resource_row<4,4,8,true,40,true>();
- TORCH_CHECK(false,"invalid shared W4 lookup resource variant");
-}

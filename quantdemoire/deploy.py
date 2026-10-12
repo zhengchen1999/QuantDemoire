@@ -87,9 +87,6 @@ class PackedConv(nn.Module):
         self.spec = spec
         self.backend = backend
         self.sparse_enabled = True
-        # Enabled explicitly by quantdemoire.branch_diagnostic, never by a model
-        # package or environment variable. This counterfactual is timing-only.
-        self.diagnostic_main_only = False
         self.fused = spec.get("fused_sparse", False)
         self.sparse_impl = os.environ.get("QUANTDEMOIRE_SPARSE_IMPL", "csr")
         self.main_half = os.environ.get('QUANTDEMOIRE_MAIN_HALF', str(int(spec.get('main_output')=='float16'))) == '1'
@@ -288,7 +285,7 @@ class PackedConv(nn.Module):
                 and s['padded_channels']<=((512 if s['bits']==4 else 256) if self.retain_shared else (256 if s['bits']==4 else 128)))
 
     def supports_prepared_input(self):
-        return (self.backend == 'cuda' and self.main_half and (self.sparse_enabled or self.diagnostic_main_only)
+        return (self.backend == 'cuda' and self.main_half and self.sparse_enabled
                 and self.sparse_impl == 'csr' and self.compact_sparse
                 and self.prepare_impl in ('pair','quad','quad_loop','quad_swizzle') and self.sparse_channels > 0)
 
@@ -297,7 +294,7 @@ class PackedConv(nn.Module):
                 (self.joint_warps==8 and self.joint_variant in (8,9) and self.joint_next_mode>0))
 
     def supports_residual(self):
-        return self.backend=='cuda' and self.main_half and (self.sparse_enabled or self.diagnostic_main_only) and self.sparse_impl=='csr'
+        return self.backend=='cuda' and self.main_half and self.sparse_enabled and self.sparse_impl=='csr'
 
     def can_quantize_for(self, consumer):
         return (isinstance(consumer, PackedConv) and self.supports_next_quant()
@@ -315,7 +312,7 @@ class PackedConv(nn.Module):
                 and all(m.prepare_impl=='quad_swizzle' for m in (self,middle,consumer)))
 
     def can_omit_cached_feature(self,x):
-        common=(self.backend=='cuda' and self.main_half and (self.sparse_enabled or self.diagnostic_main_only)
+        common=(self.backend=='cuda' and self.main_half and self.sparse_enabled
                 and self.sparse_impl=='csr' and self.prepare_impl=='quad_swizzle' and self.compact_sparse)
         joint=(self.joint_warps==8 and self.joint_next_mode>0 and self.joint_variant in (8,9)
                and self.balance_csr and self.packed_csr_meta and self.spec['shape'][2]>1
@@ -402,10 +399,6 @@ class PackedConv(nn.Module):
             packed, planar = op.prepare_cat(parts, self.inverse_smooth, self.activation, s["bits"], s["padded_channels"], self.sparse_enabled)
         del prepared
         k, _, r, _ = s["shape"]
-        if self.diagnostic_main_only:
-            from .branch_diagnostic import dense_forward
-            return dense_forward(self, packed, planar, locations, next_quantizer,
-                                 residual, future_quantizer, omit_feature)
         if self.main_half:
             if self.joint_warps:
                 joint_locations=self.locations if self.uses_shared_pointwise() else locations

@@ -134,33 +134,3 @@ std::vector<torch::Tensor> joint_next(torch::Tensor x,torch::Tensor planar,torch
  #undef RUN
  C10_CUDA_KERNEL_LAUNCH_CHECK();return {out,packed,auxiliary};
 }
-
-// Static launch-resource limit from the CUDA occupancy API; this is not a
-// measurement of achieved occupancy, memory bandwidth, or elapsed time.
-std::vector<int64_t> joint_resources(int64_t bits,int64_t warps,int64_t access,
- int64_t variant,bool sparse,int64_t device) {
- TORCH_CHECK((bits==4||bits==8)&&(warps==4||warps==8)&&(access==4||access==8)&&variant>=0&&variant<=46&&variant!=10&&variant!=27&&variant!=28,"invalid resource-query configuration");
- TORCH_CHECK(warps!=8||access==4,"eight-warp output uses four elements per access");
- int count=0;C10_CUDA_CHECK(cudaGetDeviceCount(&count));TORCH_CHECK(device>=0&&device<count,"invalid device");
- c10::cuda::CUDAGuard guard(static_cast<c10::DeviceIndex>(device));
- #define QUERY(B,A,W,S,V) return joint_resource_row<B,A,W,S,V>()
- #define Q4(S) if(bits==4){if(access==4){QUERY(4,4,4,S,0);}else{QUERY(4,8,4,S,0);}}else{if(access==4){QUERY(8,4,4,S,0);}else{QUERY(8,8,4,S,0);}}
- #define Q8(S,V) if(bits==4){QUERY(4,4,8,S,V);}else{QUERY(8,4,8,S,V);}
- #define CONFIG(S) if(warps==4){Q4(S);}else if(variant==0){Q8(S,0);}else if(variant==1){Q8(S,1);}else if(variant==2){Q8(S,2);}else if(variant==3){Q8(S,3);}else if(variant==11){Q8(S,11);}else if(variant==12){Q8(S,12);}else if(variant==13){Q8(S,13);}else if(variant==14){Q8(S,14);}else if(variant==15){Q8(S,15);}else if(variant==16){Q8(S,16);}else if(variant==17){Q8(S,17);}else if(variant==18){Q8(S,18);}else if(variant==19){Q8(S,19);}else if(variant==20){Q8(S,20);}else if(variant==21){Q8(S,21);}else if(variant==22){Q8(S,22);}else if(variant==23){Q8(S,23);}else if(variant==24){Q8(S,24);}else if(variant==25){Q8(S,25);}else if(variant==26){Q8(S,26);}else if(variant==35){Q8(S,35);}else if(variant==36){Q8(S,36);}else if(variant==37){Q8(S,37);}else if(variant==38){Q8(S,38);}else if(variant==39){Q8(S,39);}else if(variant==40){Q8(S,40);}else if(variant==41){Q8(S,41);}else if(variant==42){Q8(S,42);}else if(variant==43){Q8(S,43);}else if(variant==44){Q8(S,44);}else if(variant==45){Q8(S,45);}else if(variant==46){Q8(S,46);}else if(variant==29){Q8(S,29);}else if(variant==30){Q8(S,30);}else if(variant==31){Q8(S,31);}else if(variant==32){Q8(S,32);}else if(variant==33){Q8(S,33);}else if(variant==34){Q8(S,34);}else if(variant==9){Q8(S,9);}else if(variant==8){Q8(S,8);}else if(variant==7){Q8(S,7);}else if(variant==6){Q8(S,6);}else if(variant==4||bits==8){Q8(S,4);}else{QUERY(4,4,8,S,5);}
- if(sparse){CONFIG(true);}else{CONFIG(false);}
- #undef QUERY
- #undef Q4
- #undef Q8
- #undef CONFIG
-}
-
-// Explicit resource query for the spatial W4 lookup specialization.
-std::vector<int64_t> joint_lut_resources(int64_t variant) {
- if(variant==36)return joint_resource_row<4,4,8,true,36,true>();
- if(variant==38)return joint_resource_row<4,4,8,true,38,true>();
- if(variant==40)return joint_resource_row<4,4,8,true,40,true>();
- if(variant==42)return joint_resource_row<4,4,8,true,42,true>();
- if(variant==44)return joint_resource_row<4,4,8,true,44,true>();
- if(variant==46)return joint_resource_row<4,4,8,true,46,true>();
- TORCH_CHECK(false,"invalid shared W4 lookup resource variant");
-}

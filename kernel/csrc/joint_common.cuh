@@ -974,28 +974,4 @@ void run_joint_selected(torch::Tensor x,torch::Tensor weight,torch::Tensor scale
  }
  run_joint<Bits,Access,Warps,Sparse,Variant,false>(x,weight,scale,out,cp,p,stream);
 }
-template<int Bits,int Access,int Warps,bool Sparse,int Variant,bool SharedW4Lookup=false>
-std::vector<int64_t> joint_resource_row() {
- using Kernel=JointKernel<Bits,Access,Warps,Sparse,Variant,SharedW4Lookup>;
- constexpr int SharedBytes=joint_shared_bytes<Kernel,Warps,Sparse,Variant>();
- if constexpr(SharedW4Lookup) {
-   static_assert(Bits==4&&Warps==8&&Sparse&&(Variant==36||Variant==38||Variant==40||Variant==42||Variant==44||Variant==46),"unsupported shared W4 lookup specialization");
-   static_assert(SharedBytes>=sizeof(typename Kernel::Epilogue::SharedStorage)
-     +64*33*(sizeof(float)+sizeof(int8_t))+8*16*sizeof(float),"shared operand table exceeds reusable storage");
- }
- if constexpr(Variant==13||Variant==14||Variant==19||Variant==20||Variant==25||Variant==26||Variant==33||Variant==34||Variant==39||Variant==40||Variant==45||Variant==46)static_assert(SharedBytes>=sizeof(typename Kernel::Epilogue::SharedStorage)+64*33*(sizeof(float)+sizeof(int8_t)),"quantized prefix tile exceeds shared storage");
- cudaFuncAttributes attr{};int blocks=0;
- if constexpr(Variant>=3) {
- C10_CUDA_CHECK(cudaFuncSetAttribute(joint_limited_kernel<Kernel>,cudaFuncAttributeMaxDynamicSharedMemorySize,SharedBytes));
- C10_CUDA_CHECK(cudaFuncGetAttributes(&attr,joint_limited_kernel<Kernel>));
- C10_CUDA_CHECK(cudaOccupancyMaxActiveBlocksPerMultiprocessor(&blocks,joint_limited_kernel<Kernel>,Warps*32,SharedBytes));
- } else {
- C10_CUDA_CHECK(cudaFuncSetAttribute(cutlass::Kernel<Kernel>,cudaFuncAttributeMaxDynamicSharedMemorySize,SharedBytes));
- C10_CUDA_CHECK(cudaFuncGetAttributes(&attr,cutlass::Kernel<Kernel>));
- C10_CUDA_CHECK(cudaOccupancyMaxActiveBlocksPerMultiprocessor(&blocks,cutlass::Kernel<Kernel>,Warps*32,SharedBytes));
- }
- return {attr.numRegs,int64_t(attr.sharedSizeBytes),SharedBytes,
-   sizeof(typename Kernel::Epilogue::SharedStorage),int64_t(attr.localSizeBytes),Warps*32,blocks};
-}
 } // namespace
-

@@ -62,21 +62,3 @@ std::vector<torch::Tensor> joint_next_two(torch::Tensor x,torch::Tensor planar,t
  #undef RUN
  C10_CUDA_KERNEL_LAUNCH_CHECK();return {out,packed,auxiliary,future};
 }
-
-
-std::vector<int64_t> joint_two_resources(int64_t bits,int64_t variant) {
- TORCH_CHECK(bits==4||bits==8,"invalid bit width");
- #define Q(V) if(variant==V){if(bits==4)return joint_resource_row<4,4,8,true,V>();else return joint_resource_row<8,4,8,true,V>();}
- Q(38) Q(40) Q(44) Q(46)
- #undef Q
- TORCH_CHECK(false,"invalid prototype resource variant");
-}
-
-// Explicit resource query for the spatial W4 lookup specialization.
-std::vector<int64_t> joint_two_lut_resources(int64_t variant) {
- if(variant==38)return joint_resource_row<4,4,8,true,38,true>();
- if(variant==40)return joint_resource_row<4,4,8,true,40,true>();
- if(variant==44)return joint_resource_row<4,4,8,true,44,true>();
- if(variant==46)return joint_resource_row<4,4,8,true,46,true>();
- TORCH_CHECK(false,"invalid shared W4 lookup resource variant");
-}

@@ -1,5 +1,5 @@
 # QuantDemoire: Quantization with Outlier Aware for Image Demoiréing
-[Zheng Chen](https://zhengchen1999.github.io/), [Kewei Zhang](https://github.com/Pushazf), [Xiaoyang Liu](https://xyliu339.github.io/), [Weihang Zhang](), [Mengfan Wang](), [Yifan Fu](), [Yulun Zhang](http://yulunzhang.com/),"QuantDemoire: Quantization with Outlier Aware for Image Demoiréing", arXiv, 2025
+[Zheng Chen](https://zhengchen1999.github.io/), [Kewei Zhang](https://github.com/Pushazf), [Xiaoyang Liu](https://xyliu339.github.io/), [Weihang Zhang](), [Mengfan Wang](), [Yifan Fu](), [Yulun Zhang](http://yulunzhang.com/),"QuantDemoire: Quantization with Outlier Aware for Image Demoiréing", NeurIPS 2026
 
 
 
@@ -105,10 +105,10 @@ bash script/benchmark_memory.sh   # GPU memory
 If you find the code helpful in your research or work, please cite our work.
 
 ```
-@article{chen2025quantdemoire,
+@inproceedings{chen2026quantdemoire,
     title={QuantDemoire: Quantization with Outlier Aware for Image Demoiréing},
     author={Chen, Zheng and Zhang, Kewei and Liu, Xiaoyang and Zhang, Weihang and Wang, Mengfan and Fu, Yifan and Zhang, Yulun},
-    journal={arXiv preprint arXiv:2510.04066},
-    year={2025}
+    booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+    year={2026}
 }
 ```
