@@ -25,8 +25,6 @@
 ## ⚒️ TODO
 
 * [x] Add ESDNet/UHDM calibration, portable weights, and CUDA experiment code
-* [ ] Publish validated pretrained models and Hugging Face download links
-* [ ] Test our quantization method on more models
 
 ## ESDNet / UHDM implementation
 
