@@ -24,8 +24,7 @@
 
 ## Reproduction
 
-ESDNet on UHDM, tested with an RTX 4090, Python 3.11, PyTorch 2.2.2+cu121,
-CUDA toolkit 12.1 and CUTLASS 3.5.1.
+ESDNet on UHDM, tested with an RTX 4090, Python 3.11 and CUDA 12.1.
 
 ### Environment
 
@@ -35,49 +34,26 @@ export CUDA_HOME=/path/to/cuda-12.1
 uv run --frozen python -m kernel
 ```
 
-The build command fetches CUTLASS 3.5.1 and compiles the CUDA extension. Keep
-`CUDA_HOME` set when running the commands below; `CUTLASS_ROOT` may point to an
-existing checkout.
-
-### Quality metrics
+### Data
 
 Download the ESDNet checkpoint and data from the [official UHDM repository](https://github.com/CVMI-Lab/UHDM).
-Save the checkpoint as `checkpoints/uhdm_checkpoint.pth`, put 200 training pairs
-(sampled with seed 123) in `data/UHDM-paper-calibration/train/`, and all 500 test
-pairs in `data/UHDM-full/test/`. Each pair uses matching `*_moire.jpg` and
-`*_gt.jpg` filenames. Data and pretrained weights are not bundled with Git.
+
+- Checkpoint: `checkpoints/uhdm_checkpoint.pth`
+- Calibration: 200 training pairs (seed 123) in `data/UHDM-paper-calibration/train/`
+- Test set: 500 pairs in `data/UHDM-full/test/`
+
+Each pair uses matching `*_moire.jpg` and `*_gt.jpg` filenames.
+
+### Run
 
 ```bash
-bash script/reproduce_metrics.sh
+bash script/reproduce_metrics.sh  # PSNR / SSIM / LPIPS
+bash script/benchmark_speed.sh    # Speedup
+bash script/benchmark_memory.sh   # GPU memory
 ```
 
-This calibrates and exports W4A4/W8A8, verifies CUDA execution, and reports
-PSNR, SSIM and LPIPS for FP32, FP16, fakequant and integer CUDA inference.
-Models are saved under `checkpoints/reproduction/deploy/`; calibration states and
-metric reports go to `outputs/reproduction/deploy/`. Add `--stage evaluate` to
-evaluate existing exports, or `--limit N` for a development subset.
-
-The default adjusted recipe uses 0.25% weight tails, alpha=0.5, gamma=0.01 (W4) /
-0.05 (W8), and full statistics for pooled 1×1 features. `--recipe paper` selects
-the adjusted 0.5%-tail comparison. Neither recipe claims exact reproduction of
-the published quantized scores.
-
-### Speedup and GPU memory
-
-```bash
-bash script/benchmark_speed.sh
-bash script/benchmark_memory.sh
-```
-
-Both commands use the reproduced models and report CUDA Graph and eager results.
-Speedup and memory savings use an FP16 baseline with the same applicable fusions;
-the memory test also includes FP32. Reports are saved under `outputs/reproduction/`.
-Use `--help` for custom model paths, input images and output directories.
-
-Speed uses three rounds of 30 samples after seven warmups on a native UHDM image.
-Timing covers the complete network and all three outputs, excluding image I/O,
-input transfer, padding and metrics. Historical strict sparse-branch overhead was
-57.45% (W4) / 39.03% (W8), above the 30% target.
+Models are saved under `checkpoints/reproduction/deploy/` and reports under
+`outputs/reproduction/`. Add `--help` to any script for available options.
 
 ## 🔎 Method Overview
 
