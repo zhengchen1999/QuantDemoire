@@ -1,4 +1,4 @@
-include .python-version uv.lock models.json LICENSE-UHDM.txt THIRD_PARTY_NOTICES.md
+include uv.lock LICENSE-UHDM.txt
 recursive-include script *.sh
 recursive-include config *.yaml *.json
 include kernel/README.md

@@ -37,7 +37,7 @@ uv run --frozen python -m kernel
 
 The build command fetches CUTLASS 3.5.1 and compiles the CUDA extension. Keep
 `CUDA_HOME` set when running the commands below; `CUTLASS_ROOT` may point to an
-existing checkout. Third-party licenses are listed in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+existing checkout.
 
 ### Quality metrics
 
@@ -128,6 +128,14 @@ input transfer, padding and metrics. Historical strict sparse-branch overhead wa
 </details>
 
 </details>
+
+## Acknowledgements
+
+`quantdemoire/esdnet.py` is adapted from [CVMI-Lab/UHDM](https://github.com/CVMI-Lab/UHDM)
+under [Apache-2.0](LICENSE-UHDM.txt). Deployment changes defer selected
+concatenations until activation quantization while preserving the architecture
+and checkpoint tensor names. CUTLASS 3.5.1 is downloaded separately; its BSD-3-Clause
+license remains in the dependency source tree. Other dependencies retain their own licenses.
 
 ## <a name="citation"></a>📎 Citation
 
