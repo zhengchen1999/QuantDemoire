@@ -22,109 +22,47 @@
 
 <img src="figs/compare.png" width="100%"/>
 
-## ⚒️ TODO
+## Reproduction
 
-* [x] Add ESDNet/UHDM calibration, portable weights, and CUDA experiment code
+ESDNet on UHDM, tested with an RTX 4090, Python 3.11, PyTorch 2.2.2+cu121,
+CUDA toolkit 12.1 and CUTLASS 3.5.1.
 
-## ESDNet / UHDM implementation
-
-Packed W4A4 INT4 and W8A8 INT8 Tensor Core convolution cover 157 quantized layers.
-The FP16 outlier branch accumulates in FP32, and the two boundary convolutions
-remain floating point. Fakequant and CUDA load the same integer codes, sparse
-indices and FP16 tail values. Smoothing, quantization and packing are included
-in complete-network inference.
-
-### Validated results
-
-All quality results below use the full 500-pair UHDM test split. Adjusted PTQ
-uses gamma 0.01 (W4) / 0.05 (W8), alpha=0.5 and full statistics for pooled 1×1
-features. Parameters were selected on held-out training images.
-
-| Model | Tail fraction per side | PSNR ↑ | SSIM ↑ | LPIPS ↓ |
-|---|---:|---:|---:|---:|
-| FP32 | — | 22.118994 | 0.795592 | 0.255100 |
-| FP16 | — | 22.118892 | 0.795589 | 0.255058 |
-| W4A4 adjusted PTQ CUDA | 0.5% | 20.973432 | 0.760425 | 0.315438 |
-| W8A8 adjusted PTQ CUDA | 0.5% | 21.868181 | 0.792626 | 0.256231 |
-| W4A4 deployment CUDA | 0.25% | 21.093776 | 0.762535 | 0.316172 |
-| W8A8 deployment CUDA | 0.25% | 21.874563 | 0.792815 | 0.256027 |
-
-Final 0.25%-tail deployment packages, RTX 4090, one native 4K image padded to
-2176×3840, three alternating-process rounds with 30 samples per round:
-
-| Model | Graph ms | Eager ms | Graph speedup | Graph peak allocated GiB |
-|---|---:|---:|---:|---:|
-| FP16 | 127.835 | 128.795 | 1.000× | 2.065 |
-| W4A4 | 78.084 | 78.813 | 1.637× | 1.340 |
-| W8A8 | 93.158 | 94.155 | 1.372× | 1.631 |
-
-FP16 uses the same applicable fusions and feature release. Graph peak allocated
-memory savings are 35.13% (W4) / 21.06% (W8).
-Timing excludes image I/O, host-to-device transfer, padding and quality metrics.
-These measurements are specific to the recorded hardware, input and profiles.
-
-The strict sparse-branch overhead target of **≤30% is not met**: W4
-is **57.45%** and W8 **39.03%**.
-The denominator is integer-core time, and the increment includes sparse
-preparation and merge. Complete-network speedup does not imply this target passes.
-Adjusted 0.5%-tail PTQ PSNR remains below the paper's W4/W8 values of
-21.08/22.00 dB. Deployment uses a different tail fraction; its scores are reported
-separately and are not evidence of exact paper reproduction.
-
-See [release evidence and validation](docs/RELEASE_RESULTS.md),
-[calibration assumptions](docs/PAPER_PROTOCOL.md) and [documentation index](docs/README.md).
-
-### Install and reproduce
-
-Validated with Python 3.11, PyTorch 2.2.2+cu121, CUDA toolkit 12.1, CUTLASS 3.5.1,
-and an RTX 4090. Other SM8x devices require independent validation.
+### Environment
 
 ```bash
 uv sync --frozen
 export CUDA_HOME=/path/to/cuda-12.1
-bash script/setup_kernel.sh
-uv run pytest -q
+uv run --frozen python -m kernel
 ```
 
-Prepare the raw checkpoint and data as described in [REPRODUCE.md](docs/REPRODUCE.md).
-Run calibration, unchanged-mask export, format checks and full fakequant/CUDA
-evaluation from the raw checkpoint:
+### Quality metrics
+
+Prepare the original ESDNet checkpoint, 200 calibration pairs and the 500-pair
+UHDM test set using the [data guide](docs/REPRODUCE.md). Then run:
 
 ```bash
-uv run python script/reproduce_ptq.py --recipe deploy --bits 4 \
-  --small-tensor-policy full_if_pooled --sampling-rate 0.01
-uv run python script/reproduce_ptq.py --recipe deploy --bits 8 \
-  --small-tensor-policy full_if_pooled --sampling-rate 0.05
+bash script/reproduce_metrics.sh
 ```
 
-Use `--recipe paper` for the separate 0.5%-tail adjusted PTQ comparison.
-The original gamma=0.001 recipe remains available as an explicitly different
-experiment. Ordinary network weights are frozen during this PTQ process.
+This calibrates and exports W4A4/W8A8, verifies CUDA execution, and reports
+PSNR, SSIM and LPIPS for FP32, FP16, fakequant and integer CUDA inference.
+Models are saved under `checkpoints/reproduction/deploy/`. To evaluate existing
+exports again, add `--stage evaluate`. Pretrained weights are not bundled with Git.
 
-[models.json](models.json) identifies the validated local safetensors packages
-and their exact reports. **Weights are not included in Git and have not been
-uploaded to Hugging Face**; download links are null. Cloning this repository
-does not create those model folders. The [guide](docs/REPRODUCE.md) describes
-reproduction and local packaging. Once a local package is available:
+### Speedup and GPU memory
 
 ```bash
-uv run python script/infer.py \
-  --model checkpoints/hf/esdnet-uhdm-w4a4-ptq-20261003 --runtime-profile \
-  --input /path/to/moire.jpg --output outputs/restored.png --graph
+bash script/benchmark_speed.sh
+bash script/benchmark_memory.sh
 ```
 
-| Entry point in `script/` | Purpose |
-|---|---|
-| `evaluate_fakequant.py`, `evaluate_cuda.py` | Full PSNR, SSIM and LPIPS evaluation |
-| `benchmark_e2e.py`, `benchmark_variants.py` | Eager / CUDA Graph network latency |
-| `benchmark_memory.py` | Resident, peak allocated and reserved memory |
-| `benchmark_branch.py` | Strict branch cost with a matched main-only comparison |
-| `export.py`, `verify_release.py`, `package_model.py` | Packed weights, calibration identity and local packages |
+Both commands use the reproduced models and report CUDA Graph and eager results.
+Speedup and memory savings use an FP16 baseline with the same applicable fusions;
+the memory test also includes FP32. Reports are saved under `results/reproduction/`.
+Use `--help` for custom model paths, input images and output directories.
 
-[kernel/](kernel/README.md) contains the production CUDA sources and build logic.
-[research/](research/README.md) preserves rejected candidates outside the runtime
-wheel and default test suite. [Third-party notices](docs/THIRD_PARTY_NOTICES.md)
-document external code and dependencies.
+[Reference results and limitations](docs/RELEASE_RESULTS.md) ·
+[Reproduction details](docs/REPRODUCE.md) · [Calibration protocol](docs/PAPER_PROTOCOL.md)
 
 ## 🔎 Method Overview
 

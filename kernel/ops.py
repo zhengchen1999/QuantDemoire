@@ -28,7 +28,7 @@ def extension():
     if not cuda or not (Path(cuda) / "bin/nvcc").is_file():
         raise RuntimeError("Set CUDA_HOME to a CUDA 12.1 toolkit (including nvcc)")
     if not (cutlass / "include/cutlass/cutlass.h").is_file():
-        raise RuntimeError("Run script/setup_kernel.sh or set CUTLASS_ROOT to CUTLASS 3.5.1")
+        raise RuntimeError("Run uv run python -m kernel or set CUTLASS_ROOT to CUTLASS 3.5.1")
     cpp_extension.CUDA_HOME = cuda
     import ninja
     os.environ["PATH"] = str(ninja.BIN_DIR) + os.pathsep + os.environ["PATH"]

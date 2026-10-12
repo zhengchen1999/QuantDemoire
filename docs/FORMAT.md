@@ -48,54 +48,33 @@ blocks from the union of exact CSR indices. Zero-filled coefficients preserve
 the same outliers. These derived blocks do not change fakequant's sparse mask.
 The ordinary CSR implementation remains available for comparison.
 
-Export checks actual ranked tails of each original **smoothed** weight tensor,
-including both `ceil(numel * 0.0025)` extremes. `script/verify_release.py` can
-repeat this check with the source checkpoint, in addition to checking packing,
-padding, CSR consistency, checksums and duplicate weight counting.
+Export checks both ranked tails of each original smoothed weight tensor.
+The metrics workflow also checks integer packing, padding, CSR consistency,
+checksums and exact correspondence with the saved calibration state.
 
-`script/package_model.py` produces a local Hugging Face-compatible folder with
-a model card and checksums. It does not upload, create a Hub repository, or
-invent a public download URL. The custom CUDA loader is required; this format
-does not claim compatibility with Transformers `AutoModel`.
+## Execution settings
 
-## Portable execution settings
-
-An optional `runtime.json` (`quantdemoire-runtime-v1`) stores the validated
-execution flags, weight/config checksums, measured latency and allocated memory,
-GPU/software/input provenance, and validation hashes. `joint_plan.json` holds
-the weight-bound per-layer kernel choices. Neither changes the packed weight
-format or fakequant sparse structure; both are included in `manifest.json`.
+`runtime.json` binds execution flags to the model and config checksums.
+`joint_plan.json` binds per-layer kernel choices to the same weights.
+They do not change the packed weight format or fakequant sparse structure.
 
 ```python
 from quantdemoire.profiles import apply_execution_profile
 from quantdemoire.precision import configure
 from quantdemoire.deploy import load_model
-folder = "checkpoints/hf/esdnet-uhdm-w4a4-ptq-20261003"
+folder = "checkpoints/reproduction/deploy/w4a4"
 apply_execution_profile(folder)
 configure()
 model = load_model(folder, backend="cuda")
 ```
 
-The helper validates checksums and resolves the plan relative to the downloaded
-folder. It only accepts known QuantDemoire flags and preserves explicit existing
-environment overrides; `overwrite=True` explicitly selects the saved settings.
-Measured speed is specific to the recorded hardware and input. Source hashes
-document the validation run and are not a promise of compatibility with arbitrary
-future implementations.
+The helper validates checksums and resolves the plan inside the model directory.
+Newly reproduced weights use the architecture-checked templates in
+`config/release/`; their runtime status remains `unmeasured_proposal`, without
+copied quality or performance claims. The reproduction commands generate fresh
+quality, Graph equivalence, speed and memory reports for those weights.
 
-`script/attach_runtime_profile.py` builds these files from a complete benchmark
-and matching numerical validation, without modifying the model weights or
-uploading anything. `script/package_model.py` also preserves an existing valid
-runtime profile when copying a model folder.
-
-Create the local package before attaching a profile: a raw export does not yet
-contain a model card. The attachment command checks the card before writing
-runtime metadata; an absent or incomplete card is an error. Final packages also
-include CUDA and fakequant quality reports, branch-cost measurements, numerical
-validation and performance samples. `manifest.json` hashes the complete folder.
-
-`script/propose_runtime.py` can copy an architecture-compatible schedule to new
-weights before tuning. Such a profile explicitly has `status=unmeasured_proposal`
-and contains no copied performance or correctness claims. It must pass fresh
-validation and timing before `attach_runtime_profile.py` replaces it with
-`status=validated`. Both files remain bound to the new model checksum.
+The validated historical packages indexed by `models.json` additionally contain
+model cards, provenance, reports and file manifests. They are local safetensors
+packages requiring this CUDA loader, not Transformers AutoModel repositories.
+Hugging Face links remain unset until the weights are uploaded.

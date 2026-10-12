@@ -1,0 +1,121 @@
+{
+  "date": "2026-10-12T07:17:36.856172+00:00",
+  "scope": "Repository simplification and reproduction entry points; historical 500-pair reports remain unchanged.",
+  "complete": true,
+  "production_tests": {
+    "tests": 1412,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "removed_test_count": 6,
+  "removed_test_scope": "Deleted historical dispatch-tuner and packaging CLI tests only.",
+  "frozen_uv_install": true,
+  "dependency_packages_checked": 38,
+  "public_shell_entrypoints": [
+    "benchmark_memory.sh",
+    "benchmark_speed.sh",
+    "reproduce_metrics.sh"
+  ],
+  "shell_syntax_and_help": true,
+  "wheel_cuda_source_count": 15,
+  "sdist_public_shell_count": 3,
+  "historical_tuning_excluded_from_distribution": true,
+  "markdown_local_links_valid": true,
+  "production_cuda_unchanged": true,
+  "exports_match_validated_weight_and_config_bytes": {
+    "w4a4": {
+      "model.safetensors": true,
+      "config.json": true
+    },
+    "w8a8": {
+      "model.safetensors": true,
+      "config.json": true
+    }
+  },
+  "runtime_template_geometry_guard_checked_bits": [
+    4,
+    8
+  ],
+  "quality_smoke": {
+    "images": 2,
+    "models": [
+      "fp32",
+      "fp16",
+      "w4a4_fake",
+      "w4a4_cuda",
+      "w8a8_fake",
+      "w8a8_cuda"
+    ],
+    "full_test_rerun": false
+  },
+  "cuda_equivalence_smoke": {
+    "w4a4": {
+      "images": 2,
+      "all_three_outputs_bitwise_equal": true,
+      "changing_input_graph_equal": true
+    },
+    "w8a8": {
+      "images": 2,
+      "all_three_outputs_bitwise_equal": true,
+      "changing_input_graph_equal": true
+    }
+  },
+  "speed_smoke": {
+    "modes": [
+      "graph",
+      "eager"
+    ],
+    "variants": [
+      "fp16",
+      "w4a4",
+      "w8a8"
+    ],
+    "rounds": 1,
+    "warmup": 2,
+    "repeats": 3,
+    "ratios_verified": true
+  },
+  "memory_smoke": {
+    "modes": [
+      "graph",
+      "eager"
+    ],
+    "variants": [
+      "fp32",
+      "fp16",
+      "w4a4",
+      "w8a8"
+    ],
+    "resident_and_peak_fields_verified": true,
+    "savings_verified": true
+  },
+  "source_sha256": {
+    "config/release/w4a4.json": "05b30ac01db6a82c37044c975429f8a35a32eb1b17b1e4c9d1b740e09c8e79a9",
+    "config/release/w8a8.json": "d44053ed10995256fdb7061f75dec378f1ac7dd0a822a35e019758b6c3681464",
+    "kernel/__main__.py": "d4c7668b3d13f9a0b9bf3ef941ce5719125210827ab12809e561d77888e2787f",
+    "script/_internal/benchmark_e2e.py": "8b7b0d7859311139bc639d554b29995dfc82c09e33e491de1d2639c63f619237",
+    "script/_internal/benchmark_memory.py": "5d59a5d305e6a0701d11c9588002b5f5b730e921404914908042ede2e591afb1",
+    "script/_internal/benchmark_speed.py": "c9e7c8f69688d897094f251829c07fded7ba211d82c3f765ada00211ecdee657",
+    "script/_internal/benchmark_variants.py": "62015daf6df995b9a862e0d06ae70145abf51baf848e54ad83953c8b52e54175",
+    "script/_internal/calibrate.py": "38d04b9e24896d197d2c767f4cfbce9d4a15113e213bc42d6421d37715058be1",
+    "script/_internal/common.py": "75e78b1fa4057f056252b9b056bd9065ec2ac105d7cc177f890460923d91531d",
+    "script/_internal/download_uhdm.py": "8f6477874774c78924b99620c095a50c4447fd60e10d97477208d608582c4210",
+    "script/_internal/evaluate.py": "8b839aa77e1a3df2adba231c34fc5833a0109f5094b8f52e307b6005e7d79aa5",
+    "script/_internal/export.py": "9cf6d6e513f4b6821054db22c879cc0f3e3778bd635cd8fd57ff2f93f1013a44",
+    "script/_internal/measure_memory.py": "345f640b493afb013febf23933a3df9ed7b8bd528af05850dcf6a222fa7cf5a0",
+    "script/_internal/reproduce_metrics.py": "de3964a75565056f3f4fe46ed75cf0dd7ddff83f272d782a6ced947eb18f1e42",
+    "script/_internal/reproduce_ptq.py": "d2ca113a5f98ddf4b6753ea3ae50250b096f79eed91a1dd2f73d73f77a02d547",
+    "script/_internal/runtime.py": "79ed9fffc0804679688b940078134b2077a67a669a8262fe7ac7a93828458e43",
+    "script/_internal/verify_graph_fusions.py": "e92320894735a4b2603c308f92381b7f1218fb02a91e2f7a53db840e868448a8",
+    "script/_internal/verify_release.py": "9df5b72754fa45a6ab134cea4b0224aa037f59d2e97737a872a6ef2a247d8f4e",
+    "script/benchmark_memory.sh": "25af53f4611a325fd73cda12c3faecc849ebc05399fd7e554bb3ecb42603ed1b",
+    "script/benchmark_speed.sh": "886b84e9ad5cb16abc9d91ea8eb91401d38e60b6c25e03e6209b49b7a9358a05",
+    "script/reproduce_metrics.sh": "379479b08846ce5c6d789b0694ff420cdf4592e3cf44a97b7117127802d702bb"
+  },
+  "notes": [
+    "Calibration states were reused for the export smoke; four-epoch training was not repeated.",
+    "Two native 4K images validate the revised metrics entry point, not a new full-test score.",
+    "The latency smoke uses reduced samples and does not replace release performance claims."
+  ]
+}

@@ -1,8 +1,14 @@
 # ESDNet / UHDM release evidence — 2026-10-03
 
 Scope: ESDNet, UHDM, W4A4/W8A8 and floating references. Model packages are local;
-this release preparation does not upload models or push Git commits.
+the measurements below describe the accepted October 3 weights.
 Machine-readable current results are in [summary.json](../results/release_20261003/summary.json).
+
+The simplified reproduction entry points were checked on October 12:
+[workflow validation](../results/reproduction_validation/summary.json) records
+1,412 passing production tests, unchanged exported weights/configs, a two-image
+native-4K quality/Graph smoke, and Graph/eager speed and memory runs. These checks
+do not replace the full-test reference measurements below.
 
 ## Full test quality
 
@@ -92,7 +98,7 @@ comparisons and changing-input Graph replay matched all three outputs bitwise:
 This is equivalence between CUDA execution configurations; fakequant and CUDA
 quality are evaluated separately and are not claimed to match bitwise.
 
-See [final software validation](../results/release_20261003/software_validation.json)
+The original October 3 software acceptance is recorded in [final software validation](../results/release_20261003/software_validation.json)
 for production tests, clean uv installation, wheel/source-distribution checks,
 portable loading and CLI smoke tests. Runtime profiles are bound to model,
 config and joint-plan checksums. The final model cards include the measurements
@@ -113,5 +119,5 @@ The evidence applies to the recorded RTX 4090 environment. The source supports
 SM8x compilation, but SM80/86 have not received equivalent device validation.
 Hugging Face links remain unset until an actual upload. Calibration and result
 files retain historical paths as provenance; public commands use relative paths.
-Earlier 100-image/QAT/range-search experiments are historical and do not describe
-the current PTQ packages. Failed optimization candidates remain in research/.
+Earlier 100-image/QAT/range-search experiments and rejected candidates are
+available in Git history at commit `368422d`; they do not describe the current PTQ packages.

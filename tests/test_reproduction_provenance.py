@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 import pytest
 import yaml
-from script.reproduce_ptq import configuration,validate_calibration_source
+from script._internal.reproduce_ptq import configuration,validate_calibration_source
 from quantdemoire.deploy import sha256
 
 

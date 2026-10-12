@@ -13,3 +13,5 @@ checkpoints/
 outputs/
 *.log
 results/*.trace.json
+results/*.json
+results/reproduction/
