@@ -11,21 +11,17 @@ dependencies = [
   "torch==2.2.2", "torchvision==0.17.2", "numpy==1.26.4",
   "Pillow==11.3.0", "PyYAML==6.0.2", "tqdm==4.67.1",
   "lpips==0.1.4", "ninja==1.11.1.4", "safetensors==0.5.3",
-  "pytest==8.4.2",
   "setuptools==75.8.0",
 ]
 
 [tool.setuptools]
-license-files = ["docs/licenses/*.txt", "docs/THIRD_PARTY_NOTICES.md"]
+license-files = ["LICENSE-UHDM.txt", "THIRD_PARTY_NOTICES.md"]
 
 [tool.setuptools.packages.find]
 include = ["quantdemoire*", "kernel*"]
 
 [tool.setuptools.package-data]
 kernel = ["csrc/*.cu", "csrc/*.cuh", "csrc/*.cpp"]
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
 
 [tool.uv.sources]
 torch = { index = "pytorch-cu121" }

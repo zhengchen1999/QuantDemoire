@@ -44,7 +44,7 @@ from quantdemoire.quantization.pipeline import (
 )
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
+PROJECT_ROOT = Path.cwd()
 PATH_FIELDS = {
     "SAVE_PREFIX",
     "TRAIN_DATASET",
@@ -375,8 +375,8 @@ def main() -> None:
             checkpoint_sha256=sha256(args.LOAD_PATH),seed=args.SEED,torch=torch.__version__,
             tf32=False,calibration_pairs=[dict(image=str(p.relative_to(root)),gt_sha256=sha256(p),
                 input_sha256=sha256(p.with_name(p.name.replace('_gt.jpg','_moire.jpg')))) for p in pairs],
-            source_sha256={str(p.relative_to(PROJECT_ROOT)):sha256(p) for p in
-                [Path(__file__), *sorted((PROJECT_ROOT/'quantdemoire/quantization').glob('*.py'))]})
+            source_sha256={str(Path('quantdemoire') / p.relative_to(Path(__file__).parent)):sha256(p) for p in
+                [Path(__file__), *sorted((Path(__file__).parent/'quantization').glob('*.py'))]})
         if getattr(args,'QUANT_STATE_PATH',None):
             write_json(Path(args.QUANT_STATE_PATH).with_name('provenance.json'),provenance)
     model = ESDNet(

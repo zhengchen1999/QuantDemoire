@@ -79,3 +79,28 @@ def shapes(height=224, width=224):
     for h in handles:
         h.remove()
     return records
+
+
+def read_json(path):
+    return json.loads(Path(path).read_text())
+
+
+def run_module(module, *arguments, environment=None, log=None):
+    """Use a fresh process with explicit execution settings for each experiment."""
+    import os
+    import subprocess
+    import sys
+    env = {key: value for key, value in os.environ.items() if not key.startswith('QUANTDEMOIRE_')}
+    env.update(environment or {})
+    command = [sys.executable, '-m', module, *map(str, arguments)]
+    if log is None:
+        print("Running:", " ".join(command), flush=True)
+        subprocess.run(command, check=True, env=env)
+    else:
+        log = Path(log)
+        log.parent.mkdir(parents=True, exist_ok=True)
+        with log.open('w') as stream:
+            try:
+                subprocess.run(command, check=True, env=env, stdout=stream, stderr=subprocess.STDOUT)
+            except subprocess.CalledProcessError as error:
+                raise RuntimeError(f'Command failed; see {log}') from error

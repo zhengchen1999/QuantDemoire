@@ -35,10 +35,17 @@ export CUDA_HOME=/path/to/cuda-12.1
 uv run --frozen python -m kernel
 ```
 
+The build command fetches CUTLASS 3.5.1 and compiles the CUDA extension. Keep
+`CUDA_HOME` set when running the commands below; `CUTLASS_ROOT` may point to an
+existing checkout. Third-party licenses are listed in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
 ### Quality metrics
 
-Prepare the original ESDNet checkpoint, 200 calibration pairs and the 500-pair
-UHDM test set using the [data guide](docs/REPRODUCE.md). Then run:
+Download the ESDNet checkpoint and data from the [official UHDM repository](https://github.com/CVMI-Lab/UHDM).
+Save the checkpoint as `checkpoints/uhdm_checkpoint.pth`, put 200 training pairs
+(sampled with seed 123) in `data/UHDM-paper-calibration/train/`, and all 500 test
+pairs in `data/UHDM-full/test/`. Each pair uses matching `*_moire.jpg` and
+`*_gt.jpg` filenames. Data and pretrained weights are not bundled with Git.
 
 ```bash
 bash script/reproduce_metrics.sh
@@ -46,8 +53,14 @@ bash script/reproduce_metrics.sh
 
 This calibrates and exports W4A4/W8A8, verifies CUDA execution, and reports
 PSNR, SSIM and LPIPS for FP32, FP16, fakequant and integer CUDA inference.
-Models are saved under `checkpoints/reproduction/deploy/`. To evaluate existing
-exports again, add `--stage evaluate`. Pretrained weights are not bundled with Git.
+Models are saved under `checkpoints/reproduction/deploy/`; calibration states and
+metric reports go to `outputs/reproduction/deploy/`. Add `--stage evaluate` to
+evaluate existing exports, or `--limit N` for a development subset.
+
+The default adjusted recipe uses 0.25% weight tails, alpha=0.5, gamma=0.01 (W4) /
+0.05 (W8), and full statistics for pooled 1×1 features. `--recipe paper` selects
+the adjusted 0.5%-tail comparison. Neither recipe claims exact reproduction of
+the published quantized scores.
 
 ### Speedup and GPU memory
 
@@ -58,11 +71,13 @@ bash script/benchmark_memory.sh
 
 Both commands use the reproduced models and report CUDA Graph and eager results.
 Speedup and memory savings use an FP16 baseline with the same applicable fusions;
-the memory test also includes FP32. Reports are saved under `results/reproduction/`.
+the memory test also includes FP32. Reports are saved under `outputs/reproduction/`.
 Use `--help` for custom model paths, input images and output directories.
 
-[Reference results and limitations](docs/RELEASE_RESULTS.md) ·
-[Reproduction details](docs/REPRODUCE.md) · [Calibration protocol](docs/PAPER_PROTOCOL.md)
+Speed uses three rounds of 30 samples after seven warmups on a native UHDM image.
+Timing covers the complete network and all three outputs, excluding image I/O,
+input transfer, padding and metrics. Historical strict sparse-branch overhead was
+57.45% (W4) / 39.03% (W8), above the 30% target.
 
 ## 🔎 Method Overview
 

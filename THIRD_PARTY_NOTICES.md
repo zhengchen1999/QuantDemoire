@@ -3,7 +3,7 @@
 The ESDNet architecture in `quantdemoire/esdnet.py` is adapted from
 [CVMI-Lab/UHDM](https://github.com/CVMI-Lab/UHDM), through the existing local
 QuantDemoire implementation. Its Apache-2.0 license is retained in
-[`licenses/UHDM-Apache-2.0.txt`](licenses/UHDM-Apache-2.0.txt).
+[`LICENSE-UHDM.txt`](LICENSE-UHDM.txt).
 Deployment-specific changes defer selected concatenations until activation
 quantization. The network architecture and checkpoint tensor names are retained.
 

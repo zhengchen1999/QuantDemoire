@@ -21,9 +21,8 @@ The reproduction workflow applies per-model runtime settings for smoothing,
 input quantization, packing, sparse computation, fusion and feature release.
 No dense floating fallback replaces the integer computation.
 
-Use the three [reproduction scripts](../docs/REPRODUCE.md) for quality, full-network
-speedup and memory. [Reference measurements](../docs/RELEASE_RESULTS.md) retain the
-strict sparse-branch budget result: W4 57.45%, W8 39.03%, both above 30%.
+Use the three [reproduction scripts](../README.md#reproduction) for quality,
+full-network speedup and memory.
 
 The Python `diagnostic.py` and main-only diagnostic helpers support numerical
 tests; they do not define a quality-valid inference model.

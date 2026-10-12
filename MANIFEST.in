@@ -1,6 +1,4 @@
-include .python-version uv.lock models.json
-recursive-include script *.py *.sh
-recursive-include config *.yaml *.json *.md
-recursive-include docs *.md *.txt
-recursive-include tests *.py
+include .python-version uv.lock models.json LICENSE-UHDM.txt THIRD_PARTY_NOTICES.md
+recursive-include script *.sh
+recursive-include config *.yaml *.json
 include kernel/README.md

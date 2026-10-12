@@ -1,4 +1,4 @@
-# ArXiv v1 recipe; explicit assumptions are recorded in docs/PAPER_PROTOCOL.md.
+# ESDNet/UHDM PTQ template; the reproduction command applies the adjusted recipe in README.md.
 CALIBRATION:
   CALI_BATCH_SIZE: 1
   CALI_NUM: 200

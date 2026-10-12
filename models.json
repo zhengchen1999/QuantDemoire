@@ -15,11 +15,6 @@
       "runtime_profile_sha256": "126f9150ebd68f7b818808d758d35dfa9bc16a2dc4c513877a5863bf92af9f79",
       "joint_plan_sha256": "c3699d6dce15bf52c1e108f1c6ba456dd443c3d3e9906435c81a62d79c9fe8c0",
       "manifest_sha256": "b9dd5c85f40cb6b3a70a75c02ea76d88876ee0de88ee525b42b61fb09a70f6e5",
-      "quality_report": "results/release_20261001/quality_w4_cuda_500.json",
-      "fake_quality_report": "results/release_20261001/quality_w4_fake_500.json",
-      "performance_report": "results/release_20261001/e2e_graph.json",
-      "performance_variant": "w4a4",
-      "branch_report": "results/release_20261001/branch_w4.json",
       "strict_branch_target_passed": false,
       "paper_result_reproduced": false
     },
@@ -36,13 +31,9 @@
       "runtime_profile_sha256": "68203223ff696953635cb1309b0c655803bd9ec527d81971dfc333ec951a5e24",
       "joint_plan_sha256": "99b39aae4be9262cfe5cdee038b1f5c8be188db481cbe62a871751bc03cea3da",
       "manifest_sha256": "bd465fb09434105cbc17aed9e698f452be860c64d2fac2b6d224e6ed3d7e652e",
-      "quality_report": "results/release_20261001/quality_w8_cuda_500.json",
-      "fake_quality_report": "results/release_20261001/quality_w8_fake_500.json",
-      "performance_report": "results/release_20261001/e2e_graph.json",
-      "performance_variant": "w8a8",
-      "branch_report": "results/release_20261001/branch_w8.json",
       "strict_branch_target_passed": false,
       "paper_result_reproduced": false
     }
-  ]
+  ],
+  "evidence_commit": "54c78b1dd1b5e5dd238e6b6ccb673bbcc885a216"
 }
