@@ -38,12 +38,6 @@ uv run --frozen python -m kernel
 
 Download the ESDNet checkpoint and data from the [official UHDM repository](https://github.com/CVMI-Lab/UHDM).
 
-- Checkpoint: `checkpoints/uhdm_checkpoint.pth`
-- Calibration: 200 training pairs (seed 123) in `data/UHDM-paper-calibration/train/`
-- Test set: 500 pairs in `data/UHDM-full/test/`
-
-Each pair uses matching `*_moire.jpg` and `*_gt.jpg` filenames.
-
 ### Run
 
 ```bash
@@ -51,9 +45,6 @@ bash script/reproduce_metrics.sh  # PSNR / SSIM / LPIPS
 bash script/benchmark_speed.sh    # Speedup
 bash script/benchmark_memory.sh   # GPU memory
 ```
-
-Models are saved under `checkpoints/reproduction/deploy/` and reports under
-`outputs/reproduction/`. Add `--help` to any script for available options.
 
 ## 🔎 Method Overview
 
