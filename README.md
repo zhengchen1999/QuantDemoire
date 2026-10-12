@@ -131,11 +131,7 @@ input transfer, padding and metrics. Historical strict sparse-branch overhead wa
 
 ## Acknowledgements
 
-`quantdemoire/esdnet.py` is adapted from [CVMI-Lab/UHDM](https://github.com/CVMI-Lab/UHDM)
-under [Apache-2.0](LICENSE-UHDM.txt). Deployment changes defer selected
-concatenations until activation quantization while preserving the architecture
-and checkpoint tensor names. CUTLASS 3.5.1 is downloaded separately; its BSD-3-Clause
-license remains in the dependency source tree. Other dependencies retain their own licenses.
+`quantdemoire/esdnet.py` is adapted from [CVMI-Lab/UHDM](https://github.com/CVMI-Lab/UHDM) under [Apache-2.0](LICENSE-UHDM.txt).
 
 ## <a name="citation"></a>📎 Citation
 
