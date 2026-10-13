@@ -1,5 +1,5 @@
-# QuantDemoire: Quantization with Outlier Aware for Image Demoiréing
-[Zheng Chen](https://zhengchen1999.github.io/), [Kewei Zhang](https://github.com/Pushazf), [Xiaoyang Liu](https://xyliu339.github.io/), [Weihang Zhang](), [Mengfan Wang](), [Yifan Fu](), [Yulun Zhang](http://yulunzhang.com/),"[NeurIPS 2026] QuantDemoire: Quantization with Outlier Aware for Image Demoiréing", NeurIPS 2026
+#[NeurIPS 2026] QuantDemoire: Quantization with Outlier Aware for Image Demoiréing
+[Zheng Chen](https://zhengchen1999.github.io/), [Kewei Zhang](https://github.com/Pushazf), [Xiaoyang Liu](https://xyliu339.github.io/), [Weihang Zhang](), [Mengfan Wang](), [Yifan Fu](), [Yulun Zhang](http://yulunzhang.com/),"QuantDemoire: Quantization with Outlier Aware for Image Demoiréing", NeurIPS 2026
 
 
 
