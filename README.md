@@ -10,11 +10,11 @@
 </div>
 
 
-[[arXiv](https://arxiv.org/abs/2510.04066)] [[supplementary material](https://github.com/zhengchen1999/QuantDemoire/releases/download/v1/Supplementary_Material.pdf)] [[project](https://zheng-chen.cn/QuantDemoire/)] 
+[[arXiv](https://arxiv.org/abs/2510.04066)] [[project](https://zheng-chen.cn/QuantDemoire/)] 
 
 #### 🔥🔥🔥 News
 
-- **2026-10-12:** Released the [training (quantization calibration) and evaluation code](#reproduction) for ESDNet on UHDM. 🚀🚀🚀
+- **2026-10-12:** Released the training (quantization calibration) and evaluation code. 🚀🚀🚀
 - **2026-09-25:** QuantDemoire was accepted to NeurIPS 2026 as a poster. 🎉🎉🎉
 - **2025-10-05:** This repo is released.
 
@@ -100,7 +100,7 @@ bash script/benchmark_memory.sh   # GPU memory
 
 ## Acknowledgements
 
-`quantdemoire/esdnet.py` is adapted from [CVMI-Lab/UHDM](https://github.com/CVMI-Lab/UHDM) under [Apache-2.0](LICENSE-UHDM.txt).
+This project is adapted from [CVMI-Lab/UHDM](https://github.com/CVMI-Lab/UHDM) under [Apache-2.0](LICENSE-UHDM.txt).
 
 ## <a name="citation"></a>📎 Citation
 
@@ -110,7 +110,7 @@ If you find the code helpful in your research or work, please cite our work.
 @inproceedings{chen2026quantdemoire,
     title={QuantDemoire: Quantization with Outlier Aware for Image Demoiréing},
     author={Chen, Zheng and Zhang, Kewei and Liu, Xiaoyang and Zhang, Weihang and Wang, Mengfan and Fu, Yifan and Zhang, Yulun},
-    booktitle={Advances in Neural Information Processing Systems},
+    booktitle={NeurIPS},
     year={2026}
 }
 ```
