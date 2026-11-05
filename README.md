@@ -1,5 +1,5 @@
 # [NeurIPS 2026] QuantDemoire: Quantization with Outlier Aware for Image Demoiréing
-[Zheng Chen](https://zhengchen1999.github.io/), [Kewei Zhang](https://github.com/Pushazf), [Xiaoyang Liu](https://xyliu339.github.io/), [Weihang Zhang](), [Mengfan Wang](), [Yifan Fu](), [Yulun Zhang](http://yulunzhang.com/),"QuantDemoire: Quantization with Outlier Aware for Image Demoiréing", NeurIPS 2026
+[Zheng Chen](https://zhengchen1999.github.io/), [Kewei Zhang](https://github.com/Pushazf), [Xiaoyang Liu](https://xyliu339.github.io/), Weihang Zhang, Mengfan Wang, Yifan Fu, and [Yulun Zhang](http://yulunzhang.com/), "QuantDemoire: Quantization with Outlier Aware for Image Demoiréing", NeurIPS 2026
 
 
 
@@ -14,6 +14,8 @@
 
 #### 🔥🔥🔥 News
 
+- **2026-10-12:** Released the [training (quantization calibration) and evaluation code](#reproduction) for ESDNet on UHDM. 🚀🚀🚀
+- **2026-09-25:** QuantDemoire was accepted to NeurIPS 2026 as a poster. 🎉🎉🎉
 - **2025-10-05:** This repo is released.
 
 ---
@@ -104,11 +106,11 @@ bash script/benchmark_memory.sh   # GPU memory
 
 If you find the code helpful in your research or work, please cite our work.
 
-```
+```bibtex
 @inproceedings{chen2026quantdemoire,
     title={QuantDemoire: Quantization with Outlier Aware for Image Demoiréing},
     author={Chen, Zheng and Zhang, Kewei and Liu, Xiaoyang and Zhang, Weihang and Wang, Mengfan and Fu, Yifan and Zhang, Yulun},
-    booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+    booktitle={Advances in Neural Information Processing Systems},
     year={2026}
 }
 ```
