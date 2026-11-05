@@ -10,7 +10,7 @@
 </div>
 
 
-[[arXiv](https://arxiv.org/abs/2510.04066)] [[project](https://zheng-chen.cn/QuantDemoire/)] 
+[[paper](https://openreview.net/pdf?id=xWKcMe90g4)] [[arXiv](https://arxiv.org/abs/2510.04066)] [[project](https://zheng-chen.cn/QuantDemoire/)] 
 
 #### 🔥🔥🔥 News
 
